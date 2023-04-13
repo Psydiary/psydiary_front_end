@@ -5,7 +5,7 @@ orbs:
 
 jobs:
   build_and_test:
-    working_directory: ~/psydiary_frontend # THIS SHOULD BE NAME OF YOUR APP
+    working_directory: ~/psydiary_front_end # THIS SHOULD BE NAME OF YOUR APP
     docker:
       - image: cimg/ruby:3.1.1
         environment:
@@ -14,8 +14,8 @@ jobs:
           RAILS_ENV: test
       - image: postgres:13.2
         environment:
-          POSTGRES_USER: psydiary_frontend # THIS SHOULD BE NAME OF YOUR APP
-          POSTGRES_DB: psydiary_frontend_test # find db name in /config/database.yml
+          POSTGRES_USER: psydiary_front_end # THIS SHOULD BE NAME OF YOUR APP
+          POSTGRES_DB: psydiary_front_end_test # find db name in /config/database.yml
           POSTGRES_PASSWORD:
     executor: ruby/default
     steps:
@@ -30,7 +30,7 @@ jobs:
     executor: heroku/default
     steps:
       - attach_workspace:
-          at: ~/psydiary_frontend
+          at: ~/psydiary_front_end
       - heroku/deploy-via-git:
           force: true
 
