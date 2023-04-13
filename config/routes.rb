@@ -7,6 +7,13 @@ Rails.application.routes.draw do
 
   get '/login', to: "users#login"
   get '/register', to: "users#new"
-  get '/learn_more', to: "discover#index", as: 'discover'
   get '/users/:id', to: "users#show"
+
+  get '/learn_more', to: "discover#index", as: 'discover'
+
+  get '/protocols/new', to: "protocols#new"
+  post '/protocols', to: "protocols#create"
+  get '/protocols/:id', to: "protocols#show"
+  get '/protocols/:id/edit', to: "protocols#edit"
+  patch '/protocols/:id', to: "protocols#update"
 end

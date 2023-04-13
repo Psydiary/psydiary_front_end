@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'New User page' do
+RSpec.describe 'User show page' do
   it 'exists' do
     visit '/users/1'
     
