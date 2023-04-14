@@ -8,4 +8,13 @@ RSpec.describe 'Login page' do
 
     expect(page).to have_content('Login')
   end
+
+  it 'has a form to login' do
+    visit '/login'
+    
+    expect(page).to have_field(:email)
+    expect(page).to have_field(:password)
+    expect(page).to have_button('Login')
+    expect(page).to have_button('Login with Google')
+  end
 end
