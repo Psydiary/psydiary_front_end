@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    user = User.new(user_params)
+    user = UserService.create_user(user_params)
     if user.save
       session[:user_id] = user.id
       redirect_to user_path(user)
@@ -11,5 +11,10 @@ class UsersController < ApplicationController
       flash[:error] = "Please fill out all fields."
       redirect_to new_user_path
     end
+  end
+
+  private
+  def user_params
+    params.permit(:name, :email, :password, :protocol_id,)
   end
 end

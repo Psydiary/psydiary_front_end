@@ -24,6 +24,7 @@ describe '/users/new', type: :feature do
         select 'Yes', from: :allow_sharing
         click_button 'Begin My Journey'
 
+        expect(page.status_code).to eq(200)
         expect(current_path).to eq(user_path(User.last))
       end
     end

@@ -1,6 +1,6 @@
 <h1>Your Journey Start Here!</h1>
 
-<%= form_with url: "https://api-url.com/users", method: :post do |f| %>
+<%= form_with url: users_path, method: :post, local: true do |f| %>
   <%= f.label :name, "Name:" %>
   <%= f.text_field :name %>
 

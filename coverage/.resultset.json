@@ -238,11 +238,27 @@
           null
         ]
       },
-      "/Users/samwalker/Documents/Turing/3mod/projects/psydiary_front_end/app/controllers/welcome_controller.rb": {
+      "/Users/samwalker/Documents/Turing/3mod/projects/psydiary_front_end/app/controllers/users_controller.rb": {
         "lines": [
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          1,
+          0,
           null,
           null
         ]
@@ -254,6 +270,6 @@
         ]
       }
     },
-    "timestamp": 1681427074
+    "timestamp": 1681446551
   }
 }
