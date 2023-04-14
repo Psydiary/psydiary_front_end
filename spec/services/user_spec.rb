@@ -4,16 +4,19 @@ RSpec.describe UserService do
   describe 'class methods' do
     describe '.create_user' do
       it 'creates a new user' do
-        attributes = {:name=>"Caridad Herzog CPA",
-          :email=>"caridad_cpa_herzog@davis.example",
-          :password=>"pG6SUJxArr",
-          :data_sharing=>true,
-          :protocol_id=>55,
-          :ip_address=>"2601:282:4300:aef0:3c11:257d:152b:f5ad"}
+        attributes = {
+          name: "Caridad Herzog CPA",
+          email: "caridad_cpa_herzog@davis.example",
+          password: "pG6SUJxArr",
+          data_sharing: true,
+          protocol_id: 1,
+          ip_address: "192.199.248.75"
+        }
 
         user = UserService.create_user(attributes)
-        require 'pry'; binding.pry
-        expect(response.status).to eq(200)
+        # require 'pry'; binding.pry
+        expect(user.status).to eq(201)
+        # expect(user.name).to eq(attributes[:name])
       end
     end
   end
