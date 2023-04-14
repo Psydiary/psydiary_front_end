@@ -25,6 +25,7 @@ jobs:
           command: bundle -v
       - checkout
       - run: bundle install --path vendor/bundle
+      - run: sudo apt-get update && sudo apt-get install -y nodejs
       - run: bundle exec rspec
   deploy:
     executor: heroku/default
