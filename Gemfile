@@ -61,6 +61,7 @@ group :development, :test do
   gem 'pry'
   gem 'simplecov'
   gem 'launchy'
+  gem 'factory_bot_rails'
 end
 
 group :test do
