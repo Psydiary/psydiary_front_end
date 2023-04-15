@@ -61,6 +61,7 @@ group :development, :test do
   gem 'pry'
   gem 'simplecov'
   gem 'launchy'
+  gem 'shoulda-matchers'
 end
 
 group :development do

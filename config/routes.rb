@@ -23,6 +23,7 @@ Rails.application.routes.draw do
 
   get '/protocols/new', to: "protocols#new"
   post '/protocols', to: "protocols#create"
+  get '/protocols', to: "protocols#index"
   get '/protocols/:id', to: "protocols#show"
   get '/protocols/:id/edit', to: "protocols#edit"
   patch '/protocols/:id', to: "protocols#update"
