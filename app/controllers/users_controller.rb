@@ -1,10 +1,12 @@
 class UsersController < ApplicationController
   def new
+    
   end
-
+  
   def create
-    user = UserService.create_user(user_params)
-    redirect_to user_path(user)
+    user = PsyDiaryFacade.new(user_params).new_user
+    session[:user_id] = user.id
+    redirect_to user_path(user) 
   end
 
   def show

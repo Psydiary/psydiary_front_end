@@ -18,13 +18,14 @@ describe '/users/new', type: :feature do
       it 'when I fill out the form and click submit, I am redirected to the user dashboard' do
         visit new_user_path
         user1 = FactoryBot.build(:user, ip_address: "192.199.248.75")
-
+        # user1 = User.new(name: "Bob", email: "bob@bob.com", protocol_id: 1, ip_address: "192.199.248. )
         fill_in :name, with: user1.name
         fill_in :email, with: user1.email
         select 'Yes', from: :data_sharing
 
         click_button 'Begin My Journey'
-
+        save_and_open_page
+        # require 'pry'; binding.pry
         expect(page.status_code).to eq(200)
       end
     end

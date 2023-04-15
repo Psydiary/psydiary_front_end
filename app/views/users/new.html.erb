@@ -1,6 +1,9 @@
 <h1>Your Journey Start Here!</h1>
 
 <%= form_with url: users_path, method: :post, local: true do |f| %>
+  <%= f.hidden_field :protocol_id, value: 4 %>
+  <%= f.hidden_field :password, value: "password" %>
+
   <%= f.label :name, "Name:" %>
   <%= f.text_field :name %>
 
