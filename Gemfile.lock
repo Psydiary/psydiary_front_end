@@ -293,6 +293,7 @@ DEPENDENCIES
   debug
   factory_bot_rails
   faker!
+  execjs
   faraday
   figaro
   importmap-rails

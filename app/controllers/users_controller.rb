@@ -13,6 +13,10 @@ class UsersController < ApplicationController
     
   end
 
+  def login
+    
+  end
+
   private
   def user_params
     params.permit(:name, :email, :password, :protocol_id, :ip_address)
