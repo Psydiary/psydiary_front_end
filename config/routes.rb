@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "welcome#welcome"
 
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create, :show]
   
   get '/login', to: "users#login"
   post '/register', to: "users#new"

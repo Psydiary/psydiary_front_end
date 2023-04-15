@@ -4,7 +4,8 @@ class UsersController < ApplicationController
 
   def create
     user = UserService.create_user(user_params)
-    require 'pry'; binding.pry
+    redirect_to user_path(user)
+    # require 'pry'; binding.pry
     # if user.save
     #   session[:user_id] = user.id
     #   redirect_to user_path(user)
@@ -12,6 +13,10 @@ class UsersController < ApplicationController
     #   flash[:error] = "Please fill out all fields."
     #   redirect_to new_user_path
     # end
+  end
+
+  def show
+    
   end
 
   private
