@@ -3,6 +3,7 @@
 <%= form_with url: users_path, method: :post, local: true do |f| %>
   <%= f.hidden_field :protocol_id, value: 4 %>
   <%= f.hidden_field :password, value: "password" %>
+  <%= f.hidden_field :ip_address, value: "192.199.248.75" %>
 
   <%= f.label :name, "Name:" %>
   <%= f.text_field :name %>

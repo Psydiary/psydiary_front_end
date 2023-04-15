@@ -4,8 +4,8 @@ class UsersController < ApplicationController
   end
   
   def create
-    user = PsyDiaryFacade.new(user_params).new_user
-    session[:user_id] = user.id
+    user = PsydiaryFacade.new(user_params).new_user
+    # session[:user_id] = user.id
     redirect_to user_path(user) 
   end
 
