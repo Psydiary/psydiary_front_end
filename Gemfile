@@ -61,12 +61,8 @@ group :development, :test do
   gem 'pry'
   gem 'simplecov'
   gem 'launchy'
-  gem 'factory_bot_rails'
-  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
-end
-
-group :test do
-  gem 'webmock' 
+  gem 'shoulda-matchers'
+  gem 'webmock'
   gem 'vcr'
 end
 
