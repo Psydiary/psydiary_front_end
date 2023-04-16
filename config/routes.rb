@@ -3,13 +3,14 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  
   root "welcome#welcome"
 
   get '/login', to: "users#login"
   get '/register', to: "users#new"
   get '/learn_more', to: "discover#index", as: 'discover'
 
-  resources :users, only: %i[show edit update] do
+  resources :users, only: %i[create show edit update] do
     resources :logs, except: %i[edit destroy], controller: 'users/logs'
     resources :microdose_diaries, only: %i[index new create], controller: 'users/microdose_diaries'
   end

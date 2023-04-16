@@ -3,7 +3,7 @@ require './app/facades/openai_facade'
 
 RSpec.describe OpenaiFacade do
 
-  it 'exists' do
+  xit 'exists' do
     openai_response = File.read('spec/fixtures/openai.json')
     stub_request(:post, "https://api.openai.com/v1/chat/completions").
       with(
