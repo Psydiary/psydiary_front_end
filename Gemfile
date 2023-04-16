@@ -64,7 +64,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'webmock'
   gem 'vcr'
-  gem 'faker'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'main'
 end
 
 group :development do
