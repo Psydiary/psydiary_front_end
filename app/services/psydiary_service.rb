@@ -8,9 +8,9 @@ class PsydiaryService
   end
 
   private
-  
+
 
   def self.conn
-    Faraday.new(url: 'http://localhost:4000/')
+    Faraday.new(url: 'http://localhost:3000/')
   end
 end
