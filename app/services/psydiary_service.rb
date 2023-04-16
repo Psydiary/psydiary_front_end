@@ -11,6 +11,7 @@ class PsydiaryService
 
 
   def self.conn
-    Faraday.new(url: 'http://localhost:3000/')
+    # Faraday.new(url: 'https://pacific-reef-79035.herokuapp.com')
+    Faraday.new(url: 'http://localhost:3000')
   end
 end

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  
   root "welcome#welcome"
 
   get '/login', to: "users#login"
@@ -15,27 +16,4 @@ Rails.application.routes.draw do
   end
 
   resources :protocols, except: %i[destroy]
-
-  # resources :users, only: [:new, :create, :show]
-  
-  
-  # post '/users', to: "users#create"
-  # get '/users/:id', to: "users#show"
-
-
-  # get '/users/:id/logs/new', to: "users/logs#new"
-  # post '/users/:id/logs', to: "users/logs#create"
-  # get '/users/:id/edit', to: "users#edit"
-  # patch '/users/:id', to: "users#update"
-  # get '/users/:id/logs', to: "users/logs#index"
-  # get '/users/:id/logs/:id', to: "users/logs#show"
-  # get '/users/:id/microdose_diarys', to: "users/microdose_diarys#index"
-  # get '/users/:id/microdose_diarys/new', to: "users/microdose_diarys#new"
-  # post '/users/:id/microdose_diarys', to: "users/microdose_diarys#create"
-
-  # get '/protocols/new', to: "protocols#new"
-  # post '/protocols', to: "protocols#create"
-  # get '/protocols/:id', to: "protocols#show"
-  # get '/protocols/:id/edit', to: "protocols#edit"
-  # patch '/protocols/:id', to: "protocols#update"
 end

@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:3000/api/v1/users
+    body:
+      encoding: UTF-8
+      string: data_sharing=false&email=bobby%40abernathy.test&ip_address=76.131.159.186&name=Kyra+D%27Amore&password=iefQvttdBvU2SB&protocol_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"89f3f60811e369e3c30296c6b2421bf4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 14d5ab67-459c-44dd-9937-334408dd0375
+      X-Runtime:
+      - '26.033328'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.23, sql.active_record;dur=22.76,
+        instantiation.active_record;dur=0.15, render.active_model_serializers;dur=0.22,
+        process_action.action_controller;dur=26018.03
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Kyra D''Amore","email":"bobby@abernathy.test","protocol_id":1,"data_sharing":false}}}'
+  recorded_at: Sun, 16 Apr 2023 20:39:51 GMT
+recorded_with: VCR 6.1.0
