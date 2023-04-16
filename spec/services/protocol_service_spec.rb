@@ -2,6 +2,16 @@ require 'rails_helper'
 
 RSpec.describe ProtocolService do
   it 'exists' do
+    response = File.read('spec/fixtures/protocols.json')
+    stub_request(:get, "http://localhost:3000/api/v1/protocols").
+         with(
+           headers: {
+       	  'Accept'=>'*/*',
+       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+       	  'User-Agent'=>'Faraday v2.7.4'
+           }).
+         to_return(status: 200, body: response, headers: {})
+
     protocols = ProtocolService.get_protocols
 
     expect(protocols).to be_an(Hash)

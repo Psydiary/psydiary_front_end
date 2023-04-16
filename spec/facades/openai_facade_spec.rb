@@ -1,5 +1,5 @@
 require 'rails_helper'
-require './app/facades/protocol_facade'
+require './app/facades/openai_facade'
 
 RSpec.describe ProtocolFacade do
 
@@ -14,17 +14,17 @@ RSpec.describe ProtocolFacade do
            }).
          to_return(status: 200, body: response, headers: {})
 
-    protocol_facade = ProtocolFacade.get_protocols
+    openai_facade = OpenaiFacade.get_response
 
-    expect(protocol_facade).to be_an(Array)
+    expect(openai_facade).to be_an(Array)
     
-    expect(protocol_facade.last.name).to eq("Nightcap")
-    expect(protocol_facade.last.name).to be_a(String)
+    expect(openai_facade.last.name).to eq("Nightcap")
+    expect(openai_facade.last.name).to be_a(String)
 
-    expect(protocol_facade[0].name).to eq("Fadiman")
-    expect(protocol_facade[0].name).to be_a(String)
+    expect(openai_facade[0].name).to eq("Fadiman")
+    expect(openai_facade[0].name).to be_a(String)
 
-    expect(protocol_facade[0].dosage).to be_a(Float)
-    expect(protocol_facade[0].dosage).to eq(0.2)
+    expect(openai_facade[0].dosage).to be_a(Float)
+    expect(openai_facade[0].dosage).to eq(0.2)
   end
 end
