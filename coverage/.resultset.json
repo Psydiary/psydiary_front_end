@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/config/environment.rb": {
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -10,7 +10,7 @@
           1
         ]
       },
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/config/application.rb": {
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/config/application.rb": {
         "lines": [
           1,
           null,
@@ -51,7 +51,7 @@
           null
         ]
       },
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/config/boot.rb": {
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -59,7 +59,7 @@
           1
         ]
       },
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/config/environments/test.rb": {
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -123,7 +123,7 @@
           null
         ]
       },
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/config/initializers/assets.rb": {
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -139,7 +139,7 @@
           null
         ]
       },
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/config/initializers/content_security_policy.rb": {
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/config/initializers/content_security_policy.rb": {
         "lines": [
           null,
           null,
@@ -150,38 +150,6 @@
           null,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/config/initializers/filter_parameter_logging.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/config/initializers/inflections.rb": {
-        "lines": [
           null,
           null,
           null,
@@ -200,7 +168,39 @@
           null
         ]
       },
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/config/initializers/permissions_policy.rb": {
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
           null,
@@ -215,7 +215,7 @@
           null
         ]
       },
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/config/routes.rb": {
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/config/routes.rb": {
         "lines": [
           1,
           null,
@@ -231,53 +231,355 @@
           1,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/app/controllers/users_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
           null,
           null,
           1,
           null,
           null,
           null,
-          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null
         ]
       },
-      "/Users/davidmarino/Desktop/3_mod/projects/psydiary_front_end/app/controllers/application_controller.rb": {
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/protocols/edit_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/protocols/new_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/protocols/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/users/edit_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/users/login_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/users/logs/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/users/logs/new_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/users/logs/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/users/microdose_diarys/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/users/microdose_diarys/new_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/users/new_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/users/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/spec/features/welcome/welcome_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/app/controllers/discover_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/app/controllers/protocols_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/app/controllers/users/logs_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/tesseract/Desktop/turing.nosync/3_mod/psydiary_front_end/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1681503259
+    "timestamp": 1681604464
   }
 }
