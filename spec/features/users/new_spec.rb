@@ -28,7 +28,7 @@ describe '/users/new', type: :feature do
         #will update when I get the view working
       end
 
-      xit 'when I fill out the form with incomplete info and click "Begin My Journey", I am redirected to the user register page' do
+      it 'when I fill out the form with incomplete info and click "Begin My Journey", I am redirected to the user register page' do
         visit register_path
 
         fill_in :name, with: ""
@@ -38,8 +38,8 @@ describe '/users/new', type: :feature do
         
         click_button 'Begin My Journey'
         save_and_open_page
-        expect(page).to_have_content("Could not create user")
-        #Need to fix the error handling in the morning, currently not showing up on page
+        expect(page).to have_content("Could not create user")
+        expect(current_path).to eq(register_path)
       end
     end
   end
