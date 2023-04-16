@@ -63,6 +63,8 @@ group :development, :test do
   gem 'launchy'
   gem 'shoulda-matchers'
   gem 'webmock'
+  gem 'faker'
+  gem "factory_bot_rails"
 end
 
 group :development do

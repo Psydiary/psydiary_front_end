@@ -215,6 +215,20 @@
           null
         ]
       },
+      "/Users/torienyart/Documents/TORI ENYART/Turing/3mod/projects/psydiary_front_end/spec/factories/users.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/torienyart/Documents/TORI ENYART/Turing/3mod/projects/psydiary_front_end/config/routes.rb": {
         "lines": [
           1,
@@ -242,8 +256,47 @@
           1,
           null
         ]
+      },
+      "/Users/torienyart/Documents/TORI ENYART/Turing/3mod/projects/psydiary_front_end/app/controllers/users/daily_log_entries_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/torienyart/Documents/TORI ENYART/Turing/3mod/projects/psydiary_front_end/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/torienyart/Documents/TORI ENYART/Turing/3mod/projects/psydiary_front_end/app/facades/daily_log_entries_facade.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1681686440
+    "timestamp": 1681687673
   }
 }

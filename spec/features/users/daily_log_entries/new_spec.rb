@@ -4,7 +4,7 @@ RSpec.describe 'New Daily Log Page' do
   context "As a logged in user when i visit the new daily log page" do
     describe "I see a form to fill out a new daily log entry" do
       before :each do
-        visit new_daily_log_entry_path
+        visit new_user_daily_log_entry_path(1)
       end
 
       it "has various fields" do
