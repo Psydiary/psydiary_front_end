@@ -37,7 +37,6 @@ describe '/users/new', type: :feature do
         
         
         click_button 'Begin My Journey'
-        save_and_open_page
         expect(page).to have_content("Could not create user")
         expect(current_path).to eq(register_path)
       end

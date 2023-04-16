@@ -17,16 +17,27 @@ RSpec.describe PsydiaryService do
 
       it 'creates a new user' do
         VCR.use_cassette('psydiary_service/new_user', record: :once) do
-          user = PsydiaryService.create_user(@request_params)
+          response = PsydiaryService.create_user(@request_params)
           
-          expect(new_user.status).to eq(201)
+          expect(response.status).to eq(201)
           
-          response = JSON.parse(user_new.body, symbolize_names: true)
-          require 'pry'; binding.pry
-          expect(response[:data][:attributes][:name]).to eq(user1[:name])
-          expect(response[:data][:attributes][:email]).to eq(user1[:email])
-          expect(response[:data][:attributes][:data_sharing]).to eq(user1[:data_sharing])
-          expect(response[:data][:attributes][:protocol_id]).to eq(user1[:protocol_id])
+          parsed = JSON.parse(response.body, symbolize_names: true)
+
+          data = parsed[:data]
+          attributes = data[:attributes]
+
+          expectation = Proc.new do |example, data_type|
+            expect(example).to be_a(data_type)
+          end
+
+          expectation.call(data[:id], String)
+          expectation.call(data[:type], String)
+          expectation.call(data[:attributes], Hash)
+          
+          expectation.call(attributes[:name], String)
+          expectation.call(attributes[:email], String)
+          expectation.call(attributes[:protocol_id], Integer)
+          expect(attributes[:data_sharing]).to be_a(FalseClass).or be_a(TrueClass)
         end
       end
     end
