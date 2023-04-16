@@ -291,9 +291,9 @@ DEPENDENCIES
   bootstrap (~> 5.3.0.alpha3)
   capybara
   debug
+  execjs
   factory_bot_rails
   faker!
-  execjs
   faraday
   figaro
   importmap-rails

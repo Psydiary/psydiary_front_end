@@ -5,8 +5,9 @@ class UsersController < ApplicationController
   
   def create
     user = PsydiaryFacade.new(user_params).new_user
-    # session[:user_id] = user.id
-    redirect_to user_path(user) 
+    session[:user_id] = user.id
+    require 'pry'; binding.pry
+    redirect_to "/users/#{user.id}" 
   end
 
   def show
@@ -14,7 +15,7 @@ class UsersController < ApplicationController
   end
 
   def login
-    
+
   end
 
   private

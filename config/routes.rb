@@ -5,11 +5,13 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "welcome#welcome"
 
-  resources :users, only: [:new, :create, :show]
+  # resources :users, only: [:new, :create, :show]
   
   get '/login', to: "users#login"
   get '/register', to: "users#new"
+  post '/users', to: "users#create"
   get '/users/:id', to: "users#show"
+
 
   get '/users/:id/logs/new', to: "users/logs#new"
   post '/users/:id/logs', to: "users/logs#create"
