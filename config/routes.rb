@@ -10,15 +10,11 @@ Rails.application.routes.draw do
   get '/register', to: "users#new"
   get '/learn_more', to: "discover#index", as: 'discover'
 
-<<<<<<< HEAD
-  resources :users, only: %i[show update] do
+  resources :users, only: %i[create show edit update] do
     member do
       get 'settings', to: 'users#edit'
     end
 
-=======
-  resources :users, only: %i[create show edit update] do
->>>>>>> main
     resources :logs, except: %i[edit destroy], controller: 'users/logs'
     resources :microdose_diaries, only: %i[index new create], controller: 'users/microdose_diaries'
   end

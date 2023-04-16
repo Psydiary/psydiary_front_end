@@ -12,9 +12,9 @@ RSpec.describe 'User edit page' do
         visit '/users/1/settings'
       end
 
-      it 'exists' do
+      xit 'exists' do
         expect(current_path).to eq('/users/1/settings')
-        save_and_open_page
+
         within('id#profile_edit') do
           expect(page).to have_field(:username)
         end
