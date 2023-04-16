@@ -8,9 +8,9 @@ RSpec.describe ProtocolFacade do
     stub_request(:get, "https://pacific-reef-79035.herokuapp.com/api/v1/protocols").
          with(
            headers: {
-       	  'Accept'=>'*/*',
-       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-       	  'User-Agent'=>'Faraday v2.7.4'
+              'Accept'=>'*/*',
+              'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+              'User-Agent'=>'Faraday v2.7.4'
            }).
          to_return(status: 200, body: response, headers: {})
 

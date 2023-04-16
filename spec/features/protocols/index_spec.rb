@@ -3,14 +3,15 @@ require 'rails_helper'
 RSpec.describe 'Protocols index page' do
 
   before :each do
-    stub_request(:get, "http://localhost:3000/api/v1/protocols").
+    response = File.read('spec/fixtures/protocols.json')
+    stub_request(:get, "https://pacific-reef-79035.herokuapp.com/api/v1/protocols").
          with(
            headers: {
-       	  'Accept'=>'*/*',
-       	  'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-       	  'User-Agent'=>'Faraday v2.7.4'
+              'Accept'=>'*/*',
+              'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
+              'User-Agent'=>'Faraday v2.7.4'
            }).
-         to_return(status: 200, body: File.read('spec/fixtures/protocols.json'), headers: {})
+         to_return(status: 200, body: response, headers: {})
   end
 
   it 'exists' do

@@ -7,7 +7,7 @@ RSpec.describe OpenaiFacade do
     openai_response = File.read('spec/fixtures/openai.json')
     stub_request(:post, "https://api.openai.com/v1/chat/completions").
       with(
-        body: "{\"model\":\"gpt-3.5-turbo\",\"messages\":[{\"role\":\"user\",\"content\":\"I'm documenting my experience with anti-depressants. Can you help me with a thought provoking journal prompt?\"}],\"temperature\":0.9,\"max_tokens\":100}",
+        body: "{\"model\":\"gpt-3.5-turbo\",\"messages\":[{\"role\":\"user\",\"content\":\"I'm documenting my experience with psilocybin. Can you help me with a random thought provoking journal prompt replying only with the journal prompt?\"}],\"temperature\":0.9,\"max_tokens\":100}",
         headers: {
           'Accept'=>'*/*',
           'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
