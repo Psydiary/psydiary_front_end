@@ -16,23 +16,27 @@ describe '/users/new', type: :feature do
       end
 
       it 'when I fill out the form and click submit, I am redirected to the user dashboard' do
-        # user1 = {
-        #   name: Faker::Name.name,
-        #   email: Faker::Internet.unique.email,
-        #   ip_address: "192.199.248.75",
-        #   password: Faker::Internet.password,
-        #   protocol_id: 4
-        # }
         visit register_path
-        # user1 = User.new(attribuetes)
-      #  require 'pry'; binding.pry
 
         fill_in :name, with: Faker::Name.name
         fill_in :email, with: Faker::Internet.unique.email
-        select 'True', from: :data_sharing
+        select 'False', from: :data_sharing
+        
         click_button 'Begin My Journey'
         
         expect(page.status_code).to eq(200)
+      end
+      
+      it 'when I fill out the form with incomplete info and click "Begin My Journey", I am redirected to the user register page' do
+        visit register_path
+
+        fill_in :name, with: ""
+        fill_in :email, with: Faker::Internet.unique.email
+        select 'False', from: :data_sharing
+        
+        click_button 'Begin My Journey'
+        
+        expect(page.status_code).to eq(400)
       end
     end
   end
