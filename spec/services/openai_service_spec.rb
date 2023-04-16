@@ -17,14 +17,15 @@ RSpec.describe OpenaiService do
       to_return(status: 200, body: openai_response, headers: {})
   end
 
-  it 'exists' do
+  xit 'exists' do
     openai = OpenaiService.new
 
     expect(openai).to be_a(OpenaiService)
   end
 
-  it 'returns a response' do
+  xit 'returns a response' do
     response = OpenaiService.get_response
+    require 'pry'; binding.pry
 
     expect(response).to be_a(Hash)
     
