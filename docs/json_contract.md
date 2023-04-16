@@ -1,5 +1,6 @@
 Psydiary JSON Contract
 ### New User Create
+---
  Request: `post 'api/v1/user'`
 
  Response:
