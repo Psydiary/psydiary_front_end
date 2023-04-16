@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: http://localhost:3000/api/v1/users
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users
     body:
       encoding: UTF-8
-      string: data_sharing=false&email=bobby%40abernathy.test&ip_address=76.131.159.186&name=Kyra+D%27Amore&password=iefQvttdBvU2SB&protocol_id=1
+      string: data_sharing=false&email=delilah_bartell%40kuvalis.example&ip_address=76.131.159.186&name=Kyra+D%27Amore&password=1NurSCt8&protocol_id=1
     headers:
       User-Agent:
       - Faraday v2.7.4
@@ -20,6 +20,12 @@ http_interactions:
       code: 201
       message: Created
     headers:
+      Server:
+      - Cowboy
+      Date:
+      - Sun, 16 Apr 2023 21:11:48 GMT
+      Connection:
+      - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -37,21 +43,19 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"89f3f60811e369e3c30296c6b2421bf4"
+      - W/"87493d5ec0d9b5f860e01c578ec1882d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 14d5ab67-459c-44dd-9937-334408dd0375
+      - 9662d564-743c-4a1e-a10a-a756ab6daa66
       X-Runtime:
-      - '26.033328'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.23, sql.active_record;dur=22.76,
-        instantiation.active_record;dur=0.15, render.active_model_serializers;dur=0.22,
-        process_action.action_controller;dur=26018.03
+      - '0.309558'
       Transfer-Encoding:
       - chunked
+      Via:
+      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Kyra D''Amore","email":"bobby@abernathy.test","protocol_id":1,"data_sharing":false}}}'
-  recorded_at: Sun, 16 Apr 2023 20:39:51 GMT
+      string: '{"data":{"id":"3","type":"user","attributes":{"name":"Kyra D''Amore","email":"delilah_bartell@kuvalis.example","protocol_id":1,"data_sharing":false}}}'
+  recorded_at: Sun, 16 Apr 2023 21:11:48 GMT
 recorded_with: VCR 6.1.0
