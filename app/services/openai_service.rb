@@ -22,7 +22,7 @@ class OpenaiService
       req.headers['Authorization'] = "Bearer #{ENV['openai_key']}"
       req.body = payload.to_json
     end
-    JSON.parse(response.body)
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.conn
