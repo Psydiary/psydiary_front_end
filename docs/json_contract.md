@@ -1,7 +1,8 @@
 Psydiary JSON Contract
 
-Request: `post 'api/v1/user'`
-Response:
+ Request: `post 'api/v1/user'`
+
+ Response:
 ```
 { 
 	"data": {
