@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     end
 
     resources :logs, except: %i[edit destroy], controller: 'users/logs'
-    resources :microdose_diaries, only: %i[index new create], controller: 'users/microdose_diaries'
+    resources :microdose_diaries, only: %i[index show new create], controller: 'users/microdose_diaries'
   end
 
   resources :protocols, except: %i[destroy]

@@ -1,0 +1,19 @@
+{
+  "data": {
+    "id": "1",
+    "type": "microdose_log_entry",
+    "attributes": {
+      "user_id": 2,
+      "mood_before": "Melancholy",
+      "mood_after": "Happy",
+      "environment": "The Park",
+      "dosage": 0.75,
+      "intensity": "low",
+      "sociability": "anxious",
+      "journal_prompt": "How was your day?",
+      "journal_entry": "I felt great after today's microdose!",
+      "other_notes": "What a nice little reset this was",
+      "created_at": "April 16, 2023"
+    }
+  }
+}
