@@ -1,11 +1,28 @@
-<h1>Daily Log For <%= @daily_log_entry.created_at %></h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-FwAd3MqDfGVzIIXxnfAmK+s4G+yKeJb1aQZ1+Ukfy6YNGY6U37S6jL4+iGnm9XcMfzF4WyIwzlKjcazdMFmfCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>PsyDiary - Daily Log</title>
+</head>
+<body>
+  <section id="top_info">
+  <center><h1>Daily Log For <%= @daily_log_entry.created_at %></h1></center>
+  </section>
 
-<li>Mood: <%= @daily_log_entry.mood %></li>
-<li>Sleep Quality: <%= @daily_log_entry.sleep_score %></li>
-<li>Anxiety Score: <%= @daily_log_entry.anxiety_score %></li>
-<li>Depression Score: <%= @daily_log_entry.depression_score %></li>
-<li>Energy Levels: <%= @daily_log_entry.energy_levels %></li>
-<li>Sociability: <%= @daily_log_entry.sociability %></li>
-<li>Meditation: <%= @daily_log_entry.meditation %></li>
-<li>Exercise: <%= @daily_log_entry.exercise %></li>
-<li>Notes: <%= @daily_log_entry.notes %></li>
+  <section id="details">
+  <h3>Mood: <%= @daily_log_entry.mood %></h3>
+  <h3>Sleep Quality: <%= @daily_log_entry.sleep_score %></h3>
+  <h3>Anxiety Score: <%= @daily_log_entry.anxiety_score %></h3>
+  <h3>Depression Score: <%= @daily_log_entry.depression_score %></h3>
+  <h3>Energy Levels: <%= @daily_log_entry.energy_levels %></h3>
+  <h3>Sociability: <%= @daily_log_entry.sociability %></h3>
+  <h3>Meditation: <%= @daily_log_entry.meditation %></h3>
+  <h3>Exercise: <%= @daily_log_entry.exercise %></h3>
+  <br>
+  <h3>Notes:</h3>
+  <p><%= @daily_log_entry.notes %></p>
+  </section>
+</body>
