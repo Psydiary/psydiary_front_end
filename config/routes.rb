@@ -11,6 +11,10 @@ Rails.application.routes.draw do
   get '/learn_more', to: "discover#index", as: 'discover'
 
   resources :users, only: %i[create show edit update] do
+    member do
+      get 'settings', to: 'users#edit'
+    end
+
     resources :logs, except: %i[edit destroy], controller: 'users/logs'
     resources :microdose_diaries, only: %i[index new create], controller: 'users/microdose_diaries'
   end
