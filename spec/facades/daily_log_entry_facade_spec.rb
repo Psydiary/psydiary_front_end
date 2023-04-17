@@ -16,7 +16,7 @@ RSpec.describe DailyLogEntryFacade do
           to_return(status: 200, body: response, headers: {})
 
       daily_log_entry = facade.daily_log_entry(2, 1)
-
+      require 'pry'; binding.pry
       expect(daily_log_entry).to be_a(DailyLogEntry)
       expect(daily_log_entry.id).to eq("1")
       expect(daily_log_entry.user_id).to eq(2)
