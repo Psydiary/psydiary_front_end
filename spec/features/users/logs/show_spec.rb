@@ -15,20 +15,23 @@ RSpec.describe 'Daily log show page' do
   it 'exists' do
 
     visit user_log_path(2, 1)
-    save_and_open_page
+
     expect(current_path).to eq(user_log_path(2, 1))
-    expect(page).to have_content('Daily Log For April 16, 2023')
-    expect(page).to have_content('Mood: Melancholy')
-    expect(page).to have_content('Sleep Quality: 3')
-    expect(page).to have_content('Anxiety Score: 2')
-    expect(page).to have_content('Depression Score: 5')
-    expect(page).to have_content('Energy Levels: 2')
-    expect(page).to have_content('Sociability: 3')
-    expect(page).to have_content('Meditation: 5 min mindulness meditation')
-    expect(page).to have_content('Exercise: 4')
-    expect(page).to have_content('Notes:')
-    expect(page).to have_content('Today was an ok day.')
+
+    within "#top_info" do
+      expect(page).to have_content('Daily Log For April 16, 2023')
+    end
+    within "#details" do
+      expect(page).to have_content('Mood: Melancholy')
+      expect(page).to have_content('Sleep Quality: 3')
+      expect(page).to have_content('Anxiety Score: 2')
+      expect(page).to have_content('Depression Score: 5')
+      expect(page).to have_content('Energy Levels: 2')
+      expect(page).to have_content('Sociability: 3')
+      expect(page).to have_content('Meditation: 5 min mindulness meditation')
+      expect(page).to have_content('Exercise: 4')
+      expect(page).to have_content('Notes:')
+      expect(page).to have_content('Today was an ok day.')
+    end
   end
-
-
 end
