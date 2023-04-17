@@ -9,7 +9,7 @@ RSpec.describe OpenaiService do
         headers: {
           'Accept'=>'*/*',
           'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-          'Authorization'=>'Bearer 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',
+          'Authorization'=>"Bearer #{ENV['openai_key']}",
           'Content-Type'=>'application/json',
           'User-Agent'=>'Faraday v2.7.4'
         }
