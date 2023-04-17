@@ -49,17 +49,17 @@ RSpec.describe 'New Daily Log Page' do
           expect(page).to have_css('[@id=depression_score_10]')
         end
 
-        within "#energy_level" do
-          expect(page).to have_css('[@id=energy_level_1]')
-          expect(page).to have_css('[@id=energy_level_2]')
-          expect(page).to have_css('[@id=energy_level_3]')
-          expect(page).to have_css('[@id=energy_level_4]')
-          expect(page).to have_css('[@id=energy_level_5]')
-          expect(page).to have_css('[@id=energy_level_6]')
-          expect(page).to have_css('[@id=energy_level_7]')
-          expect(page).to have_css('[@id=energy_level_8]')
-          expect(page).to have_css('[@id=energy_level_9]')
-          expect(page).to have_css('[@id=energy_level_10]')
+        within "#energy_levels" do
+          expect(page).to have_css('[@id=energy_levels_1]')
+          expect(page).to have_css('[@id=energy_levels_2]')
+          expect(page).to have_css('[@id=energy_levels_3]')
+          expect(page).to have_css('[@id=energy_levels_4]')
+          expect(page).to have_css('[@id=energy_levels_5]')
+          expect(page).to have_css('[@id=energy_levels_6]')
+          expect(page).to have_css('[@id=energy_levels_7]')
+          expect(page).to have_css('[@id=energy_levels_8]')
+          expect(page).to have_css('[@id=energy_levels_9]')
+          expect(page).to have_css('[@id=energy_levels_10]')
         end
 
         expect(page).to have_select("Sociability")
@@ -81,14 +81,19 @@ RSpec.describe 'New Daily Log Page' do
           find('[@id=depression_score_7]').click
         end
 
-        within '#energy_level' do
-          find('[@id=energy_level_5]').click
+        within '#energy_levels' do
+          find('[@id=energy_levels_5]').click
         end
 
         select 'withdrawn', from: 'Sociability'
         fill_in 'Meditation Minutes', with: '20'
         select 'cardio', from: 'Exercise'
+        fill_in 'Notes', with: 'I want a capybara'
+        click_on "Upload to the Universe"
 
+        expect(page.current_path).to eq(user_path(1))
+
+        require 'pry'; binding.pry
       end
     end
   end

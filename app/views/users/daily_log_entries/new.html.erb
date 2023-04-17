@@ -24,9 +24,9 @@
               <%= render partial: 'radio_button', locals: {f: f, score_type: :depression_score}%>
             </div>
 
-            <div id="energy_level" class="col-md-12">
+            <div id="energy_levels" class="col-md-12">
             <p>Energy Level: (1 being the lowest, 10 being the highest): </p>
-              <%= render partial: 'radio_button', locals: {f: f, score_type: :energy_level}%>
+              <%= render partial: 'radio_button', locals: {f: f, score_type: :energy_levels}%>
             </div>
 
             <div class="col-md-12">
@@ -47,6 +47,10 @@
             <div class="col-md-12">
               <%= f.label :notes, "Other Notes:", class: "form-label" %>
               <%= f.text_area :notes, :cols => "65", :rows => "10" %>
+            </div>
+
+            <div class="col-md-12">
+              <%= f.submit "Upload to the Universe", class: "btn btn-dark w-100 mb-3 text-white" %>
             </div>
           <% end %>
         </div>
