@@ -15,7 +15,7 @@ RSpec.describe 'New Microdose Log Page' do
         expect(page).to have_select("Intensity", options: ['low', 'medium', 'high'])
         expect(page).to have_select("Sociability", options: ['social', 'anxious', 'withdrawn'])
         expect(page).to have_field("Journal Prompt Keyphrase")
-        expect(page).to have_field("Journal Entry")
+        expect(page).to have_field('Journal About Your Prompt')
         expect(page).to have_field("Other Notes")
       end
 
@@ -31,7 +31,7 @@ RSpec.describe 'New Microdose Log Page' do
         select 'medium', from: 'Intensity'
         select 'withdrawn', from: 'Sociability'
         fill_in 'Journal Prompt Keyphrase', with: 'Learning to let go'
-        fill_in 'Journal Entry', with: 'I learned that I can let go'
+        fill_in 'Journal About Your Prompt', with: 'I learned that I can let go'
         fill_in 'Other Notes', with: 'I stayed in my bed for this experience'
         click_on "Upload to the Universe"
 
@@ -46,7 +46,7 @@ RSpec.describe 'New Microdose Log Page' do
         select 'medium', from: 'Intensity'
         select 'withdrawn', from: 'Sociability'
         fill_in 'Journal Prompt Keyphrase', with: 'Learning to let go'
-        fill_in 'Journal Entry', with: 'I learned that I can let go'
+        fill_in 'Journal About Your Prompt', with: 'I learned that I can let go'
         fill_in 'Other Notes', with: 'I stayed in my bed for this experience'
         click_on "Upload to the Universe"
 
@@ -62,7 +62,7 @@ RSpec.describe 'New Microdose Log Page' do
         select 'medium', from: 'Intensity'
         select 'withdrawn', from: 'Sociability'
         fill_in 'Journal Prompt Keyphrase', with: 'Learning to let go'
-        fill_in 'Journal Entry', with: 'I learned that I can let go'
+        fill_in 'Journal About Your Prompt', with: 'I learned that I can let go'
         fill_in 'Other Notes', with: 'I stayed in my bed for this experience'
         click_on "Upload to the Universe"
 

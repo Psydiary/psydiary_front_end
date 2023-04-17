@@ -27,4 +27,8 @@ class MicrodoseLogEntry
     @other_notes = microdose_log_data[:attributes][:other_notes]
     @created_at = microdose_log_data[:attributes][:created_at]
   end
+
+  def format_date
+    DateTime.parse(@created_at.to_s).strftime("%A, %B %d, %Y")
+  end
 end
