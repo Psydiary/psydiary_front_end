@@ -1,0 +1,23 @@
+<section id="top_info">
+  <center><h1>Microdose Diary for <%= @facade.created_at %></h1></center>
+</section>
+
+<section id="details">
+  <h3>Mood Before: <%= @facade.mood_before %></h3>
+  <h3>Mood After: <%= @facade.mood_after %></h3>
+  <h3>Environment: <%= @facade.environment %></h3>
+  <h3>Dosage: <%= @facade.dosage %> grams</h3>
+  <h3>Intensity: <%= @facade.intensity %></h3>
+  <h3>Sociability: <%= @facade.sociability %></h3>
+  <h3>Other Notes: <%= @facade.other_notes %></h3>
+<br><br>
+
+<section id="journal_prompt">
+  <h3>Journal Prompt:</h3>
+  <p><%= @facade.journal_prompt %></p>
+</section>
+
+<section id="journal_entry">
+  <h3>Journal Entry:</h3>
+  <p><%= @facade.journal_entry %></p>
+</section>
