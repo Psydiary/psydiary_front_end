@@ -2,6 +2,6 @@ class DailyLogEntriesFacade
   attr_reader :user_id
   
   def initialize(params)
-    @user_id = params[:user]
+    @user_id = params[:user_id]
   end
 end
