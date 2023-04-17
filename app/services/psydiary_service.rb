@@ -19,9 +19,16 @@ class PsydiaryService
     end
   end
 
+  def self.authenticate_user(user_params)
+    response = conn.post('/api/v1/login') do |req|
+      req.headers = { 'CONTENT_TYPE' => 'application/json' }
+      req.body = user_params
+    end
+    
+    JSON.parse(response.body, symbolize_names: true)
+  end
 
   private
-
 
   def self.conn
     Faraday.new(url: 'https://pacific-reef-79035.herokuapp.com')
