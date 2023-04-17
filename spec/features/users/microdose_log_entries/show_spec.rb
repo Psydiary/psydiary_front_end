@@ -14,9 +14,9 @@ RSpec.describe 'Microdose diary show page' do
   end
 
   it "displays all the details of a user's Microdose Diary" do
-    visit '/users/2/microdose_diaries/1'
+    visit '/users/2/microdose_log_entries/1'
 
-    expect(current_path).to eq('/users/2/microdose_diaries/1')
+    expect(current_path).to eq('/users/2/microdose_log_entries/1')
 
     within "#top_info" do
       expect(page).to have_content('Microdose Diary for April 16, 2023')

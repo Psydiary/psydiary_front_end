@@ -19,6 +19,7 @@ class DailyLogEntry
     @anxiety_score = daily_log_params[:data][:attributes][:anxiety_score]
     @depression_score = daily_log_params[:data][:attributes][:depression_score]
     @energy_levels = daily_log_params[:data][:attributes][:energy_levels]
+    @sociability = daily_log_params[:data][:attributes][:sociability]
     @meditation = daily_log_params[:data][:attributes][:meditation]
     @exercise = daily_log_params[:data][:attributes][:exercise]
     @notes = daily_log_params[:data][:attributes][:notes]

@@ -15,7 +15,7 @@ class Users::DailyLogEntriesController < ApplicationController
   def create
     daily_log_entry = DailyLogEntriesFacade.new(daily_log_entry_params).new_entry
     if daily_log_entry.is_a?(Array)
-      flash[:error] = "Could not create user"
+      flash[:error] = "Could not create entry"
       redirect_to register_path
     else
       redirect_to user_path(params[:user_id]) 

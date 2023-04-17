@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     end
 
     resources :daily_log_entries, except: %i[edit destroy], controller: 'users/daily_log_entries'
-    resources :microdose_diaries, only: %i[index show new create], controller: 'users/microdose_diaries'
+    resources :microdose_log_entries, only: %i[index show new create], controller: 'users/microdose_log_entries'
   end
 
   resources :protocols, except: %i[destroy]
