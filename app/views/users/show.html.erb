@@ -1,28 +1,54 @@
 <div class ="container">
-  <divclass="mx-auto" style="width: 600px;">
+  <div class="mx-auto" style="width: 1000px;">
     <h1 class="text-center fw-bold display-1">Welcome Home, <%=@facade.user.first_name%></h1>
+
     <br>
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        ✨Track Something Amazing✨
-      </button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href=<%=new_user_daily_log_entry_path(@facade.user.id)%>>Track Your Day</a>
-        <a class="dropdown-item" href="<%=new_user_microdose_log_entry_path(@facade.user.id)%>">Track A Microdose</a>
-        <a class="dropdown-item" href="#">Something else here</a>
-      </div>
-    </div>
-    <h1 class="text-center">"The App to Bring You Home"</h3>
+
+    <h1 class="text-center">✨Track Something Amazing✨</h3>
+    
     <br>
-    <p class="text-center lead">As psilocybin has started to receive more attention in the mental health space and become legal to consume in multiple states the interest in receiving treatment has grown. Unfortunately the accessibility to clinics/clinicians providing this treatment is slow to take off. As individuals are seeking out self-treatment by way of growing and consuming at home, Psydiary hopes to provide a structured way for users to track their experience with self-guided-treatment.</p>
-    <br>
-    <h3 class="text-center">Track Your Journey</h3>
-    <br>
+
     <div class="row justify-content-center align-items-center">
       <div class="col-md-4 text-center">
-        <button type="button" class="btn btn-dark btn-center btn-lg" href=<%=register_path%>>Begin Here</button>
+        <button type="button" class="btn btn-dark btn-center btn-md" href=<%=new_user_daily_log_entry_path(@facade.user.id)%>>🌅 Track Your Day</button>
       </div>
     </div>
+
+    <br>
+   
+   <div class="row justify-content-center align-items-center">
+      <div class="col-md-4 text-center">
+        <button type="button" class="btn btn-dark btn-center btn-md" href=<%=new_user_microdose_log_entry_path(@facade.user.id)%>>🍄 Track a Microdose</button>
+      </div>
+    </div>
+
+    <div id="3-recent-entries" class="mx-auto" style="width: 600px;">
+      <h1 class="text-center">✒️Here Are Your Recent Entries🖋</h3>
+
+      <%n = 0%>
+      <%@facade.recent_entries do |entry|%>
+        <%if entry.mood%>
+          <div id="entry-<%=n += 1%>">
+          <p>Mood:<%=entry.mood%>
+          <p>Sleep Score:<%=entry.sleep_score%>
+          <p>Anxiety Score:<%=entry.anxiety_score%>
+          <p>Depression Score:<%=entry.depression_score%>
+          <p>Energy Levels:<%=entry.energy_levels%>
+          <%=link_to "See More...", user_daily_log_entry(@facade.user.id, entry.id)%>
+        <%else%>
+          <div id="entry-<%=n += 1%>">
+          <p>Mood Before:<%=entry.mood_before%>
+          <p>Mood After:<%=entry.mood_after%>
+          <p>Environment:<%=entry.environment%>
+          <p>Dosage:<%=entry.dosage%>
+          <%=link_to "See More...", user_microdose_log_entry(@facade.user.id, entry.id)%>
+        <%end%>
+
+
+
+
+    </div>
+
   </div>
 </div>
 

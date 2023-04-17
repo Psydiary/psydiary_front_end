@@ -8,14 +8,15 @@ RSpec.describe 'User show page' do
   it "shows buttons for a user to navigate" do
     expect(current_path).to eq('/users/1')
     expect(page).to have_content("Welcome Home, Tori")
-    expect(page).to have_select("Track Something Amazing", options: ["Track Your Day", "Track a Microdose"])
+    expect(page).to have_button("Track Your Day")
+    expect(page).to have_button("Track a Microdose")
     expect(page).to have_button("My Entries Journal")
     expect(page).to have_button("Discover Something New")
   end
 
   xit "shows a section with the past 3 most recent user entries" do
     context "create 2 new daily entries" do
-      select "Track Your Day", from: "Track Something Amazing"
+      click_on "Track Your Day"
       fill_in 'Mood', with: 'unmotivated'
       within '#sleep_score' do
         find('[@id=sleep_score_4]').click
@@ -39,7 +40,7 @@ RSpec.describe 'User show page' do
       fill_in 'Notes', with: 'I want a capybara'
       click_on "Upload to the Universe"
 
-      select "Track Your Day", from: "Track Something Amazing"
+      click_on "Track Your Day"
       fill_in 'Mood', with: 'happy!'
       within '#sleep_score' do
         find('[@id=sleep_score_7]').click
@@ -65,7 +66,7 @@ RSpec.describe 'User show page' do
     end
 
     context "create a new microdose log entry" do
-      select "Track a Microdose", from: "Track Something Amazing"
+      click_on "Track a Microdose"
       fill_in "Mood Before", with: "angsty"
       fill_in "Mood After", with: "peaceful"
       fill_in "Environment", with: "at home"
@@ -82,6 +83,7 @@ RSpec.describe 'User show page' do
       within "#entry-1" do
         expect(page).to have_content("Daily Log Entry from: #{Date.today}")
         expect(page).to have_link("See More...")
+        expect(page).to have_content("Mood: Unmotivated")
         expect(page).to have_content("Sleep Score: 4")
         expect(page).to have_content("Anxiety Score: 3")
         expect(page).to have_content("Depression Score: 7")
@@ -91,6 +93,7 @@ RSpec.describe 'User show page' do
       within "#entry-2" do
         expect(page).to have_content("Daily Log Entry from: #{Date.today}")
         expect(page).to have_link("See More...")
+        expect(page).to have_content("Mood: happy!")
         expect(page).to have_content("Sleep Score: 7")
         expect(page).to have_content("Anxiety Score: 3")
         expect(page).to have_content("Depression Score: 2")
