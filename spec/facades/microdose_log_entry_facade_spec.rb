@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe MicrodoseLogEntryFacade do
-  let(:facade) { described_class.new }
+  let(:facade) { described_class.new({})}
 
   describe "one_microdose_log_entry" do
-    xit 'returns a microdose_log_entry object' do
+    it 'returns a microdose_log_entry object' do
       response = File.read('spec/fixtures/microdose_log_entry.json')
       stub_request(:get, "https://pacific-reef-79035.herokuapp.com/api/v1/users/2/microdose_log_entries/1").
           with(
