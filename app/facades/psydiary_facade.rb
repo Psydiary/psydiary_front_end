@@ -18,6 +18,14 @@ class PsydiaryFacade
   end
 
   def recent_entries
-    
+    response = PsydiaryService.get_recent_entries(@params[:id])
+    entries_data = JSON.parse(response.body, symbolize_names: true)
+    entries_data[:data][1..3].map do |entry|
+      if entry[:attributes][:mood]
+        DailyLogEntry.new(entry)
+      else
+        MicrodoseLogEntry.new(entry)
+      end
+    end
   end
 end

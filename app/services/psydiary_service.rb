@@ -23,6 +23,10 @@ class PsydiaryService
     conn.get("/api/v1/users/#{user_id}")
   end
 
+  def self.get_recent_entries(user_id)
+    conn.get("/api/v1/users/#{user_id}/log_entries")
+  end
+
 
   private
 
