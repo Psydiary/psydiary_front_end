@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    
+    @facade = PsydiaryFacade.new(params)
   end
 
   def login_form
