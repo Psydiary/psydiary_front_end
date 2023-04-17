@@ -3,7 +3,7 @@ require './app/facades/protocol_facade'
 
 RSpec.describe PsydiaryFacade do
   describe '.class_methods' do
-    context '#intitialize' do 
+    context '#initialize' do 
       before do
         @new_user_params = {
           "name"=>"Emerita Kessler", 
@@ -50,7 +50,7 @@ RSpec.describe PsydiaryFacade do
       end
 
       it 'can get user info to render edit page for that user' do
-        facade = PsydiaryFacade.new(@user_edit_params)
+        facade = PsydiaryFacade.new(user_id)
         require 'pry'; binding.pry
         expect(facade.edit_user)
       end

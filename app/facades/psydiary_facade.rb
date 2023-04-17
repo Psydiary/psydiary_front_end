@@ -1,9 +1,8 @@
 class PsydiaryFacade
   attr_reader :params
+
   def initialize(params = {})
     @params = params
-    require 'pry'; binding.pry
-    @edit_params = params["data"].to_i
   end
 
   def new_user
@@ -14,9 +13,9 @@ class PsydiaryFacade
   end
 
   def edit_user
-    response = PsydiaryService.edit_user(@edit_params)
+    response = PsydiaryService.edit_user(@params)
     edit_data = JSON.parse(response.body, symbolize_names: true)
-    require 'pry'; binding.pry
+    UserEdit.new(edit_data)
   end
  
 end
