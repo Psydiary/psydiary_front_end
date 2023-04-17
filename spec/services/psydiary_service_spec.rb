@@ -47,47 +47,36 @@ RSpec.describe PsydiaryService do
       end
     end
 
-    context ".user_settings" do
+    context ".edit_user" do
       describe 'happy path' do
+        let(:user_id) { '1' }
+        let(:expected_response_body) do
+          {
+            data: {
+              id: user_id,
+              type: 'user',
+              attributes: {
+                name: 'Someone Something',
+                email: 'someone@something.com',
+                protocol: {
+                  id: '1',
+                  name: 'protocol_name'
+                },
+                data_sharing: 'true'
+              }
+            }
+          }
+        end
+  
         before do
-          VCR.use_cassette('psydiary_service/new_user', record: :once) do
-            response = PsydiaryService.create_user(@request_params)
-            @parsed_create = JSON.parse(response.body, symbolize_names: true)
-          end
-          
-          new_password = Faker::Internet.password
-          @user_attributes = @parsed_create[:data][:attributes]
-
-          @user_request_params = {
-            "user_id": @parsed_create[:data][:id]
-          }
-
-          @update_request_params = {
-            "name": @user_attributes[:name],
-            "user_id": @parsed_create[:data][:id],
-            "email": @user_attributes[:email],
-            "old_password": @original_password,
-            "new_password": new_password,
-            "password_confirm": new_password,
-            "protocol_id": @user_attributes[:protocol_id], 
-            "data_sharing": @user_attributes[:data_sharing]
-          }
+          stub_request(:get, "https://pacific-reef-79035.herokuapp.com/api/v1/users/#{user_id}/settings")
+          .to_return(status: 200, body: expected_response_body.to_json)
         end
-
-        it 'can get send user info to render edit page fo that user' do
-          VCR.use_cassette('psydiary_service/get_user') do
-            response = PsydiaryService.get_user(@user_request_params)
-            require 'pry'; binding.pry
-            @parsed_get = JSON.parse(response.body, symbolize_names: true)
-
-          end
-        end
-
-        xit 'can get send user info to render edit page fo that user' do
-          VCR.use_cassette('psydiary_service/user_settings') do
-            response = PsydiaryService.user_settings(@update_request_params)
-            require 'pry'; binding.pry
-          end
+    
+        it 'returns the expected user info' do
+          response = PsydiaryService.edit_user(user_id)
+          expect(response.status).to eq(200)
+          expect(JSON.parse(response.body, symbolize_names: true)).to eq(expected_response_body)
         end
       end
     end

@@ -7,12 +7,11 @@ class PsydiaryService
     end
   end
 
-  def self.get_user(user_id_param)
-    conn.get("/api/v1/users/#{user_id_param}")
+  def self.edit_user(user_id_param)
+    conn.get("/api/v1/users/#{user_id_param}/settings")
   end
 
   private
-
 
   def self.conn
     Faraday.new(url: 'https://pacific-reef-79035.herokuapp.com')
