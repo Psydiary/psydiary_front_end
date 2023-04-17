@@ -15,7 +15,7 @@ RSpec.describe 'Daily log show page' do
   it 'exists' do
 
     visit user_log_path(2, 1)
-  
+    save_and_open_page
     expect(current_path).to eq(user_log_path(2, 1))
     expect(page).to have_content('Daily Log For April 16, 2023')
     expect(page).to have_content('Mood: Melancholy')
