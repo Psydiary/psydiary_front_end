@@ -13,6 +13,10 @@ class PsydiaryService
     end
   end
 
+  def self.get_user(user_id)
+    conn.get("/api/v1/users/#{user_id}")
+  end
+
 
   private
 

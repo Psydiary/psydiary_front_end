@@ -10,4 +10,10 @@ class PsydiaryFacade
    return user[:errors] if user[:errors].present?
    User.new(user)
   end
+
+  def user
+    response = PsydiaryService.get_user(@params[:id])
+    user = JSON.parse(response.body, symbolize_names: true)
+    User.new(user)
+  end
 end
