@@ -1,0 +1,19 @@
+{
+  "data": {
+    "id": "1",
+    "type": "daily_log_entry",
+    "attributes": {
+      "user_id": 2,
+      "mood": "Melancholy",
+      "depression_score": 5,
+      "anxiety_score": 2,
+      "sleep_score": 3,
+      "energy_level": 2,
+      "exercise": 4,
+      "meditation": "5 min mindulness meditation",
+      "sociability": 3,
+      "notes": "Today is not the best day.",
+      "created_at": "April 16, 2023"
+    }
+  }
+}
