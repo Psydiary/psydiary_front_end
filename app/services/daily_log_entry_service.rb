@@ -1,5 +1,5 @@
 class DailyLogEntryService
-  def one_daily_log_entry(user_id, log_id)
+  def daily_log_entry(user_id, log_id)
     response = conn.get("users/#{user_id}/daily_log_entries/#{log_id}")
     JSON.parse(response.body, symbolize_names: true)
   end

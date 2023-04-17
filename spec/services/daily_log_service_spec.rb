@@ -14,7 +14,7 @@ RSpec.describe DailyLogEntryService do
            }).
          to_return(status: 200, body: response, headers: {})
 
-    microdose_log_entry = service.one_daily_log_entry(2, 1)
+    microdose_log_entry = service.daily_log_entry(2, 1)
 
     expect(microdose_log_entry).to be_a(Hash)
     expect(microdose_log_entry[:data].keys).to eq([:id, :type, :attributes])
