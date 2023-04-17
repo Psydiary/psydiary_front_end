@@ -15,7 +15,7 @@ Rails.application.routes.draw do
       get 'settings', to: 'users#edit'
     end
 
-    resources :logs, except: %i[edit destroy], controller: 'users/logs'
+    resources :daily_log_entries, except: %i[edit destroy], controller: 'users/daily_log_entries'
     resources :microdose_diaries, only: %i[index show new create], controller: 'users/microdose_diaries'
   end
 
