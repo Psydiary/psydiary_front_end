@@ -10,4 +10,8 @@ class PsydiaryFacade
    return user[:errors] if user[:errors].present?
    User.new(user)
   end
+
+  def get_user
+
+  end
 end
