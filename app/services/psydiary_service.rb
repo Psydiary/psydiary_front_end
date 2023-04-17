@@ -7,6 +7,13 @@ class PsydiaryService
     end
   end
 
+  def self.create_daily_log_entry(entry_params)
+    conn.post("/api/v1/users/#{entry_params[:user_id]}/daily_log_entries") do |req|
+      req.body = entry_params
+    end
+  end
+
+
   private
 
 
