@@ -1,1 +1,11 @@
-Log Show
+<h1>Daily Log For <%= @daily_log_entry.created_at %></h1>
+
+<li>Mood: <%= @daily_log_entry.mood %></li>
+<li>Sleep Quality: <%= @daily_log_entry.sleep_score %></li>
+<li>Anxiety Score: <%= @daily_log_entry.anxiety_score %></li>
+<li>Depression Score: <%= @daily_log_entry.depression_score %></li>
+<li>Energy Levels: <%= @daily_log_entry.energy_levels %></li>
+<li>Sociability: <%= @daily_log_entry.sociability %></li>
+<li>Meditation: <%= @daily_log_entry.meditation %></li>
+<li>Exercise: <%= @daily_log_entry.exercise %></li>
+<li>Notes: <%= @daily_log_entry.notes %></li>
