@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   
   root "welcome#welcome"
 
-  get '/login', to: "users#login"
+  get '/login', to: "users#login_form"
+  post '/login', to: "users#login"
+
   get '/register', to: "users#new"
   get '/learn_more', to: "discover#index", as: 'discover'
 
