@@ -28,4 +28,10 @@ class PsydiaryFacade
       end
     end
   end
+
+  def authenticate_user
+    user = PsydiaryService.authenticate_user(@params)
+    return user = nil if user[:errors].present?
+    User.new(user)
+  end
 end
