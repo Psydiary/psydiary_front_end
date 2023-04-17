@@ -13,6 +13,22 @@ describe 'as a visitor' do
       expect(page).to have_link 'Learn More'
     end
 
+    it 'if I am already logged in I see a link to log out, not login and register' do
+      visit login_path
+      fill_in 'email', with: 'torienyart@gmail.com'
+      fill_in 'password', with: '1234'
+      click_on 'Log In'
+
+      expect(page).to have_link 'Log Out'
+      expect(page).to_not have_link 'Register'
+      expect(page).to_not have_link 'Log In'
+
+      click_on 'Log Out'
+
+      expect(page).to have_link 'Log In'
+      expect(page).to have_link 'Register'
+    end
+
     it 'I also see a paragraph about psydiary' do
       expect(page).to have_content 'The App to Bring You Home'
       expect(page).to have_content "As psilocybin has started to receive more attention in the mental health space and become legal to consume in multiple states the interest in receiving treatment has grown. Unfortunately the accessibility to clinics/clinicians providing this treatment is slow to take off. As individuals are seeking out self-treatment by way of growing and consuming at home, Psydiary hopes to provide a structured way for users to track their experience with self-guided-treatment."
