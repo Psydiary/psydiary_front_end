@@ -13,6 +13,7 @@ class MicrodoseLogEntry
               :created_at
 
   def initialize(microdose_log_data)
+    microdose_log_data = microdose_log_data[:data] if microdose_log_data[:data]
     @id = microdose_log_data[:id]
     @user_id = microdose_log_data[:attributes][:user_id]
     @mood_before = microdose_log_data[:attributes][:mood_before]
