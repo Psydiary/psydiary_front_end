@@ -4,21 +4,31 @@
 
     <br>
 
+   
+    <div class="col-md-12 text-center text-nowrap">
+      <a class="btn btn-dark btn-center btn-md text-nowrap" href="#">Explore<br>Protocols</a>
+      <a class="btn btn-dark btn-center btn-md text-nowrap" href="#">Your Entries<br>Diary</a>
+      <a class="btn btn-dark btn-center btn-md text-nowrap" href="#">Edit Your<br>Profile</a>
+    </div>
+
+
+
+
     <h1 class="text-center">✨Track Something Amazing✨</h3>
     
     <br>
 
     <div class="row justify-content-center align-items-center">
       <div class="col-md-4 text-center">
-        <button type="button" class="btn btn-dark btn-center btn-md" href=<%=new_user_daily_log_entry_path(@facade.user.id)%>>🌅 Track Your Day</button>
+        <a class="btn btn-dark btn-center btn-md" href=<%=new_user_daily_log_entry_path(@facade.user.id)%>>🌞 Track Your Day 🌞</a>
       </div>
     </div>
 
     <br>
    
-   <div class="row justify-content-center align-items-center">
+    <div class="row justify-content-center align-items-center">
       <div class="col-md-4 text-center">
-        <button type="button" class="btn btn-dark btn-center btn-md" href=<%=new_user_microdose_log_entry_path(@facade.user.id)%>>🍄 Track a Microdose</button>
+              <a class="btn btn-dark btn-center btn-md" href=<%=new_user_microdose_log_entry_path(@facade.user.id)%>>🍄 Track a Microdose 🍄</a>
       </div>
     </div>
 

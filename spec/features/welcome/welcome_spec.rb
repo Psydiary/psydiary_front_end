@@ -12,7 +12,7 @@ describe 'as a visitor' do
       expect(page).to have_link 'Register'
     end
 
-    it 'if I am already logged in I see a link to log out, not login and register' do
+    it 'if I am already logged in I see a link to log out and visit my dashboard, not login and register' do
       visit login_path
       within "#login_buttons" do
         fill_in 'email', with: 'torienyart@gmail.com'
@@ -21,6 +21,7 @@ describe 'as a visitor' do
       end
 
       expect(page).to have_button 'Log Out'
+      expect(page).to have_button 'My Dashboard'
       expect(page).to_not have_link 'Register'
       expect(page).to_not have_link 'Log In'
 
