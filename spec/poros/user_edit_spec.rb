@@ -35,10 +35,10 @@ RSpec.describe UserEdit do
     it 'has attributes, readable' do
       expected_attributes = expected_response_body[:data][:attributes]
 
-      expect(@user_edit.id).to eq(user_id)
+      expect(@user_edit.id).to eq(user_id.to_i)
       expect(@user_edit.name).to eq(expected_attributes[:name])
       expect(@user_edit.email).to eq(expected_attributes[:email])
-      expect(@user_edit.protocol_id).to eq(expected_attributes[:protocol][:id])
+      expect(@user_edit.protocol_id).to eq(expected_attributes[:protocol][:id].to_i)
       expect(@user_edit.protocol_name).to eq(expected_attributes[:protocol][:name])
       expect(@user_edit.data_sharing).to eq(expected_attributes[:data_sharing])
     end

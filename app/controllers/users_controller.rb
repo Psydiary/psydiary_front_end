@@ -35,11 +35,11 @@ class UsersController < ApplicationController
   end
 
   def edit
-    
+    user = PsydiaryFacade.new(user_params).edit_user
   end
 
   private
   def user_params
-    params.permit(:name, :email, :password, :protocol_id, :ip_address, :data_sharing)
+    params.permit(:name, :email, :password, :protocol_id, :ip_address, :data_sharing, :user_id)
   end
 end

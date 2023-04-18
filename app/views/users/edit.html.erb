@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PsyDiary - Login</title>
+    <title>PsyDiary - Settings</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-FwAd3MqDfGVzIIXxnfAmK+s4G+yKeJb1aQZ1+Ukfy6YNGY6U37S6jL4+iGnm9XcMfzF4WyIwzlKjcazdMFmfCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
+  <header>
+    <h1>Settings</h1>
+  </header>
   <section id="profile_edit">
+  <h2>Profile Settings<h2>
     <%= form_with url: user_settings_path, method: :patch, local: true do |f| %>
       <%= f.label :email, "E-mail:" %>
       <%= f.email_field :email %><br>
@@ -17,10 +21,17 @@
       <%= f.password_field :new_password %><br>
       <%= f.label :password_conf, "Confirm Password:" %>
       <%= f.password_field :password_conf %><br>
-      <%= f.label :data_sharing, "Data Sharing:" %>
+      <%= f.label :data_sharing, "I Elect To Share My Health Trend Data:" %>
       <%= f.select :data_sharing, options_for_select(["Allow", "Decline"]), {}, { class: "form-control" } %><br>
-      <%= f.submit "Update & Save Changes", class: 'button' %>
+      <div class="col-md-12">
+        <%= f.submit "Update & Save Changes", class: "btn btn-dark w-100 mb-3 text-white" %>
+      </div>
+      <p>* Save your changes before continuing below!</p>
     <% end %>
+  </section>
+  <section id="protocol_settings">
+    <h2>Protocol Settings:</h2>
+    <p><%= button_to "Update Current Custom Protocol" %> or <%= button_to "Select From Our Library" %></p>
   </section>
     <!-- Bootstrap Bundle JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-hwUfpTp6UvO6OZ4ksih4Q6R/Vx47S7ggr/Oh6MeH7oBQlD4ST4+r3adU6NnU6I1/kDyDKsMzQEmn2v78txVEJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

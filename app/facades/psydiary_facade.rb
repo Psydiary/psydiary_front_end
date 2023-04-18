@@ -14,8 +14,9 @@ class PsydiaryFacade
 
   def edit_user
     response = PsydiaryService.edit_user(@params)
-    edit_data = JSON.parse(response.body, symbolize_names: true)
-    UserEdit.new(edit_data)
+    user = JSON.parse(response.body, symbolize_names: true)
+    return user = nil if user[:errors].present?
+    UserEdit.new(user)
   end
  
   def user
@@ -41,5 +42,4 @@ class PsydiaryFacade
     return user = nil if user[:errors].present?
     User.new(user)
   end
->>>>>>> main
 end
