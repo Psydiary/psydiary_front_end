@@ -1,4 +1,4 @@
-<h1>Your Journey Start Here!</h1>
+<h1>Your Journey Starts Here!</h1>
 
 <%= form_with url: users_path, method: :post, local: true do |f| %>
   <%= f.hidden_field :protocol_id, value: 4 %>
@@ -16,3 +16,6 @@
 
   <%= f.submit "Begin My Journey" %>
 <% end %>
+
+<p>OR...</p>
+<%= button_to "Log In with Google", '/users/auth/google_oauth2'  %>

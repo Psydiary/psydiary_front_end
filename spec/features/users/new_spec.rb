@@ -8,11 +8,12 @@ describe '/users/new', type: :feature do
         visit register_path
 
         expect(current_path).to eq(register_path)
-        expect(page).to have_content('Your Journey Start Here!')
+        expect(page).to have_content('Your Journey Starts Here!')
         expect(page).to have_field(:name)
         expect(page).to have_field(:email) 
         expect(page).to have_select(:data_sharing)
         expect(page).to have_button("Begin My Journey")
+        expect(page).to have_button('Log In with Google')
       end
 
       it 'when I fill out the form and click submit, I am redirected to the user dashboard' do
