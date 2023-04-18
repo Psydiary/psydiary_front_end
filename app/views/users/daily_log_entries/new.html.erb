@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row justify-content-center align-items-center min-vh-100">
+      <div class="col-sm-6">
+        <div class="card p-4">
+          <h1 class="card-title text-center mb-4">Track Your Day</h1>
+          <%= form_with url: user_daily_log_entries_path(@facade.user_id), method: :post, class: "row g-3" do |f| %>
+            <div class="col-md-12">
+              <%= f.label :mood, "Mood:", class: "form-label" %>
+              <%= f.text_field :mood, class: "form-control" %>
+            </div>
+
+            <div id="sleep_score" class="col-md-12">
+            <p>Sleep Quality (1 being the worst possible, 10 being the best possible): </p>
+              <%= render partial: 'radio_button', locals: {f: f, score_type: :sleep_score}%>
+            </div>
+
+            <div id="anxiety_score" class="col-md-12">
+            <p>Anxiety Level: (1 being the worst possible, 10 being the best possible): </p>
+              <%= render partial: 'radio_button', locals: {f: f, score_type: :anxiety_score}%>
+            </div>
+
+            <div id="depression_score" class="col-md-12">
+            <p>Depression Level: (1 being the worst possible, 10 being the best possible): </p>
+              <%= render partial: 'radio_button', locals: {f: f, score_type: :depression_score}%>
+            </div>
+
+            <div id="energy_levels" class="col-md-12">
+            <p>Energy Level: (1 being the lowest, 10 being the highest): </p>
+              <%= render partial: 'radio_button', locals: {f: f, score_type: :energy_levels}%>
+            </div>
+
+            <div class="col-md-12">
+              <%= f.label :sociability, "Sociability:", class: "form-label" %>
+              <%= f.select :sociability, ['social', 'anxious', 'withdrawn'], class: "form-control" %>
+            </div>
+
+            <div class="col-md-12">
+              <%= f.label :meditation, "Meditation Minutes (please enter a numerical value):", class: "form-label" %>
+              <%= f.text_field :meditation, class: "form-control" %>
+            </div>
+
+            <div class="col-md-12">
+              <%= f.label :exercise, "Exercise:", class: "form-label" %>
+              <%= f.select :exercise, ['aerobic', 'strength', 'cardio', 'yoga', 'sport'], class: "form-control" %>
+            </div>
+
+            <div class="col-md-12">
+              <%= f.label :notes, "Other Notes:", class: "form-label" %>
+              <%= f.text_area :notes, :cols => "65", :rows => "10" %>
+            </div>
+
+            <div class="col-md-12">
+              <%= f.submit "Upload to the Universe", class: "btn btn-dark w-100 mb-3 text-white" %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>

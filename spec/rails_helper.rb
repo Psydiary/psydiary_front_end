@@ -36,6 +36,7 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
+  config.configure_rspec_metadata!
   config.allow_http_connections_when_no_cassette = true
 end
 
@@ -70,5 +71,9 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
   Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+
+  RSpec.configure do |config|
+    config.include FactoryBot::Syntax::Methods
+  end
 end
 
