@@ -10,7 +10,24 @@ describe 'as a visitor' do
     it 'i see a link to login, register, and learn more' do
       expect(page).to have_link 'Log In'
       expect(page).to have_link 'Register'
-      expect(page).to have_link 'Learn More'
+    end
+
+    it 'if I am already logged in I see a link to log out, not login and register' do
+      visit login_path
+      within "#login_buttons" do
+        fill_in 'email', with: 'torienyart@gmail.com'
+        fill_in 'password', with: '1234'
+        click_on 'Log In'
+      end
+
+      expect(page).to have_button 'Log Out'
+      expect(page).to_not have_link 'Register'
+      expect(page).to_not have_link 'Log In'
+
+      click_on 'Log Out'
+
+      expect(page).to have_link 'Log In'
+      expect(page).to have_link 'Register'
     end
 
     it 'I also see a paragraph about psydiary' do

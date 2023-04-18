@@ -4,6 +4,12 @@ RSpec.describe 'New Microdose Log Page' do
   context "As a logged in user when i visit the new microdose log page" do
     describe "I see a form to fill out a new microdose log entry" do
       before :each do
+        visit '/login'
+        within '#login_buttons' do
+          fill_in 'email', with: 'torienyart@gmail.com'
+          fill_in 'password', with: '1234'
+          click_button 'Log In'
+        end
         visit new_user_microdose_log_entry_path(1)
       end
 

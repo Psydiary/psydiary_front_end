@@ -13,3 +13,25 @@
  */
 
  @import "bootstrap";
+
+ @font-face {
+  font-family: "CormorantGaramond";
+  font-style: normal;
+  font-weight: normal;
+  src: url(CormorantGaramond-Bold.ttf) format("opentype");
+ }
+
+ .cormorant_garamond {
+    font-family: "CormorantGaramond", serif !important
+ }
+
+ @font-face {
+  font-family: "DMSerifDisplay";
+  font-style: normal;
+  font-weight: normal;
+  src: url(DMSerifDisplay-Regular.ttf) format("opentype");
+ }
+
+ .dmserif_display {
+  font-family: "DMSerifDisplay" !important
+}
