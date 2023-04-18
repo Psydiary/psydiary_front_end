@@ -46,6 +46,7 @@ gem 'bootstrap', '~> 5.3.0.alpha3'
 gem 'faraday'
 gem 'figaro'
 gem 'jquery-rails'
+gem 'newrelic_rpm'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
