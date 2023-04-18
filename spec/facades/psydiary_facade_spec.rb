@@ -4,27 +4,24 @@ require './app/facades/protocol_facade'
 RSpec.describe PsydiaryFacade do
   describe '.class_methods' do
     context '#initialize' do 
-      before do
-        @new_user_params = {
-          "name"=>"Emerita Kessler", 
-          "email"=>"ricarda@kuvalis-mckenzie.biz", 
-          "password"=>"password", 
-          "protocol_id"=>"4", 
-          "ip_address"=>"192.199.248.75", 
-          "data_sharing"=>"False"
-        }
+      let(:facade) { described_class.new }
+
+      it 'exists' do
+        expect(facade).to be_a(PsydiaryFacade)
       end
 
       it 'has attributes' do 
-        facade = PsydiaryFacade.new(@new_user_params)
-
-        expect(facade.params).to eq(@new_user_params)
+        expect(facade.params).to be_a(Hash)
       end
     end
   end
 
   describe '.instance_methods' do
-    context 'edit_user' do 
+    context '.new_user' do
+
+    end
+    
+    context '.edit_user' do 
       let(:user_id) { '1' }
       let(:expected_response_body) do
         {
@@ -38,11 +35,12 @@ RSpec.describe PsydiaryFacade do
                 id: '1',
                 name: 'protocol_name'
               },
-              data_sharing: 'true'
+              data_sharing: true
             }
           }
         }
       end
+      let(:facade) { described_class.new(user_id) }
   
       before do
         stub_request(:get, "https://pacific-reef-79035.herokuapp.com/api/v1/users/#{user_id}/settings")
@@ -50,9 +48,15 @@ RSpec.describe PsydiaryFacade do
       end
 
       it 'can get user info to render edit page for that user' do
-        facade = PsydiaryFacade.new(user_id)
-        require 'pry'; binding.pry
-        expect(facade.edit_user)
+        user_to_edit = facade.edit_user
+
+        expect(user_to_edit).to be_a(UserEdit)
+        expect(user_to_edit.data_sharing).to eq(true)
+        expect(user_to_edit.email).to eq("someone@something.com")
+        expect(user_to_edit.id).to eq(1)
+        expect(user_to_edit.name).to eq("Someone Something")
+        expect(user_to_edit.protocol_id).to eq(1)
+        expect(user_to_edit.protocol_name).to eq("protocol_name")
       end
     end
     

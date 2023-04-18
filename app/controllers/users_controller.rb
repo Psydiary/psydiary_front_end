@@ -22,6 +22,10 @@ class UsersController < ApplicationController
 
   end
 
+  def edit
+    
+  end
+
   private
   def user_params
     params.permit(:name, :email, :password, :protocol_id, :ip_address, :data_sharing)

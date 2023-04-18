@@ -62,7 +62,7 @@ RSpec.describe PsydiaryService do
                   id: '1',
                   name: 'protocol_name'
                 },
-                data_sharing: 'true'
+                data_sharing: true
               }
             }
           }
