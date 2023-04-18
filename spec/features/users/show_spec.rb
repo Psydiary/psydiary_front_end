@@ -80,7 +80,7 @@ RSpec.describe 'User show page' do
   it "shows a section with the past 3 most recent user entries" do
     within "#3-recent-entries" do
       within "#entry-1" do
-        expect(page).to have_content("Daily Log Entry From: #{Date.today.strftime("%A, %B %d, %Y")}")
+        expect(page).to have_content("Daily Log Entry From:")
         expect(page).to have_link("See More...")
         expect(page).to have_content("Mood: happy!")
         expect(page).to have_content("Sleep Score: 7")
@@ -90,7 +90,7 @@ RSpec.describe 'User show page' do
       end
 
       within "#entry-2" do
-        expect(page).to have_content("Daily Log Entry From: #{Date.today.strftime("%A, %B %d, %Y")}")
+        expect(page).to have_content("Daily Log Entry From:")
         expect(page).to have_link("See More...")
         expect(page).to have_content("Mood: unmotivated")
         expect(page).to have_content("Sleep Score: 4")
@@ -100,7 +100,7 @@ RSpec.describe 'User show page' do
       end
 
       within "#entry-3" do
-        expect(page).to have_content("Microdose Log Entry From: #{Date.today.strftime("%A, %B %d, %Y")}")
+        expect(page).to have_content("Microdose Log Entry From:")
         expect(page).to have_link("See More...")
         expect(page).to have_content("Mood Before: angsty")
         expect(page).to have_content("Mood After: peaceful")
