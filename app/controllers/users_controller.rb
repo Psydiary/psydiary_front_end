@@ -45,6 +45,17 @@ class UsersController < ApplicationController
     redirect_to root_path
   end
 
+  def omniauth
+    user = PsydiaryFacade.from_omniauth(request.env['omniauth.auth'])
+    if user.nil?
+      flash[:error] = "Oops, that didn't work"
+      redirect_to register_path
+    else
+      session[:user_id] = user.id
+      redirect_to user_path(user.id) 
+    end
+  end
+
   private
   def user_params
     params.permit(:name, :email, :password, :protocol_id, :ip_address, :data_sharing)

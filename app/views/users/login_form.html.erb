@@ -24,7 +24,7 @@
             </div>
             <div class="col-md-12">
               <%= f.submit "Log In", class: "btn btn-dark w-100 mb-3 text-white" %>
-              <%= link_to "Login through Google","/login", class: "btn btn-dark w-100 text-white" %>
+              <%= button_to "Log In with Google","/auth/google_oauth2"%>
             </div>
           <% end %>
         </div>
