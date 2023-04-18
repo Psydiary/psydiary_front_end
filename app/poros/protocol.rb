@@ -1,5 +1,5 @@
 class Protocol
-  attr_reader :id, :name, :description, :dose_days, :days_between_dose, :dosage, :protocol_duration, :break_duration, :other_notes
+  attr_reader :id, :name, :description, :dose_days, :days_between_dose, :dosage, :protocol_duration, :break_duration, :other_notes, :user_id, :created_by
 
   def initialize(data)
     @id = data[:id]
@@ -11,5 +11,6 @@ class Protocol
     @protocol_duration = data[:attributes][:protocol_duration]
     @break_duration = data[:attributes][:break_duration]
     @other_notes = data[:attributes][:other_notes]
+    @created_by = data[:attributes][:created_by]
   end
 end
