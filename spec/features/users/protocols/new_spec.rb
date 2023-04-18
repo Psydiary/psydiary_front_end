@@ -27,7 +27,6 @@ RSpec.describe 'New protocol page' do
     fill_in :name, with: 'Test Protocol'
     fill_in :description, with: 'This is a test protocol'
     fill_in :dose_days, with: '1, 2, 3, 4, 5, 6, 7'
-    fill_in :days_between_dose, with: '1'
     fill_in :dosage, with: '1'
     fill_in :protocol_duration, with: '7'
     fill_in :break_duration, with: '7'
@@ -36,5 +35,23 @@ RSpec.describe 'New protocol page' do
     click_on 'Create Protocol'
 
     expect(current_path).to eq('/users/1/protocols')
+  end
+
+  it 'can return an error message if a validation fails' do
+    visit '/users/1/protocols/new'
+
+    fill_in :name, with: 'Test Protocol'
+    fill_in :description, with: 'This is a test protocol'
+    fill_in :dose_days, with: '1, 2, 3, 4, 5, 6, 7'
+    fill_in :days_between_dose, with: '1'
+    fill_in :dosage, with: '1'
+    fill_in :protocol_duration, with: '7'
+    fill_in :break_duration, with: '7'
+    fill_in :other_notes, with: 'This is a test protocol'
+
+    click_on 'Create Protocol'
+
+    expect(current_path).to eq('/users/1/protocols/new')
+    expect(page).to have_content("Specify number of days between dose or days of the week you would like to dose, not both")
   end
 end

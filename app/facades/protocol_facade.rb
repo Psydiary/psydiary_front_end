@@ -16,11 +16,13 @@ class ProtocolFacade
   def new_protocol
     response = ProtocolService.create_protocol(@params)
     protocol = JSON.parse(response.body, symbolize_names: true)
-    require 'pry'; binding.pry
-    # if response[:error]
-    #   Protocol.new({}).tap { |p| p.errors.add(:base, response[:error]) }
-    # else
-    Protocol.new(response[:data])
-    # end
+    return protocol[:errors] if protocol[:errors].present?
+    Protocol.new(protocol)
+  end
+
+  def self.format_errors(errors)
+    errors.map do |error|
+      error.to_s
+     end.join
   end
 end

@@ -11,12 +11,12 @@ class Users::ProtocolsController < ApplicationController
 
   def create
     protocol = ProtocolFacade.new(protocol_params).new_protocol
-    # protocol = user_protocol.new_protocol
-    if protocol.errors.present?
-      flash[:error] = "Error creating protocol: #{protocols.errors.full_messages.join(', ')}"
+    if protocol.is_a?(Array)
+      flash[:error] = ProtocolFacade.format_errors(protocol)
+      redirect_to new_user_protocol_path(params[:user_id])
     else
       flash[:notice] = "Protocol created successfully"
-      redirect_to users_protocols_path
+      redirect_to user_protocols_path
     end
   end
 
