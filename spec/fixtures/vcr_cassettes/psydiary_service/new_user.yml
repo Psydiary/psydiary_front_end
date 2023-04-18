@@ -5,7 +5,7 @@ http_interactions:
     uri: https://pacific-reef-79035.herokuapp.com/api/v1/users
     body:
       encoding: UTF-8
-      string: data_sharing=false&email=enriqueta.fisher%40runolfsdottir.info&ip_address=76.131.159.186&name=Kyra+D%27Amore&password=SwwjVTaytv&protocol_id=1
+      string: data_sharing=false&email=harland.collins%40heller-cummerata.co&ip_address=76.131.159.186&name=Kyra+D%27Amore&password=uHSzlcarIj&protocol_id=1
     headers:
       User-Agent:
       - Faraday v2.7.4
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 18 Apr 2023 00:25:26 GMT
+      - Tue, 18 Apr 2023 17:27:33 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -43,19 +43,19 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"7b12cff58c175be3bbb7de15d8456bb2"
+      - W/"3b389fdd4799b933b1f96f91e99ccee1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 14950297-8a5b-4943-b92e-8a82213933b0
+      - d73905a7-5574-4c02-9388-2e24d5227349
       X-Runtime:
-      - '0.280207'
+      - '0.268243'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"user","attributes":{"name":"Kyra D''Amore","email":"enriqueta.fisher@runolfsdottir.info","protocol_id":1,"data_sharing":false}}}'
-  recorded_at: Tue, 18 Apr 2023 00:25:27 GMT
+      string: '{"data":{"id":"28","type":"user","attributes":{"name":"Kyra D''Amore","email":"harland.collins@heller-cummerata.co","protocol_id":1,"data_sharing":false}}}'
+  recorded_at: Tue, 18 Apr 2023 17:27:33 GMT
 recorded_with: VCR 6.1.0
