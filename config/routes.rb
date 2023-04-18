@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   get '/login', to: "users#login_form"
   post '/login', to: "users#login"
+  delete '/login', to: "users#logout"
 
   get '/register', to: "users#new"
   get '/learn_more', to: "discover#index", as: 'discover'

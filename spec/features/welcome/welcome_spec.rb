@@ -20,7 +20,7 @@ describe 'as a visitor' do
         click_on 'Log In'
       end
 
-      expect(page).to have_link 'Log Out'
+      expect(page).to have_button 'Log Out'
       expect(page).to_not have_link 'Register'
       expect(page).to_not have_link 'Log In'
 
