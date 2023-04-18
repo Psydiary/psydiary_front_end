@@ -2,6 +2,7 @@ class Protocol
   attr_reader :id, :name, :description, :dose_days, :days_between_dose, :dosage, :protocol_duration, :break_duration, :other_notes, :user_id, :created_by
 
   def initialize(data)
+    data = data[:data] if data[:data]
     @id = data[:id]
     @name = data[:attributes][:name]
     @description = data[:attributes][:description]
