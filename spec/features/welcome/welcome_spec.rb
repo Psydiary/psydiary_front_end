@@ -42,21 +42,3 @@ describe 'as a visitor' do
     end
   end
 end
-
-describe 'as a logged-in user' do
-  describe 'when i visit the root/welcome page' do
-
-    before :each do
-      #login users here!
-      visit '/'
-    end
-
-    xit 'I see a button to log out and learn more' do
-
-    end
-
-    xit 'I do not see a button to register or login' do
-
-    end
-  end
-end
