@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe MicrodoseLogEntryFacade do
-  let(:facade) { described_class.new }
+  let(:facade) { described_class.new({})}
 
   describe "one_microdose_log_entry" do
     it 'returns a microdose_log_entry object' do
@@ -14,6 +14,7 @@ RSpec.describe MicrodoseLogEntryFacade do
                 'User-Agent'=>'Faraday v2.7.4'
             }).
           to_return(status: 200, body: response, headers: {})
+
 
       microdose_log_entry = facade.one_microdose_log_entry(2, 1)
 

@@ -15,11 +15,23 @@ class UsersController < ApplicationController
   end
 
   def show
-    
+    @facade = PsydiaryFacade.new(params)
+  end
+
+  def login_form
   end
 
   def login
-
+    user = PsydiaryFacade.new(user_params).authenticate_user
+    
+    if user.nil?
+      flash[:error] = "Incorrect email or password"
+      redirect_to login_path
+    else
+      session[:user_id] = user.id
+      flash[:success] = "Welcome, #{user.name}!"
+      redirect_to user_path(user.id)
+    end
   end
 
   private
