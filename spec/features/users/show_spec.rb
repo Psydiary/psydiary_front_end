@@ -69,7 +69,7 @@ RSpec.describe 'User show page' do
       fill_in 'Notes', with: 'I want an axolotl'
       click_on "Upload to the Universe"
       
-
+      
       visit '/users/1/microdose_log_entries/new'
       fill_in "Mood Before", with: "angsty"
       fill_in "Mood After", with: "peaceful"

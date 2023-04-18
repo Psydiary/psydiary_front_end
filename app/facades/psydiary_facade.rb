@@ -2,6 +2,7 @@ class PsydiaryFacade
 
   def initialize(params = {})
     @params = params
+   
   end
 
   def new_user
