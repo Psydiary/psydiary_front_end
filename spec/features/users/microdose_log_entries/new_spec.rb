@@ -14,6 +14,7 @@ RSpec.describe 'New Microdose Log Page' do
       end
 
       it "has various fields" do
+        
         expect(page).to have_field("Mood Before")
         expect(page).to have_field("Mood After")
         expect(page).to have_field("Environment")

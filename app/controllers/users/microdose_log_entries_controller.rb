@@ -10,6 +10,7 @@ class Users::MicrodoseLogEntriesController < ApplicationController
 
   def new
     @facade = MicrodoseLogEntryFacade.new(params)
+    @openai = OpenaiFacade.get_response
   end
 
   def create
