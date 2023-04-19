@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 18 Apr 2023 00:24:46 GMT
+      - Wed, 19 Apr 2023 05:19:51 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -47,9 +47,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4c363bd0-03e7-4527-9fae-f5de4a28cfa0
+      - 32b59be7-04f4-45f4-a8a0-94fe457e865d
       X-Runtime:
-      - '0.226582'
+      - '0.229654'
       Transfer-Encoding:
       - chunked
       Via:
@@ -57,7 +57,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":2,"data_sharing":true}}}'
-  recorded_at: Tue, 18 Apr 2023 00:24:47 GMT
+  recorded_at: Wed, 19 Apr 2023 05:19:51 GMT
 - request:
     method: get
     uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/2
@@ -79,7 +79,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 18 Apr 2023 00:24:47 GMT
+      - Wed, 19 Apr 2023 05:19:51 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -103,9 +103,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2c9053bf-4cd8-4070-b8f3-9d8c8658afc5
+      - ceac19c0-4063-4963-aa50-a9e261b537b4
       X-Runtime:
-      - '0.002939'
+      - '0.003265'
       Transfer-Encoding:
       - chunked
       Via:
@@ -113,7 +113,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":2,"data_sharing":true}}}'
-  recorded_at: Tue, 18 Apr 2023 00:24:47 GMT
+  recorded_at: Wed, 19 Apr 2023 05:19:52 GMT
 - request:
     method: get
     uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/2
@@ -135,7 +135,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 18 Apr 2023 00:24:47 GMT
+      - Wed, 19 Apr 2023 05:19:52 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -159,9 +159,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6f6336a2-e03a-4bc7-aeb2-f1ba7d85b6b3
+      - 5bf86c42-1c13-48d1-819a-61a7b71e5aec
       X-Runtime:
-      - '0.002975'
+      - '0.003390'
       Transfer-Encoding:
       - chunked
       Via:
@@ -169,7 +169,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":2,"data_sharing":true}}}'
-  recorded_at: Tue, 18 Apr 2023 00:24:48 GMT
+  recorded_at: Wed, 19 Apr 2023 05:19:52 GMT
 - request:
     method: get
     uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/2
@@ -191,7 +191,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 18 Apr 2023 00:24:47 GMT
+      - Wed, 19 Apr 2023 05:19:52 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -215,9 +215,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bcb603f3-aa65-47d3-ae15-917447630935
+      - 5c7ce83d-cb3b-42dc-b16a-c0482b39b902
       X-Runtime:
-      - '0.002907'
+      - '0.003257'
       Transfer-Encoding:
       - chunked
       Via:
@@ -225,7 +225,63 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":2,"data_sharing":true}}}'
-  recorded_at: Tue, 18 Apr 2023 00:24:48 GMT
+  recorded_at: Wed, 19 Apr 2023 05:19:52 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 19 Apr 2023 05:19:52 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"08e44f3141fc291bfe9eb7bade3663e5"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 813161fb-dd8e-4155-aefa-54643bba4b3e
+      X-Runtime:
+      - '0.003274'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":2,"data_sharing":true}}}'
+  recorded_at: Wed, 19 Apr 2023 05:19:53 GMT
 - request:
     method: get
     uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/2/log_entries
@@ -247,7 +303,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 18 Apr 2023 00:24:47 GMT
+      - Wed, 19 Apr 2023 05:19:53 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -271,9 +327,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5add6b2f-25e3-4777-8bad-77644a3d01fe
+      - 6199b48c-28b9-4d41-b21c-088d3d35cd86
       X-Runtime:
-      - '0.006077'
+      - '0.006630'
       Transfer-Encoding:
       - chunked
       Via:
@@ -288,7 +344,7 @@ http_interactions:
         still got some processing to do"}},{"id":"1","type":"user_entry","attributes":{"id":1,"user_id":2,"created_at":"2023-04-16T15:26:59.198Z","updated_at":"2023-04-16T15:26:59.198Z","type":"MicrodoseLogEntry","mood_before":"Melancholy","mood_after":"Happy","dosage":0.75,"intensity":"low","sociability":"anxious","journal_prompt":"How
         was your day?","journal_entry":"I felt great after today''s microdose!","environment":"The
         Park","other_notes":"What a nice little reset this was"}}]}'
-  recorded_at: Tue, 18 Apr 2023 00:24:48 GMT
+  recorded_at: Wed, 19 Apr 2023 05:19:53 GMT
 - request:
     method: get
     uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/2
@@ -310,7 +366,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 18 Apr 2023 00:24:48 GMT
+      - Wed, 19 Apr 2023 05:19:52 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -334,9 +390,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b7acb4aa-c44e-47aa-92d8-318c0025c21a
+      - b00bb4fb-3bec-4ea0-9753-8468b760e942
       X-Runtime:
-      - '0.003147'
+      - '0.003257'
       Transfer-Encoding:
       - chunked
       Via:
@@ -344,7 +400,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":2,"data_sharing":true}}}'
-  recorded_at: Tue, 18 Apr 2023 00:24:49 GMT
+  recorded_at: Wed, 19 Apr 2023 05:19:53 GMT
 - request:
     method: get
     uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/2
@@ -366,7 +422,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 18 Apr 2023 00:24:48 GMT
+      - Wed, 19 Apr 2023 05:19:53 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -390,9 +446,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 940a857f-c806-4e50-93ee-1596d3268f12
+      - a342f4f2-c898-456c-92bd-18ed1b8918bb
       X-Runtime:
-      - '0.003400'
+      - '0.003195'
       Transfer-Encoding:
       - chunked
       Via:
@@ -400,7 +456,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":2,"data_sharing":true}}}'
-  recorded_at: Tue, 18 Apr 2023 00:24:49 GMT
+  recorded_at: Wed, 19 Apr 2023 05:19:54 GMT
 - request:
     method: get
     uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/2
@@ -422,7 +478,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 18 Apr 2023 00:24:48 GMT
+      - Wed, 19 Apr 2023 05:19:54 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -446,9 +502,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 804d2bc7-bdef-4fae-9da2-19ac42725576
+      - '059b6d37-601c-4c62-ba02-abf0382815dc'
       X-Runtime:
-      - '0.002997'
+      - '0.003280'
       Transfer-Encoding:
       - chunked
       Via:
@@ -456,7 +512,7 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":2,"data_sharing":true}}}'
-  recorded_at: Tue, 18 Apr 2023 00:24:49 GMT
+  recorded_at: Wed, 19 Apr 2023 05:19:54 GMT
 - request:
     method: get
     uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/2
@@ -478,7 +534,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 18 Apr 2023 00:24:49 GMT
+      - Wed, 19 Apr 2023 05:19:54 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -502,9 +558,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d3d58864-837b-4a56-9717-147452740ab6
+      - c0e5c1bb-7406-47cd-ba3b-1b99b129a471
       X-Runtime:
-      - '0.002977'
+      - '0.003310'
       Transfer-Encoding:
       - chunked
       Via:
@@ -512,5 +568,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":2,"data_sharing":true}}}'
-  recorded_at: Tue, 18 Apr 2023 00:24:49 GMT
+  recorded_at: Wed, 19 Apr 2023 05:19:54 GMT
 recorded_with: VCR 6.1.0

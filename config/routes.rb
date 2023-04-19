@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   resources :users, only: %i[create show edit update] do
     member do
       get 'settings', to: 'users#edit'
+      get 'log_entries', to: 'users#log_entries'
     end
 
     resources :daily_log_entries, except: %i[edit destroy], controller: 'users/daily_log_entries'

@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     actioncable (7.0.4.3)
       actionpack (= 7.0.4.3)
@@ -106,7 +107,7 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
-    faker (3.1.1)
+    faker (3.2.0)
       i18n (>= 1.8.11, < 2)
     faraday (2.7.4)
       faraday-net_http (>= 2.0, < 3.1)
@@ -160,11 +161,7 @@ GEM
       net-protocol
     newrelic_rpm (9.2.0)
     nio4r (2.5.9)
-    nokogiri (1.14.3-arm64-darwin)
-      racc (~> 1.4)
     nokogiri (1.14.3-x86_64-darwin)
-      racc (~> 1.4)
-    nokogiri (1.14.3-x86_64-linux)
       racc (~> 1.4)
     pg (1.4.6)
     popper_js (2.11.7)
@@ -205,7 +202,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    regexp_parser (2.7.0)
+    regexp_parser (2.8.0)
     reline (0.3.3)
       io-console (~> 0.5)
     rexml (3.2.5)
@@ -279,10 +276,7 @@ GEM
     zeitwerk (2.6.7)
 
 PLATFORMS
-  arm64-darwin-21
-  x86_64-darwin-21
   x86_64-darwin-22
-  x86_64-linux
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
@@ -299,7 +293,7 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   launchy
-  newrelic_rpm
+  newrelic_rpm (= 9.2.0)
   pg (~> 1.1)
   pry
   puma (~> 5.0)
