@@ -13,9 +13,9 @@ describe '/users/new', type: :feature do
         expect(page).to have_field(:email) 
         expect(page).to have_select(:data_sharing)
         
-        expect(page).to have_css('[@id=protocol_id_5]')
-        expect(page).to have_css('[@id=protocol_id_6]')
-        expect(page).to have_css('[@id=protocol_id_7]')
+        expect(page).to have_css('[@id=protocol_id_1]')
+        expect(page).to have_css('[@id=protocol_id_2]')
+        expect(page).to have_css('[@id=protocol_id_3]')
         expect(page).to have_button("Begin My Journey")
         expect(page).to have_link('Log In with Google')
       end
