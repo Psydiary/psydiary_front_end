@@ -1,30 +1,85 @@
-Custom Protocol
-
-<%= form_with url: user_protocols_path(@facade.user_id), method: :post do |f| %>
-  <%= f.label :name, "Name:" %>
-  <%= f.text_field :name %>
-
-  <%= f.label :description, "Description:" %>
-  <%= f.text_field :description %>
-
-  <%= f.label :dose_day, "Dose Days:" %>
-  <%= f.text_field :dose_days %>
-
-  <%= f.label :days_between_dose, "Days Between Dose:" %>
-  <%= f.text_field :days_between_dose %>
-
-  <%= f.label :dosage, "Dosage:" %>
-  <%= f.text_field :dosage %>
-
-  <%= f.label :protocol_duration, "Protocol Duration:" %>
-  <%= f.text_field :protocol_duration %>
-
-  <%= f.label :break_duration, "Break Duration:" %>
-  <%= f.text_field :break_duration %>
-
-  <%= f.label :other_notes, "Other Notes:" %>
-  <%= f.text_field :other_notes %>
-
-  <%= f.hidden_field :created_by, value: @facade.user_id %>
-  <%= f.submit "Create Protocol" %>
-<% end %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PsyDiary - Protocols</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-FwAd3MqDfGVzIIXxnfAmK+s4G+yKeJb1aQZ1+Ukfy6YNGY6U37S6jL4+iGnm9XcMfzF4WyIwzlKjcazdMFmfCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F5F5F5;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    .card {
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px 40px;
+    }
+    .card-title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .form-label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+    .form-control {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 8px;
+      font-size: 14px;
+      margin-bottom: 20px;
+      text-align: center;
+      background-color: #F5F5F5;
+    }
+    .btn-primary {
+  background-color: #000000;
+  border-color: #000000;
+  border-radius: 5px;
+  color: #FFFFFF;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.btn-primary:hover {
+  background-color: #333333;
+  border-color: #333333;
+  color: #FFFFFF;
+}
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <h1 class="card-title">Create Protocol</h1>
+    <div class="card-body">
+      <%= form_with url: user_protocols_path(@facade.user_id), method: :post, class: "row g-3" do |f| %>
+        <% input_fields = [:name, :description, :dose_days, :days_between_dose, :dosage, :protocol_duration, :break_duration, :other_notes] %>
+        <% input_labels = ["Name:", "Description:", "Dose Days:", "Days Between Dose:", "Dosage:", "Protocol Duration:", "Break Duration:", "Other Notes:"] %>
+        <% input_fields.each_with_index do |input, index| %>
+          <div class="col-md-12">
+            <%= f.label input, input_labels[index], class: "form-label" %>
+            <%= f.text_field input, class: "form-control" %>
+          </div>
+        <% end %>
+        <%= f.hidden_field :created_by, value: @facade.user_id %>
+        <div class="d-flex justify-content-center">
+          <div class="text-center">
+            <%= f.submit "Create Protocol", class: "btn-primary" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+</body>
+</html>
