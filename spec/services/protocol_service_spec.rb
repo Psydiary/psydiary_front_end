@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe ProtocolService do
   it 'exists' do
     response = File.read('spec/fixtures/protocols.json')
-    stub_request(:get, "https://pacific-reef-79035.herokuapp.com/api/v1/protocols").
+    stub_request(:get, "https://pacific-reef-79035.herokuapp.com/api/v1/users/1/protocols").
          with(
            headers: {
               'Accept'=>'*/*',
@@ -12,7 +12,7 @@ RSpec.describe ProtocolService do
            }).
          to_return(status: 200, body: response, headers: {})
 
-    protocols = ProtocolService.get_protocols
+    protocols = ProtocolService.get_protocols(1)
 
     expect(protocols).to be_an(Hash)
     expect(protocols[:data][0]).to have_key(:id)

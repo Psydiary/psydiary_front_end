@@ -1,10 +1,15 @@
 version: 2.1
 orbs:
   ruby: circleci/ruby@1.4.0
-  heroku: circleci/heroku@1.2.6 # Use the Heroku orb in your config
+  # heroku: circleci/heroku@1.2.6 # Use the Heroku orb in your config
+
+workflows:
+  test-env-vars:
+    jobs:
+      - build
 
 jobs:
-  build_and_test:
+  build:
     working_directory: ~/psydiary_front_end # THIS SHOULD BE NAME OF YOUR APP
     docker:
       - image: cimg/ruby:3.1.1
@@ -21,27 +26,26 @@ jobs:
     steps:
       - checkout
       - run:
-          name: do_good_web # THIS SHOULD BE NAME OF YOUR APP
+          name: psydiary_front_end # THIS SHOULD BE NAME OF YOUR APP
           command: bundle -v
       - checkout
       - run: bundle install --path vendor/bundle
       - run: sudo apt-get update && sudo apt-get install -y nodejs
       - run: bundle exec rspec
-  deploy:
-    executor: heroku/default
-    steps:
-      - attach_workspace:
-          at: ~/psydiary_front_end
-      - heroku/deploy-via-git:
-          force: true
-
-workflows:
-  test_my_app:
-    jobs:
-      - build_and_test
-      - deploy:
-          requires:
-            - build_and_test # only deploy if the build_and_test job has completed
-          filters:
-            branches:
-              only: main # only deploy when on main
+  # deploy:
+  #   executor: heroku/default
+  #   steps:
+  #     - attach_workspace:
+  #         at: ~/psydiary_front_end
+  #     - heroku/deploy-via-git:
+  #         force: true
+# workflows:
+#   test_my_app:
+#     jobs:
+#       - build_and_test
+#       - deploy:
+#           requires:
+#             - build_and_test # only deploy if the build_and_test job has completed
+#           filters:
+#             branches:
+#               only: main # only deploy when on main

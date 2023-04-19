@@ -1,0 +1,30 @@
+Custom Protocol
+
+<%= form_with url: user_protocols_path(@facade.user_id), method: :post do |f| %>
+  <%= f.label :name, "Name:" %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description, "Description:" %>
+  <%= f.text_field :description %>
+
+  <%= f.label :dose_day, "Dose Days:" %>
+  <%= f.text_field :dose_days %>
+
+  <%= f.label :days_between_dose, "Days Between Dose:" %>
+  <%= f.text_field :days_between_dose %>
+
+  <%= f.label :dosage, "Dosage:" %>
+  <%= f.text_field :dosage %>
+
+  <%= f.label :protocol_duration, "Protocol Duration:" %>
+  <%= f.text_field :protocol_duration %>
+
+  <%= f.label :break_duration, "Break Duration:" %>
+  <%= f.text_field :break_duration %>
+
+  <%= f.label :other_notes, "Other Notes:" %>
+  <%= f.text_field :other_notes %>
+
+  <%= f.hidden_field :created_by, value: @facade.user_id %>
+  <%= f.submit "Create Protocol" %>
+<% end %>
