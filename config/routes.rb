@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   get '/login', to: "users#login_form"
   post '/login', to: "users#login"
+  delete '/login', to: "users#logout"
 
   get '/register', to: "users#new"
   get '/learn_more', to: "discover#index", as: 'discover'
@@ -18,7 +19,6 @@ Rails.application.routes.draw do
 
     resources :daily_log_entries, except: %i[edit destroy], controller: 'users/daily_log_entries'
     resources :microdose_log_entries, only: %i[index show new create], controller: 'users/microdose_log_entries'
+    resources :protocols, except: %i[edit destroy], controller: 'users/protocols'
   end
-
-  resources :protocols, except: %i[destroy]
 end

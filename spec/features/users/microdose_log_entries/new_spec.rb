@@ -4,10 +4,17 @@ RSpec.describe 'New Microdose Log Page' do
   context "As a logged in user when i visit the new microdose log page" do
     describe "I see a form to fill out a new microdose log entry" do
       before :each do
+        visit '/login'
+        within '#login_buttons' do
+          fill_in 'email', with: 'torienyart@gmail.com'
+          fill_in 'password', with: '1234'
+          click_button 'Log In'
+        end
         visit new_user_microdose_log_entry_path(1)
       end
 
       it "has various fields" do
+        
         expect(page).to have_field("Mood Before")
         expect(page).to have_field("Mood After")
         expect(page).to have_field("Environment")
@@ -52,23 +59,6 @@ RSpec.describe 'New Microdose Log Page' do
 
         expect(page.current_path).to eq(new_user_microdose_log_entry_path(1))
         expect(page).to have_content("Please enter a decmial number for dosage like this: 0.10")
-      end
-
-      xit 'renders information the entry information on the user dashboard page' do
-        fill_in "Mood Before", with: "angsty"
-        fill_in "Mood After", with: "peaceful"
-        fill_in "Environment", with: "at home"
-        fill_in "Dosage", with: "0.2"
-        select 'medium', from: 'Intensity'
-        select 'withdrawn', from: 'Sociability'
-        fill_in 'Journal Prompt Keyphrase', with: 'Learning to let go'
-        fill_in 'Journal About Your Prompt', with: 'I learned that I can let go'
-        fill_in 'Other Notes', with: 'I stayed in my bed for this experience'
-        click_on "Upload to the Universe"
-
-        expect(page.current_path).to eq(user_path(1))
-        expect(page).to have_content('Microdose Log Entry from Sunday, April 16th')
-        expect(page).to have_content('I stayed in my bed for this experience')
       end
     end
   end

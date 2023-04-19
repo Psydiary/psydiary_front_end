@@ -5,7 +5,7 @@ class Users::DailyLogEntriesController < ApplicationController
   end
 
   def show
-    
+    @daily_log_entry = facade.daily_log_entry(params[:user_id], params[:id])
   end
 
   def new
@@ -36,5 +36,9 @@ class Users::DailyLogEntriesController < ApplicationController
                     :exercise, 
                     :notes, 
                     :user_id)
+    end
+
+    def facade
+      @facade ||= DailyLogEntryFacade.new
     end
 end

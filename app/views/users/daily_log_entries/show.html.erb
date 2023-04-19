@@ -1,1 +1,38 @@
-Log Show
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PsyDiary - Daily Log</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" integrity="sha512-FwAd3MqDfGVzIIXxnfAmK+s4G+yKeJb1aQZ1+Ukfy6YNGY6U37S6jL4+iGnm9XcMfzF4WyIwzlKjcazdMFmfCA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <section id="top_info">
+    <center><h1>Daily Log For <%= @daily_log_entry.created_at %></h1></center>
+  </section>
+  
+  <div class="container">
+    <div class="row justify-content-center align-items-left min-vh-100">
+      <div class="col-md-6 mx-auto">
+        <section id="details">
+        <h3>Mood: <%= @daily_log_entry.mood %></h3>
+        <h3>Sleep Quality: <%= @daily_log_entry.sleep_score %></h3>
+        <h3>Anxiety Score: <%= @daily_log_entry.anxiety_score %></h3>
+        <h3>Depression Score: <%= @daily_log_entry.depression_score %></h3>
+        <h3>Energy Levels: <%= @daily_log_entry.energy_levels %></h3>
+        <h3>Sociability: <%= @daily_log_entry.sociability %></h3>
+        <h3>Meditation: <%= @daily_log_entry.meditation %></h3>
+        <h3>Exercise: <%= @daily_log_entry.exercise %></h3>
+        <br>
+        <h3>Notes:</h3>
+        <p><%= @daily_log_entry.notes %></p>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-hwUfpTp6UvO6OZ4ksih4Q6R/Vx47S7ggr/Oh6MeH7oBQlD4ST4+r3adU6NnU6I1/kDyDKsMzQEmn2v78txVEJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

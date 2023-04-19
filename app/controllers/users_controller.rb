@@ -15,7 +15,12 @@ class UsersController < ApplicationController
   end
 
   def show
-    @facade = PsydiaryFacade.new(params)
+    if session[:user_id] == params[:id]
+      @facade = PsydiaryFacade.new(params)
+    else 
+      redirect_to root_path
+      flash[:notice] = "You must be logged in and registered to view your dashboard"
+    end
   end
 
   def login_form
@@ -43,6 +48,12 @@ class UsersController < ApplicationController
     else
       @user = user
     end
+  end
+
+  def logout
+    session.delete(:user_id)
+    current_user = nil
+    redirect_to root_path
   end
 
   private

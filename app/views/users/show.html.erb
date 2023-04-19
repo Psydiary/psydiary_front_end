@@ -28,31 +28,35 @@
     <div id="3-recent-entries" class="mx-auto" style="width: 600px;">
       <h1 class="text-center">✒️Here Are Your Recent Entries🖋</h3>
 
-      <%n = 0%>
-      <%@facade.recent_entries.each do |entry|%>
-        <%if entry.class == DailyLogEntry%>
-          <div id="entry-<%=n += 1%>">
-          <h5>Daily Log Entry From: <%=entry.format_date%></h5>
-          <p>Mood: <%=entry.mood%></p>
-          <p>Sleep Score: <%=entry.sleep_score%></p>
-          <p>Anxiety Score: <%=entry.anxiety_score%></p>
-          <p>Depression Score: <%=entry.depression_score%></p>
-          <p>Energy Levels: <%=entry.energy_levels%></p>
-          <%=link_to "See More...", user_daily_log_entry_path(@facade.user.id, entry.id)%>
-          <br>
-          <br>
-        <%else%>
-          <div id="entry-<%=n += 1%>">
-          <h5>Microdose Log Entry From: <%=entry.format_date%></h5>
-          <p>Mood Before: <%=entry.mood_before%></p>
-          <p>Mood After: <%=entry.mood_after%></p>
-          <p>Environment: <%=entry.environment%></p>
-          <p>Dosage: <%=entry.dosage%></p>
-          <%=link_to "See More...", user_microdose_log_entry_path(@facade.user.id, entry.id)%>
-          <br>
-          <br>
+      <%if @facade.recent_entries.class == Array%>
+        <%n = 0%>
+        <%@facade.recent_entries.each do |entry|%>
+          <%if entry.class == DailyLogEntry%>
+            <div id="entry-<%=n += 1%>">
+            <h5>Daily Log Entry From: <%=entry.format_date%></h5>
+            <p>Mood: <%=entry.mood%></p>
+            <p>Sleep Score: <%=entry.sleep_score%></p>
+            <p>Anxiety Score: <%=entry.anxiety_score%></p>
+            <p>Depression Score: <%=entry.depression_score%></p>
+            <p>Energy Levels: <%=entry.energy_levels%></p>
+            <%=link_to "See More...", user_daily_log_entry_path(@facade.user.id, entry.id)%>
+            <br>
+            <br>
+          <%else%>
+            <div id="entry-<%=n += 1%>">
+            <h5>Microdose Log Entry From: <%=entry.format_date%></h5>
+            <p>Mood Before: <%=entry.mood_before%></p>
+            <p>Mood After: <%=entry.mood_after%></p>
+            <p>Environment: <%=entry.environment%></p>
+            <p>Dosage: <%=entry.dosage%></p>
+            <%=link_to "See More...", user_microdose_log_entry_path(@facade.user.id, entry.id)%>
+            <br>
+            <br>
+          <%end%>
         <%end%>
-        <%end%>
+      <%else%>
+        <p><%=@facade.recent_entries%></p>
+      <%end%>
 
     </div>
 
