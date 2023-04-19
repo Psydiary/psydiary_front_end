@@ -21,13 +21,16 @@ class PsydiaryFacade
   def recent_entries
     response = PsydiaryService.get_recent_entries(@params[:id])
     entries_data = JSON.parse(response.body, symbolize_names: true)
-    binding.pry
-    entries_data[:data][1..3].map do |entry|
-      if entry[:attributes][:mood]
-        DailyLogEntry.new(entry)
-      else
-        MicrodoseLogEntry.new(entry)
+    if !entries_data[:data].empty?
+      entries_data[:data][1..3].map do |entry|
+        if entry[:attributes][:mood]
+          DailyLogEntry.new(entry)
+        else
+          MicrodoseLogEntry.new(entry)
+        end
       end
+    else
+      "Nothing here yet.... Make a new entry above!"
     end
   end
 
