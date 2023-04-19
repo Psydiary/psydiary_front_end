@@ -77,8 +77,7 @@ RSpec.describe 'User show page' do
       fill_in "Dosage", with: "0.2"
       select 'medium', from: 'Intensity'
       select 'withdrawn', from: 'Sociability'
-      fill_in 'Journal Prompt Keyphrase', with: 'Learning to let go'
-      fill_in 'Journal About Your Prompt', with: 'I learned that I can let go'
+      fill_in 'Write your response here', with: 'I learned that I can let go'
       fill_in 'Other Notes', with: 'I stayed in my bed for this experience'
       click_on "Upload to the Universe"
     end
