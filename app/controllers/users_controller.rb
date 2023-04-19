@@ -25,7 +25,8 @@ class UsersController < ApplicationController
   end
 
   def log_entries
-    if session[:user_id] == params[:id]
+    if session[:user_id] == params[:user_id]
+      params[:id] = params[:user_id]
       @facade = PsydiaryFacade.new(params)
     else 
       redirect_to root_path
