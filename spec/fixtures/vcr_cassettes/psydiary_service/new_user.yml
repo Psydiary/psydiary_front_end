@@ -17,8 +17,8 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 422
-      message: Unprocessable Entity
+      code: 201
+      message: Created
     headers:
       Server:
       - Cowboy
@@ -45,7 +45,7 @@ http_interactions:
       Etag:
       - W/"3b389fdd4799b933b1f96f91e99ccee1"
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Request-Id:
       - d73905a7-5574-4c02-9388-2e24d5227349
       X-Runtime:
