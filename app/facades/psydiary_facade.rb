@@ -26,7 +26,7 @@ class PsydiaryFacade
   end
 
   def recent_entries
-    response = PsydiaryService.get_recent_entries(@params[:id])
+    response = PsydiaryService.get_entries(@params[:id])
     entries_data = JSON.parse(response.body, symbolize_names: true)
     if !entries_data[:data].empty?
       entries_data[:data][0..2].map do |entry|
