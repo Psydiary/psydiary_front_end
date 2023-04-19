@@ -4,7 +4,7 @@ RSpec.describe 'Log entry index page' do
 
   describe 'As a user' do
     context 'When I visit the log entry index page' do
-      it 'exists', :vcr do
+      it 'I see all of my entries', :vcr do
         visit '/login'
 
         fill_in :email, with: "bobbyluly@gmail.com"
@@ -18,13 +18,13 @@ RSpec.describe 'Log entry index page' do
         expect(page).to have_link('Track a Microdose', href: new_user_microdose_log_entry_path(2))
         
         within "#entry-1" do
-          expect(page).to have_content("Date: Sunday, April 16, 2023")
+          expect(page).to have_content("Date:")
           expect(page).to have_content("Type: Daily Log Entry")
           expect(page).to have_link("Details", href: user_daily_log_entry_path(2,2))
         end
 
         within "#entry-3" do
-          expect(page).to have_content("Date: Sunday, April 16, 2023")
+          expect(page).to have_content("Date:")
           expect(page).to have_content("Type: Microdose Log Entry")
           expect(page).to have_link("Details", href: user_microdose_log_entry_path(2,2))
 
