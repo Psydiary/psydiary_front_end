@@ -1,23 +1,83 @@
-<section id="top_info">
-  <center><h1>Microdose Diary for <%= @facade.created_at %></h1></center>
-</section>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Microdose Diary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
 
-<section id="details">
-  <h3>Mood Before: <%= @facade.mood_before %></h3>
-  <h3>Mood After: <%= @facade.mood_after %></h3>
-  <h3>Environment: <%= @facade.environment %></h3>
-  <h3>Dosage: <%= @facade.dosage %> grams</h3>
-  <h3>Intensity: <%= @facade.intensity %></h3>
-  <h3>Sociability: <%= @facade.sociability %></h3>
-  <h3>Other Notes: <%= @facade.other_notes %></h3>
-<br><br>
+    #top_info {
+      background-color: #000000;
+      color: #fff;
+      padding: 20px 0;
+      margin-bottom: 30px;
+    }
 
-<section id="journal_prompt">
-  <h3>Journal Prompt:</h3>
-  <p><%= @facade.journal_prompt %></p>
-</section>
+    #top_info h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
 
-<section id="journal_entry">
-  <h3>Journal Entry:</h3>
-  <p><%= @facade.journal_entry %></p>
-</section>
+    #details {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    #details h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    #journal_prompt, #journal_entry {
+      background-color: #f0f0f0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px 40px;
+    }
+
+    #journal_prompt h3, #journal_entry h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section id="top_info">
+      <center><h1>Microdose Diary for <%= @facade.created_at %></h1></center>
+    </section>
+
+    <section id="details">
+      <h3>Mood Before: <%= @facade.mood_before %></h3>
+      <h3>Mood After: <%= @facade.mood_after %></h3>
+      <h3>Environment: <%= @facade.environment %></h3>
+      <h3>Dosage: <%= @facade.dosage %> grams</h3>
+      <h3>Intensity: <%= @facade.intensity %></h3>
+      <h3>Sociability: <%= @facade.sociability %></h3>
+      <h3>Other Notes: <%= @facade.other_notes %></h3>
+      <br><br>
+    </section>
+
+    <section id="journal_prompt">
+      <h3>Journal Prompt:</h3>
+      <p><%= @facade.journal_prompt %></p>
+    </section>
+
+    <section id="journal_entry">
+      <h3>Journal Entry:</h3>
+      <p><%= @facade.journal_entry %></p>
+    </section>
+  </div>
+</body>
+</html>
