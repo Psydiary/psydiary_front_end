@@ -45,7 +45,9 @@ class PsydiaryFacade
   def entries
     response = PsydiaryService.get_entries(@params[:id])
     entries_data = JSON.parse(response.body, symbolize_names: true)
-    if !entries_data[:data].empty?
+    if entries_data.include?(:errors)
+      "Nothing here yet.... Make a new entry above!"
+    else !entries_data[:data].empty?
       entries_data[:data].map do |entry|
         if entry[:attributes][:mood]
           DailyLogEntry.new(entry)
@@ -53,8 +55,6 @@ class PsydiaryFacade
           MicrodoseLogEntry.new(entry)
         end
       end
-    else
-      "Nothing here yet.... Make a new entry above!"
     end
   end
 

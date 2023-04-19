@@ -124,7 +124,7 @@ RSpec.describe PsydiaryService do
       expect(parsed[:data].first[:attributes][:anxiety_score]).to be_a(Integer)
       expect(parsed[:data].first[:attributes][:sleep_score]).to be_a(Integer)
       expect(parsed[:data].first[:attributes][:exercise]).to be_a(String)
-      expect(parsed[:data].first[:attributes][:meditation]).to be_a(Integer)
+      expect(parsed[:data].first[:attributes][:meditation]).to be_a(String)
       expect(parsed[:data].first[:attributes][:energy_levels]).to be_a(Integer)
       expect(parsed[:data].first[:attributes][:notes]).to be_a(String)
       expect(parsed[:data].count).to eq(4)
