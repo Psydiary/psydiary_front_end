@@ -5,7 +5,7 @@ http_interactions:
     uri: https://pacific-reef-79035.herokuapp.com/api/v1/users
     body:
       encoding: UTF-8
-      string: data_sharing=false&email=harland.collins%40heller-cummerata.co&ip_address=76.131.159.186&name=Kyra+D%27Amore&password=uHSzlcarIj&protocol_id=1
+      string: '{"name":"Kyra DAmore","email":"edison_strosin@kemmer.net","password":"LNmIpuBk","ip_address":"76.131.159.186","protocol_id":1,"data_sharing":false}'
     headers:
       User-Agent:
       - Faraday v2.7.4
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 18 Apr 2023 17:27:33 GMT
+      - Wed, 19 Apr 2023 00:35:29 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -42,20 +42,20 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
-      Etag:
-      - W/"3b389fdd4799b933b1f96f91e99ccee1"
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - d73905a7-5574-4c02-9388-2e24d5227349
+      - c5a1ba96-03f2-4472-89ff-0c6ca2935942
       X-Runtime:
-      - '0.268243'
+      - '0.006951'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"28","type":"user","attributes":{"name":"Kyra D''Amore","email":"harland.collins@heller-cummerata.co","protocol_id":1,"data_sharing":false}}}'
-  recorded_at: Tue, 18 Apr 2023 17:27:33 GMT
+      string: '{"message":"User could not be created","errors":["Protocol must exist","Password
+        can''t be blank","Name can''t be blank","Email can''t be blank","Ip address
+        can''t be blank"]}'
+  recorded_at: Wed, 19 Apr 2023 00:35:29 GMT
 recorded_with: VCR 6.1.0
