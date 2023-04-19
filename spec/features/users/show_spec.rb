@@ -15,8 +15,8 @@ RSpec.describe 'User show page' do
     it "shows buttons for a user to navigate" do
       expect(current_path).to eq('/users/1')
       expect(page).to have_content("Welcome Home, Tori")
-      expect(page).to have_button("Track Your Day")
-      expect(page).to have_button("Track a Microdose")
+      expect(page).to have_link("🌞 Track Your Day 🌞")
+      expect(page).to have_link("🍄 Track a Microdose 🍄")
       # expect(page).to have_button("My Entries Journal")
     end
 
