@@ -38,7 +38,7 @@ describe 'as a visitor' do
 
     it 'I also see the psydiary logo and a button to track your journey' do
       expect(page).to have_content('Track Your Journey')
-      expect(page).to have_button('Begin Here')
+      expect(page).to have_link('Begin Here')
       # expect(page).to have_xpath("//img[contains(@src,'/app/assets/images/logo.png')]")
     end
   end
