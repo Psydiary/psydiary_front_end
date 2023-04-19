@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 19 Apr 2023 16:47:46 GMT
+      - Wed, 19 Apr 2023 19:52:51 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -47,9 +47,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c487c63c-dfc6-4d8c-a8a9-583199bfb173
+      - 968b9411-2a9a-466e-b6f1-88c097de9dee
       X-Runtime:
-      - '0.250811'
+      - '0.228558'
       Transfer-Encoding:
       - chunked
       Via:
@@ -57,5 +57,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":6,"data_sharing":true}}}'
-  recorded_at: Wed, 19 Apr 2023 16:47:46 GMT
+  recorded_at: Wed, 19 Apr 2023 19:52:52 GMT
 recorded_with: VCR 6.1.0
