@@ -13,6 +13,7 @@ RSpec.describe 'New Microdose Log Page' do
         visit new_user_microdose_log_entry_path(1)
       end
       it "has various fields" do
+        save_and_open_page
         expect(page).to have_field("Mood Before")
         expect(page).to have_field("Mood After")
         expect(page).to have_field("Environment")
