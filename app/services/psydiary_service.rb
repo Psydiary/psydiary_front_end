@@ -41,6 +41,7 @@ class PsydiaryService
     response = conn.post('/api/v1/omniauth') do |req|
       req.body = g_response
     end
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   private

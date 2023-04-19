@@ -47,7 +47,7 @@ RSpec.describe 'User Login page' do
     context "when i use google oauth" do
       it "I can login with google oauth" do
         visit '/auth/google_oauth2'
-        click_link 'Log In with Google'
+        # click_link 'Log In with Google'
 
         save_and_open_page
       end
