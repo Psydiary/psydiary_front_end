@@ -5,7 +5,7 @@ http_interactions:
     uri: https://pacific-reef-79035.herokuapp.com/api/v1/users
     body:
       encoding: UTF-8
-      string: '{"name":"Kyra DAmore","email":"camila@hirthe.biz","password":"afiCjkRDvGIyGe","ip_address":"76.131.159.186","protocol_id":1,"data_sharing":false}'
+      string: data_sharing=false&email=rory.kuhn%40heathcote-lindgren.com&ip_address=76.131.159.186&name=Kyra+DAmore&password=TXQgeVaW&protocol_id=1
     headers:
       User-Agent:
       - Faraday v2.7.4
@@ -17,13 +17,13 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 422
-      message: Unprocessable Entity
+      code: 201
+      message: Created
     headers:
       Server:
       - Cowboy
       Date:
-      - Wed, 19 Apr 2023 15:53:02 GMT
+      - Wed, 19 Apr 2023 17:21:47 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -42,20 +42,20 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
+      Etag:
+      - W/"c5ea0b9c4e1ecc45e8ea4414977b46c8"
       Cache-Control:
-      - no-cache
+      - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0d117b23-a912-4bd7-9a2c-01f41b05a851
+      - ae24330b-2a81-4596-b893-56868298a1a9
       X-Runtime:
-      - '0.007063'
+      - '0.269710'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"message":"User could not be created","errors":["Protocol must exist","Password
-        can''t be blank","Name can''t be blank","Email can''t be blank","Ip address
-        can''t be blank"]}'
-  recorded_at: Wed, 19 Apr 2023 15:53:02 GMT
+      string: '{"data":{"id":"5","type":"user","attributes":{"name":"Kyra DAmore","email":"rory.kuhn@heathcote-lindgren.com","protocol_id":1,"data_sharing":false}}}'
+  recorded_at: Wed, 19 Apr 2023 17:21:48 GMT
 recorded_with: VCR 6.1.0
