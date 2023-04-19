@@ -24,6 +24,15 @@ class UsersController < ApplicationController
     end
   end
 
+  def log_entries
+    if session[:user_id] == params[:id]
+      @facade = PsydiaryFacade.new(params)
+    else 
+      redirect_to root_path
+      flash[:notice] = "You must be logged in and registered to view this page"
+    end
+  end
+
   def login_form
   end
 

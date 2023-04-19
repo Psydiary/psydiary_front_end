@@ -1,29 +1,27 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: https://pacific-reef-79035.herokuapp.com/api/v1/login
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/3/log_entries
     body:
-      encoding: UTF-8
-      string: email=bobbyluly%40gmail.com&password=5678
+      encoding: US-ASCII
+      string: ''
     headers:
-      Content-Type:
-      - application/x-www-form-urlencoded
+      User-Agent:
+      - Faraday v2.7.4
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Server:
       - Cowboy
       Date:
-      - Wed, 19 Apr 2023 16:51:00 GMT
+      - Wed, 19 Apr 2023 16:47:46 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -42,20 +40,18 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
-      Etag:
-      - W/"a9eae12f6a12e82d667c84aac1c333ba"
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - 741eec15-aeb0-484b-8df7-5b9d73e1fa6c
+      - f25691ff-eaec-4538-a0b6-41c8d4d540e4
       X-Runtime:
-      - '0.246811'
+      - '0.003443'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":6,"data_sharing":true}}}'
-  recorded_at: Wed, 19 Apr 2023 16:51:00 GMT
+      string: '{"errors":"Couldn''t find User with ''id''=3"}'
+  recorded_at: Wed, 19 Apr 2023 16:47:47 GMT
 recorded_with: VCR 6.1.0
