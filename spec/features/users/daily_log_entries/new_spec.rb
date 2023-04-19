@@ -99,18 +99,6 @@ RSpec.describe 'New Daily Log Page' do
 
         expect(page.current_path).to eq(user_path(1))
       end
-
-      xit 'renders information the entry information on the user dashboard page' do
-        select 'withdrawn', from: 'Sociability'
-        fill_in 'Meditation Minutes', with: '20'
-        select 'cardio', from: 'Exercise'
-        fill_in 'Notes', with: 'I want a capybara'
-        click_on "Upload to the Universe"
-
-        expect(page.current_path).to eq(user_path(1))
-        expect(page).to have_content('Daily Log Entry from Sunday, April 16th')
-        expect(page).to have_content('I want a capybara')
-      end
     end
   end
 end

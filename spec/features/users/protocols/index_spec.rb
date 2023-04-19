@@ -4,7 +4,7 @@ RSpec.describe 'Protocols index page' do
 
   before :each do
     response = File.read('spec/fixtures/protocols.json')
-    stub_request(:get, "https://pacific-reef-79035.herokuapp.com/api/v1/protocols").
+    stub_request(:get, "https://pacific-reef-79035.herokuapp.com/api/v1/users/1/protocols").
          with(
            headers: {
               'Accept'=>'*/*',
@@ -15,13 +15,13 @@ RSpec.describe 'Protocols index page' do
   end
 
   it 'exists' do
-    visit '/protocols'
+    visit '/users/1/protocols'
     
-    expect(current_path).to eq('/protocols')
+    expect(current_path).to eq('/users/1/protocols')
   end
 
   it 'has a list of protocols' do
-    visit "/protocols"
+    visit "/users/1/protocols"
 
     expect(page).to have_content('Fadiman')
     expect(page).to have_content('Description')

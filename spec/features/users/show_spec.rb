@@ -86,6 +86,15 @@ RSpec.describe 'User show page' do
     it "shows a section with the past 3 most recent user entries" do
       within "#3-recent-entries" do
         within "#entry-1" do
+          expect(page).to have_content("Microdose Log Entry From:")
+          expect(page).to have_link("See More...")
+          expect(page).to have_content("Mood Before: angsty")
+          expect(page).to have_content("Mood After: peaceful")
+          expect(page).to have_content("Environment: at home")
+          expect(page).to have_content("Dosage: 0.2")
+        end
+
+        within "#entry-2" do
           expect(page).to have_content("Daily Log Entry From: ")
           expect(page).to have_link("See More...")
           expect(page).to have_content("Mood: happy!")
@@ -95,7 +104,7 @@ RSpec.describe 'User show page' do
           expect(page).to have_content("Energy Levels: 7")
         end
 
-        within "#entry-2" do
+        within "#entry-3" do
           expect(page).to have_content("Daily Log Entry From: ")
           expect(page).to have_link("See More...")
           expect(page).to have_content("Mood: unmotivated")
@@ -103,15 +112,6 @@ RSpec.describe 'User show page' do
           expect(page).to have_content("Anxiety Score: 3")
           expect(page).to have_content("Depression Score: 7")
           expect(page).to have_content("Energy Levels: 5")
-        end
-
-        within "#entry-3" do
-          expect(page).to have_content("Microdose Log Entry From:")
-          expect(page).to have_link("See More...")
-          expect(page).to have_content("Mood Before: angsty")
-          expect(page).to have_content("Mood After: peaceful")
-          expect(page).to have_content("Environment: at home")
-          expect(page).to have_content("Dosage: 0.2")
         end
       end
     end
