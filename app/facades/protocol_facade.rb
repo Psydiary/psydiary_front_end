@@ -13,6 +13,12 @@ class ProtocolFacade
     end
   end
 
+  def default_protocols
+    ProtocolService.default_protocols[:data].map do |protocol|
+      Protocol.new(protocol)
+    end
+  end
+
   def new_protocol
     response = ProtocolService.create_protocol(@params)
     protocol = JSON.parse(response.body, symbolize_names: true)

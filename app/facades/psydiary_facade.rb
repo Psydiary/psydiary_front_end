@@ -47,4 +47,10 @@ class PsydiaryFacade
     return user = nil if user[:errors].present?
     User.new(user)
   end
+
+  def self.from_omniauth(ip_address, response)
+    response = PsydiaryService.from_omniauth(ip_address, response)
+    return response if response[:errors].present?
+    User.new(response)    
+  end
 end

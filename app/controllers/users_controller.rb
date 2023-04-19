@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def new
-    
+    @facade = ProtocolFacade.new(params)
+    @ip_address = request.remote_ip
   end
 
   def create
@@ -54,6 +55,17 @@ class UsersController < ApplicationController
     session.delete(:user_id)
     current_user = nil
     redirect_to root_path
+  end
+
+  def omniauth
+    user = PsydiaryFacade.from_omniauth(request.remote_ip, request.env['omniauth.auth'])
+    if user[:errors]
+      flash[:error] = user[:errors]
+      redirect_to login_path
+    else
+      session[:user_id] = user.id
+      redirect_to user_path(user.id) 
+    end
   end
 
   private
