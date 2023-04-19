@@ -36,15 +36,16 @@ RSpec.describe PsydiaryFacade do
           }
         }
       end
-      let(:facade) { described_class.new(user_id) }
-  
+
+      let(:user) { described_class.new(user_id: user_id) }
+
       before do
         stub_request(:get, "https://pacific-reef-79035.herokuapp.com/api/v1/users/#{user_id}/settings")
         .to_return(status: 200, body: expected_response_body.to_json)
       end
 
       it 'can get user info to render edit page for that user' do
-        user_to_edit = facade.edit_user
+        user_to_edit = user.edit_user
 
         expect(user_to_edit).to be_a(UserEdit)
         expect(user_to_edit.data_sharing).to eq(true)

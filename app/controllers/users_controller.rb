@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   def new
     
   end
-  
+
   def create
     user = PsydiaryFacade.new(user_params).new_user
       if user.is_a?(Array)
@@ -36,6 +36,13 @@ class UsersController < ApplicationController
 
   def edit
     user = PsydiaryFacade.new(user_params).edit_user
+
+    if user.nil?
+      flash[:error] = user.errors.full_messages
+      redirect_to user_path(session[:id])
+    else
+      @user = user
+    end
   end
 
   private

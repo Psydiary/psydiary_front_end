@@ -31,12 +31,11 @@ RSpec.describe 'User edit page' do
         }
       ).to_return(status: 200, body: expected_response_body.to_json)
 
-      @user = PsydiaryFacade.new(user_id).edit_user
+      @user = PsydiaryFacade.new(user_id: user_id).edit_user
     end
     
     it 'I see the page exists' do
-      require 'pry'; binding.pry
-      visit "/users/#{@user.id}/settings"
+      visit user_settings_path(@user.id)
       
       expect(page).to have_content("Settings")
       expect(current_path).to eq("/users/#{@user.id}/settings")
@@ -58,7 +57,6 @@ RSpec.describe 'User edit page' do
         expect(page).to have_button("Select From Our Library")
       end
 
-      save_and_open_page
     end
 
     xit 'I can fill out the form with valid attributes' do

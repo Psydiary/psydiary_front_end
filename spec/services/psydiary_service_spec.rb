@@ -10,18 +10,18 @@ RSpec.describe PsydiaryService do
       describe 'happy path' do
         before do
           @request_params = {
-            "name": "Kyra D'Amore",
-            "email": Faker::Internet.email,
-            "password": @original_password,
-            "ip_address": "76.131.159.186",
-            "protocol_id": 1, 
-            "data_sharing": false 
+            name: 'Kyra DAmore',
+            email: Faker::Internet.email,
+            password: @original_password,
+            ip_address: '76.131.159.186',
+            protocol_id: 1, 
+            data_sharing: false 
           }
         end
 
         it 'creates a new user' do
-          VCR.use_cassette('psydiary_service/new_user', record: :once) do
-            response = PsydiaryService.create_user(@request_params)
+          VCR.use_cassette('psydiary_service_spec/new_user', record: :once) do
+            response = PsydiaryService.create_user(@request_params.to_json)
             
             expect(response.status).to eq(201)
             
@@ -41,6 +41,7 @@ RSpec.describe PsydiaryService do
             expectation.call(attributes[:name], String)
             expectation.call(attributes[:email], String)
             expectation.call(attributes[:protocol_id], Integer)
+            
             expect(attributes[:data_sharing]).to be_a(FalseClass).or be_a(TrueClass)
           end
         end

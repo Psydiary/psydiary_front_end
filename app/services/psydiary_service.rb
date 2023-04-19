@@ -9,7 +9,6 @@ class PsydiaryService
 
   def self.edit_user(user_id_param)
     response = conn.get("/api/v1/users/#{user_id_param}/settings")
-    
   end
 
   def self.create_daily_log_entry(entry_params)

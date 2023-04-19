@@ -25,7 +25,7 @@ RSpec.describe UserEdit do
       stub_request(:get, "https://pacific-reef-79035.herokuapp.com/api/v1/users/#{user_id}/settings")
       .to_return(status: 200, body: expected_response_body.to_json)
 
-      @user_edit = PsydiaryFacade.new(user_id).edit_user
+      @user_edit = PsydiaryFacade.new(user_id: user_id).edit_user
     end
 
     it 'exists' do
