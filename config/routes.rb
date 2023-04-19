@@ -13,10 +13,9 @@ Rails.application.routes.draw do
   get '/register', to: "users#new"
   get '/learn_more', to: "discover#index", as: 'discover'
   
+  get '/auth/:provider/callback', to: "users#omniauth"
   
   resources :users, only: %i[create show edit update] do
-    get '/auth/:provider/callback', to: "users#omniauth"
-    
     member do
       get 'settings', to: 'users#edit'
     end

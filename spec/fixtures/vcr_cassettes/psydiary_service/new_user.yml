@@ -2,10 +2,10 @@
 http_interactions:
 - request:
     method: post
-    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users
+    uri: http://localhost:3000/api/v1/users
     body:
       encoding: UTF-8
-      string: data_sharing=false&email=harland.collins%40heller-cummerata.co&ip_address=76.131.159.186&name=Kyra+D%27Amore&password=uHSzlcarIj&protocol_id=1
+      string: data_sharing=false&email=ivonne%40macgyver.co&ip_address=76.131.159.186&name=Kyra+D%27Amore&password=jhKWllRm&protocol_id=1
     headers:
       User-Agent:
       - Faraday v2.7.4
@@ -20,12 +20,6 @@ http_interactions:
       code: 201
       message: Created
     headers:
-      Server:
-      - Cowboy
-      Date:
-      - Tue, 18 Apr 2023 17:27:33 GMT
-      Connection:
-      - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -43,19 +37,20 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"3b389fdd4799b933b1f96f91e99ccee1"
+      - W/"c68e63627567c71c8558f673cbc5f1c3"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d73905a7-5574-4c02-9388-2e24d5227349
+      - 186e4486-a4a6-433e-b0b5-8257d7ad9612
       X-Runtime:
-      - '0.268243'
+      - '0.411294'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=7.76, instantiation.active_record;dur=0.09,
+        render.active_model_serializers;dur=0.16, process_action.action_controller;dur=408.02
       Transfer-Encoding:
       - chunked
-      Via:
-      - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"28","type":"user","attributes":{"name":"Kyra D''Amore","email":"harland.collins@heller-cummerata.co","protocol_id":1,"data_sharing":false}}}'
-  recorded_at: Tue, 18 Apr 2023 17:27:33 GMT
+      string: '{"data":{"id":"6","type":"user","attributes":{"name":"Kyra D''Amore","email":"ivonne@macgyver.co","protocol_id":1,"data_sharing":false}}}'
+  recorded_at: Wed, 19 Apr 2023 01:03:03 GMT
 recorded_with: VCR 6.1.0

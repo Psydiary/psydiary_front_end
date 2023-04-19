@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   def new
-    
+    @facade = ProtocolFacade.new(params)
+    @ip_address = request.remote_ip
   end
   
   def create

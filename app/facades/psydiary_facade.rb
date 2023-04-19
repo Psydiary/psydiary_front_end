@@ -39,4 +39,7 @@ class PsydiaryFacade
     return user = nil if user[:errors].present?
     User.new(user)
   end
+
+  def self.from_omniauth(response)
+    user = PsydiaryService.from_omniauth(response)  end
 end

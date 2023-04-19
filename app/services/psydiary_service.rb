@@ -36,9 +36,17 @@ class PsydiaryService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.from_omniauth(g_response)
+    response = conn.post('/api/v1/omniauth') do |req|
+      req.body = g_response
+    end
+  end
+
   private
 
   def self.conn
-    Faraday.new(url: 'https://pacific-reef-79035.herokuapp.com')
+    Faraday.new(url: 'http://localhost:3000')
+
+    # Faraday.new(url: 'https://pacific-reef-79035.herokuapp.com')
   end
 end

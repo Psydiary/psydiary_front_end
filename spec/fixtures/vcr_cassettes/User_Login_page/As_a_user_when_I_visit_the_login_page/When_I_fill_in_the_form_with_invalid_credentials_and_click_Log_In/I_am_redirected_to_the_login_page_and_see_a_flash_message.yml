@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://pacific-reef-79035.herokuapp.com/api/v1/login
+    uri: http://localhost:3000/api/v1/login
     body:
       encoding: UTF-8
       string: email=wrong%40fake.com&password=wrong
@@ -20,12 +20,6 @@ http_interactions:
       code: 404
       message: Not Found
     headers:
-      Server:
-      - Cowboy
-      Date:
-      - Tue, 18 Apr 2023 17:26:25 GMT
-      Connection:
-      - keep-alive
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -45,15 +39,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - f4474acf-c4a7-421a-8846-9eaff74e9037
+      - df58249d-69ba-4b4c-a9a5-a1928623312d
       X-Runtime:
-      - '0.003179'
+      - '0.003514'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.30, instantiation.active_record;dur=0.01,
+        render.active_model_serializers;dur=0.04, process_action.action_controller;dur=0.86
       Transfer-Encoding:
       - chunked
-      Via:
-      - 1.1 vegur
     body:
       encoding: UTF-8
       string: '{"errors":"Account not found"}'
-  recorded_at: Tue, 18 Apr 2023 17:26:26 GMT
+  recorded_at: Wed, 19 Apr 2023 01:02:44 GMT
 recorded_with: VCR 6.1.0
