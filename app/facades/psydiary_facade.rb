@@ -42,6 +42,22 @@ class PsydiaryFacade
     end
   end
 
+  def entries
+    response = PsydiaryService.get_entries(@params[:id])
+    entries_data = JSON.parse(response.body, symbolize_names: true)
+    if entries_data.include?(:errors)
+      "Nothing here yet.... Make a new entry above!"
+    else !entries_data[:data].empty?
+      entries_data[:data].map do |entry|
+        if entry[:attributes][:mood]
+          DailyLogEntry.new(entry)
+        else
+          MicrodoseLogEntry.new(entry)
+        end
+      end
+    end
+  end
+
   def authenticate_user
     user = PsydiaryService.authenticate_user(@params)
     return user = nil if user[:errors].present?

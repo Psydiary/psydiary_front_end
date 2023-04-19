@@ -31,12 +31,15 @@ class PsydiaryService
     conn.get("/api/v1/users/#{user_id}/log_entries")
   end
 
+  def self.get_entries(user_id)
+    conn.get("/api/v1/users/#{user_id}/log_entries")
+  end
+
   def self.authenticate_user(user_params)
     response = conn.post('/api/v1/login') do |req|
       req.headers = { 'CONTENT_TYPE' => 'application/json' }
       req.body = user_params
     end
-    
     JSON.parse(response.body, symbolize_names: true)
   end
 

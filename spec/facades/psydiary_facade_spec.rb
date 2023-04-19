@@ -96,9 +96,27 @@ RSpec.describe PsydiaryFacade do
         expect(logged_in_user.id).to eq("2")
         expect(logged_in_user.name).to eq('Bobby Luly')
         expect(logged_in_user.email).to eq('bobbyluly@gmail.com')
-        expect(logged_in_user.protocol_id).to eq(2)
+        expect(logged_in_user.protocol_id).to eq(6)
         expect(logged_in_user.data_sharing).to eq(true)
       end
+    end
+  end
+
+  describe "entries" do
+    it 'returns an array of daily log and microdose entry data in order of created by', :vcr do
+      params = { id: 2 }
+      entries = PsydiaryFacade.new(params).entries
+      
+      expect(entries).to be_a(Array)
+      expect(entries.count).to eq(4)
+    end
+
+    it 'returns an error message if there are no entries that belong to that user', :vcr do
+      params = { id: 3 }
+      entries = PsydiaryFacade.new(params).entries
+
+      expect(entries).to be_a(String)
+      expect(entries).to eq("Nothing here yet.... Make a new entry above!")
     end
   end
 end

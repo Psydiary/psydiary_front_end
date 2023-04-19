@@ -17,13 +17,13 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Server:
       - Cowboy
       Date:
-      - Wed, 19 Apr 2023 16:51:00 GMT
+      - Wed, 19 Apr 2023 16:45:19 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -42,20 +42,18 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
-      Etag:
-      - W/"a9eae12f6a12e82d667c84aac1c333ba"
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - 741eec15-aeb0-484b-8df7-5b9d73e1fa6c
+      - 5875a5da-6210-41ae-8f38-c0a94a212b2c
       X-Runtime:
-      - '0.246811'
+      - '0.004466'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":6,"data_sharing":true}}}'
-  recorded_at: Wed, 19 Apr 2023 16:51:00 GMT
+      string: '{"errors":"Account not found"}'
+  recorded_at: Wed, 19 Apr 2023 16:45:19 GMT
 recorded_with: VCR 6.1.0
