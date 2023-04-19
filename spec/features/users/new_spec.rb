@@ -8,24 +8,33 @@ describe '/users/new', type: :feature do
         visit register_path
 
         expect(current_path).to eq(register_path)
-        expect(page).to have_content('Your Journey Start Here!')
+        expect(page).to have_content('Your Journey Starts Here!')
         expect(page).to have_field(:name)
         expect(page).to have_field(:email) 
         expect(page).to have_select(:data_sharing)
+
+        expect(page).to have_css('[@id=protocol_id_1]')
+        expect(page).to have_css('[@id=protocol_id_2]')
+        expect(page).to have_css('[@id=protocol_id_3]')
         expect(page).to have_button("Begin My Journey")
+        expect(page).to have_link('Log In with Google')
       end
 
       it 'when I fill out the form and click submit, I am redirected to the user dashboard' do
-        
         visit register_path
+        @user = attributes_for(:user)
+        fill_in :name, with: @user[:name]
+        fill_in :email, with: @user[:email]
+        fill_in :password, with: @user[:password]
 
-        fill_in :name, with: Faker::Name.name
-        fill_in :email, with: Faker::Internet.unique.email
+        within '#protocols' do
+          find('[@id=protocol_id_1]').click
+        end
         select 'False', from: :data_sharing
         
         click_button 'Begin My Journey'
-        #currently passing based on the fact that's it's not breaking
-        #will update when I get the view working
+
+        expect(page).to have_content("Welcome Home, #{@user[:name].split.first}")
       end
 
       it 'when I fill out the form with incomplete info and click "Begin My Journey", I am redirected to the user register page' do

@@ -2,28 +2,28 @@
 http_interactions:
 - request:
     method: post
-    uri: https://pacific-reef-79035.herokuapp.com/api/v1/login
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users
     body:
       encoding: UTF-8
-      string: email=bobbyluly%40gmail.com&password=5678
+      string: '{"name":"Kyra DAmore","email":"camila@hirthe.biz","password":"afiCjkRDvGIyGe","ip_address":"76.131.159.186","protocol_id":1,"data_sharing":false}'
     headers:
+      User-Agent:
+      - Faraday v2.7.4
       Content-Type:
       - application/x-www-form-urlencoded
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
-      User-Agent:
-      - Ruby
   response:
     status:
-      code: 200
-      message: OK
+      code: 422
+      message: Unprocessable Entity
     headers:
       Server:
       - Cowboy
       Date:
-      - Tue, 18 Apr 2023 00:24:35 GMT
+      - Wed, 19 Apr 2023 15:53:02 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -42,20 +42,20 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
-      Etag:
-      - W/"08e44f3141fc291bfe9eb7bade3663e5"
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - 907afbb4-d866-4d58-bf18-13c003c9f2d9
+      - 0d117b23-a912-4bd7-9a2c-01f41b05a851
       X-Runtime:
-      - '0.310912'
+      - '0.007063'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"2","type":"user","attributes":{"name":"Bobby Luly","email":"bobbyluly@gmail.com","protocol_id":2,"data_sharing":true}}}'
-  recorded_at: Tue, 18 Apr 2023 00:24:36 GMT
+      string: '{"message":"User could not be created","errors":["Protocol must exist","Password
+        can''t be blank","Name can''t be blank","Email can''t be blank","Ip address
+        can''t be blank"]}'
+  recorded_at: Wed, 19 Apr 2023 15:53:02 GMT
 recorded_with: VCR 6.1.0

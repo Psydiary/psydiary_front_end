@@ -14,7 +14,7 @@ RSpec.describe 'User Login page' do
       visit '/login'
       
       expect(page).to have_button('Log In')
-      expect(page).to have_link('Login through Google')
+      expect(page).to have_link('Log In with Google')
     end
 
     context "When I fill in the form with valid credentials and click Log In", :vcr do

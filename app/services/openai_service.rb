@@ -5,7 +5,7 @@ class OpenaiService
       "messages": [
         {
           "role": "user",
-          "content": "I'm documenting my experience with psilocybin. Can you help me with a random thought provoking journal prompt replying only with the journal prompt?"
+          "content": "I'm documenting my experience with psilocybin. Can you help me with a random thought provoking journal prompt replying only with the journal prompt? it has to be directly psilocybin related."
         }
       ],
       "temperature": 0.9,
