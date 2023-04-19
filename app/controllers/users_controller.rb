@@ -67,8 +67,8 @@ class UsersController < ApplicationController
   end
 
   def omniauth
-    user = PsydiaryFacade.from_omniauth(request.remote_ip, request.env['omniauth.auth'])
-    if user[:errors]
+    user = PsydiaryFacade.from_omniauth('73.153.161.252', request.env['omniauth.auth'])
+    if !user.is_a?(User)
       flash[:error] = user[:errors]
       redirect_to login_path
     else
