@@ -40,6 +40,6 @@ class PsydiaryFacade
     User.new(user)
   end
 
-  def self.from_omniauth(response)
-    user = PsydiaryService.from_omniauth(response)  end
+  def self.from_omniauth(ip_address, response)
+    user = PsydiaryService.from_omniauth(ip_address, response)  end
 end

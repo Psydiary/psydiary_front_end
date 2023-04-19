@@ -36,7 +36,8 @@ class PsydiaryService
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.from_omniauth(g_response)
+  def self.from_omniauth(ip_address, g_response)
+    g_response[:ip_address] = ip_address
     response = conn.post('/api/v1/omniauth') do |req|
       req.body = g_response
     end

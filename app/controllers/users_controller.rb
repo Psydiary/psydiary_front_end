@@ -47,7 +47,7 @@ class UsersController < ApplicationController
   end
 
   def omniauth
-    user = PsydiaryFacade.from_omniauth(request.env['omniauth.auth'])
+    user = PsydiaryFacade.from_omniauth('73.153.161.252', request.env['omniauth.auth'])
     if user.nil?
       flash[:error] = "Oops, that didn't work"
       redirect_to register_path
