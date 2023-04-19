@@ -4087,7 +4087,7 @@ http_interactions:
       Content-Type:
       - application/json
       Authorization:
-      - Bearer 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
+      - Bearer ENV["openai_key"]
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
