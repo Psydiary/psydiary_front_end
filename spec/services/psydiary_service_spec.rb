@@ -59,5 +59,34 @@ RSpec.describe PsydiaryService do
         expect(login_response[:data][:attributes][:email]).to eq("bobbyluly@gmail.com")
       end
     end
+
+    it '.get_entries', :vcr do
+      entry_response = PsydiaryService.get_entries(2)
+
+      parsed = JSON.parse(entry_response.body, symbolize_names: true)
+
+      expect(parsed).to be_a(Hash)
+      
+      expect(parsed[:data].first.keys).to eq([:id, :type, :attributes])
+      expect(parsed[:data].first[:id]).to be_a(String)
+      expect(parsed[:data].first[:type]).to eq('user_entry')
+      expect(parsed[:data].first[:attributes]).to be_a(Hash)
+      expect(parsed[:data].first[:attributes].keys).to eq([:id ,:user_id, :created_at, :updated_at, :type, :sociability, :mood, :depression_score, :anxiety_score, :sleep_score, :exercise, :meditation, :energy_levels, :notes])
+      expect(parsed[:data].first[:attributes][:id]).to be_a(Integer)
+      expect(parsed[:data].first[:attributes][:user_id]).to be_a(Integer)
+      expect(parsed[:data].first[:attributes][:created_at]).to be_a(String)
+      expect(parsed[:data].first[:attributes][:updated_at]).to be_a(String)
+      expect(parsed[:data].first[:attributes][:type]).to be_a(String)
+      expect(parsed[:data].first[:attributes][:sociability]).to be_a(String)
+      expect(parsed[:data].first[:attributes][:mood]).to be_a(String)
+      expect(parsed[:data].first[:attributes][:depression_score]).to be_a(Integer)
+      expect(parsed[:data].first[:attributes][:anxiety_score]).to be_a(Integer)
+      expect(parsed[:data].first[:attributes][:sleep_score]).to be_a(Integer)
+      expect(parsed[:data].first[:attributes][:exercise]).to be_a(String)
+      expect(parsed[:data].first[:attributes][:meditation]).to be_a(Integer)
+      expect(parsed[:data].first[:attributes][:energy_levels]).to be_a(Integer)
+      expect(parsed[:data].first[:attributes][:notes]).to be_a(String)
+      expect(parsed[:data].count).to eq(4)
+    end
   end
 end
