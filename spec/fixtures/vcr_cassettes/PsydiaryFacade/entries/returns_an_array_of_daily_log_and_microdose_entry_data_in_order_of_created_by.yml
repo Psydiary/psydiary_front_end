@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 19 Apr 2023 16:47:47 GMT
+      - Wed, 19 Apr 2023 19:52:52 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -45,9 +45,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 60a3dfd5-a41a-4f1e-a941-44ea2f098435
+      - 9e0e4b6f-8f3a-46e3-a7cc-60d364064398
       X-Runtime:
-      - '0.022494'
+      - '0.006115'
       Transfer-Encoding:
       - chunked
       Via:
@@ -62,5 +62,5 @@ http_interactions:
         still got some processing to do"}},{"id":"1","type":"user_entry","attributes":{"id":1,"user_id":2,"created_at":"2023-04-19T16:47:07.684Z","updated_at":"2023-04-19T16:47:07.684Z","type":"MicrodoseLogEntry","mood_before":"Melancholy","mood_after":"Happy","dosage":0.75,"intensity":"low","sociability":"anxious","journal_prompt":"How
         was your day?","journal_entry":"I felt great after today''s microdose!","environment":"The
         Park","other_notes":"What a nice little reset this was"}}]}'
-  recorded_at: Wed, 19 Apr 2023 16:47:47 GMT
+  recorded_at: Wed, 19 Apr 2023 19:52:52 GMT
 recorded_with: VCR 6.1.0

@@ -21,7 +21,7 @@ RSpec.describe PsydiaryService do
 
         it 'creates a new user' do
           VCR.use_cassette('psydiary_service_spec/new_user', record: :once) do
-            response = PsydiaryService.create_user(@request_params.to_json)
+            response = PsydiaryService.create_user(@request_params)
             
             expect(response.status).to eq(201)
             
