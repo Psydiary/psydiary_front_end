@@ -20,12 +20,12 @@ RSpec.describe 'User show page' do
       # expect(page).to have_button("My Entries Journal")
     end
 
-    # before do
-    #   visit '/users/1/daily_log_entries/new'
-    #   fill_in 'Mood', with: 'unmotivated'
-    #   within '#sleep_score' do
-    #     find('[@id=sleep_score_4]').click
-    #   end
+    before do
+      # visit '/users/1/daily_log_entries/new'
+      # fill_in 'Mood', with: 'unmotivated'
+      # within '#sleep_score' do
+      #   find('[@id=sleep_score_4]').click
+      # end
 
       within '#anxiety_score' do
         find('[@id=anxiety_score_3]').click
