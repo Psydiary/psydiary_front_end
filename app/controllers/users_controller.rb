@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   def new
     
   end
-  
+
   def create
     user = PsydiaryFacade.new(user_params).new_user
       if user.is_a?(Array)
@@ -39,6 +39,17 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    user = PsydiaryFacade.new(user_params).edit_user
+
+    if user.nil?
+      flash[:error] = user.errors.full_messages
+      redirect_to user_path(session[:id])
+    else
+      @user = user
+    end
+  end
+
   def logout
     session.delete(:user_id)
     current_user = nil
@@ -47,6 +58,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.permit(:name, :email, :password, :protocol_id, :ip_address, :data_sharing)
+    params.permit(:name, :email, :password, :protocol_id, :ip_address, :data_sharing, :user_id)
   end
 end
