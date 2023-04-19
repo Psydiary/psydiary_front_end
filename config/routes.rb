@@ -11,7 +11,6 @@ Rails.application.routes.draw do
   delete '/login', to: "users#logout"
 
   get '/register', to: "users#new"
-  get '/learn_more', to: "discover#index", as: 'discover'
   
   get '/auth/:provider/callback', to: "users#omniauth"
 
