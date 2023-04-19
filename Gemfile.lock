@@ -330,10 +330,10 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   launchy
+  newrelic_rpm
   omniauth
   omniauth-google-oauth2
   omniauth-rails_csrf_protection
-  newrelic_rpm
   pg (~> 1.1)
   pry
   puma (~> 5.0)

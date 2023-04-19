@@ -56,11 +56,6 @@ RSpec.describe 'User edit page' do
         expect(page).to have_button("Update Current Custom Protocol")
         expect(page).to have_button("Select From Our Library")
       end
-
-    end
-
-    xit 'I can fill out the form with valid attributes' do
-
     end
   end  
 end
