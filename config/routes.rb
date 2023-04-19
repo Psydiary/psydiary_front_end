@@ -14,11 +14,10 @@ Rails.application.routes.draw do
   get '/learn_more', to: "discover#index", as: 'discover'
   
   get '/auth/:provider/callback', to: "users#omniauth"
-  
-  resources :users, only: %i[create show edit update] do
-    member do
-      get 'settings', to: 'users#edit'
-    end
+    
+  resources :users, only: %i[create show] do
+    get 'settings', to: 'users#edit'
+    patch 'settings', to: 'users#update'
     
     resources :daily_log_entries, except: %i[edit destroy], controller: 'users/daily_log_entries'
     resources :microdose_log_entries, only: %i[index show new create], controller: 'users/microdose_log_entries'

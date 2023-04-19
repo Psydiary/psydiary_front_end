@@ -1,4 +1,5 @@
 class PsydiaryFacade
+  attr_reader :params
 
   def initialize(params = {})
     @params = params
@@ -12,6 +13,13 @@ class PsydiaryFacade
    User.new(user)
   end
 
+  def edit_user
+    response = PsydiaryService.edit_user(@params[:user_id])
+    user = JSON.parse(response.body, symbolize_names: true)
+    return user = nil if user[:errors].present?
+    UserEdit.new(user)
+  end
+ 
   def user
     response = PsydiaryService.get_user(@params[:id])
     user = JSON.parse(response.body, symbolize_names: true)
