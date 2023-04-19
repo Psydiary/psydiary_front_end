@@ -43,14 +43,5 @@ RSpec.describe 'User Login page' do
         expect(page).to have_content('Incorrect email or password')
       end
     end
-
-    context "when i use google oauth" do
-      it "I can login with google oauth" do
-        visit '/auth/google_oauth2'
-        # click_link 'Log In with Google'
-
-        save_and_open_page
-      end
-    end
   end
 end

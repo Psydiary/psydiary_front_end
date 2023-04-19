@@ -10,7 +10,7 @@
   <%= f.label :password, "Set a Password:" %>
   <%= f.text_field :password %>
 
-  <%= f.hidden_field :ip_address, value: '73.153.161.252'%>
+  <%= f.hidden_field :ip_address, value: @ip_address%>
 
 
   <%n=0%>
@@ -27,9 +27,9 @@
 
   <%= f.label :data_sharing, "I Elect to Share My Health Trend Data:" %>
   <%= f.select :data_sharing, ['True', 'False'] %>
-
+<br>
   <%= f.submit "Begin My Journey" %>
 <% end %>
-
-<p>OR...</p>
-<%= button_to "Log In with Google", '/users/auth/google_oauth2'  %>
+<br>
+<h1>OR...</h1>
+<%= link_to "Log In with Google", '/auth/google_oauth2'  %>

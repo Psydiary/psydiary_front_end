@@ -17,7 +17,7 @@ describe '/users/new', type: :feature do
         expect(page).to have_css('[@id=protocol_id_2]')
         expect(page).to have_css('[@id=protocol_id_3]')
         expect(page).to have_button("Begin My Journey")
-        expect(page).to have_button('Log In with Google')
+        expect(page).to have_link('Log In with Google')
       end
 
       it 'when I fill out the form and click submit, I am redirected to the user dashboard' do
