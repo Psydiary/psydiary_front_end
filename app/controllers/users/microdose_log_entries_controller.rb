@@ -37,5 +37,4 @@ class Users::MicrodoseLogEntriesController < ApplicationController
                   :other_notes,
                   :user_id)
   end
-
 end
