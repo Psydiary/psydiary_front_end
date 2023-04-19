@@ -1,16 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe 'User show page' do
-  describe 'happy path' do
-    # before :each do
-    #   visit '/login'
-    #   within '#login_buttons' do
-    #     fill_in 'email', with: 'torienyart@gmail.com'
-    #     fill_in 'password', with: '1234'
-    #     click_button 'Log In'
-    #   end
-    #   visit '/users/1'
-    # end
+  describe 'happy path', :vcr do
+    before :each do
+      visit '/login'
+      within '#login_buttons' do
+        fill_in 'email', with: 'torienyart@gmail.com'
+        fill_in 'password', with: '1234'
+        click_button 'Log In'
+      end
+      visit '/users/1'
+    end
 
     xit "shows buttons for a user to navigate" do
       expect(current_path).to eq('/users/1')
@@ -77,8 +77,7 @@ RSpec.describe 'User show page' do
       fill_in "Dosage", with: "0.2"
       select 'medium', from: 'Intensity'
       select 'withdrawn', from: 'Sociability'
-      fill_in 'Journal Prompt Keyphrase', with: 'Learning to let go'
-      fill_in 'Journal About Your Prompt', with: 'I learned that I can let go'
+      fill_in 'Write your response here', with: 'I learned that I can let go'
       fill_in 'Other Notes', with: 'I stayed in my bed for this experience'
       click_on "Upload to the Universe"
     end
@@ -117,13 +116,12 @@ RSpec.describe 'User show page' do
     end
   end
 
-  describe 'sad_path' do
+  describe 'sad_path', :vcr do
     it "doesn't allow you to access the page if you aren't logged in" do
       visit '/users/1'
 
       expect(page).to have_content("You must be logged in and registered to view your dashboard")
       expect(page.current_path).to eq(root_path)
     end
-
   end
 end

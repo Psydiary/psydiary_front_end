@@ -1,63 +1,97 @@
-<div class="container">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Track Your Day</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px 40px;
+    }
+
+    .card-title {
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    .btn-primary {
+      background-color: #000000;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    .btn-primary:hover {
+      background-color: #0069d9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
     <div class="row justify-content-center align-items-center min-vh-100">
       <div class="col-sm-6">
         <div class="card p-4">
           <h1 class="card-title text-center mb-4">Track Your Day</h1>
           <%= form_with url: user_microdose_log_entries_path(@facade.user_id), method: :post, class: "row g-3" do |f| %>
-            <div class="col-md-12">
-              <%= f.label :mood_before, "Mood Before:", class: "form-label" %>
-              <%= f.text_field :mood_before, class: "form-control" %>
+          <div class="col-md-12">
+            <%= f.label :mood_before, "Mood Before:", class: "form-label" %>
+            <%= f.text_field :mood_before, class: "form-control" %>
+          </div>
+          <div class="col-md-12">
+            <%= f.label :mood_after, "Mood After:", class: "form-label" %>
+            <%= f.text_field :mood_after, class: "form-control" %>
+          </div>
+          <div class="col-md-12">
+            <%= f.label :environment, "Environment:", class: "form-label" %>
+            <%= f.text_field :environment, class: "form-control" %>
+          </div>
+          <div class="col-md-12">
+            <%= f.label :dosage, "Dosage (g):", class: "form-label" %>
+            <%= f.text_field :dosage, value: '0.00', class: "form-control" %>
+          </div>
+          <div class="col-md-12">
+            <%= f.label :intensity, "Intensity:", class: "form-label" %>
+            <%= f.select :intensity, ['low', 'medium', 'high'], class: "form-control" %>
+          </div>
+          <div class="col-md-12">
+            <%= f.label :sociability, "Sociability:", class: "form-label" %>
+            <%= f.select :sociability, ['social', 'anxious', 'withdrawn'], class: "form-control" %>
             </div>
-
-            <div class="col-md-12">
-              <%= f.label :mood_after, "Mood After:", class: "form-label" %>
-              <%= f.text_field :mood_after, class: "form-control" %>
-            </div>
-
-            <div class="col-md-12">
-              <%= f.label :environment, "Environment:", class: "form-label" %>
-              <%= f.text_field :environment, class: "form-control" %>
-            </div>
-
-            <div class="col-md-12">
-              <%= f.label :dosage, "Dosage (g):", class: "form-label" %>
-              <%= f.text_field :dosage, value: '0.00', class: "form-control" %>
-            </div>
-
-            <div class="col-md-12">
-              <%= f.label :intensity, "Intensity:", class: "form-label" %>
-              <%= f.select :intensity, ['low', 'medium', 'high'], class: "form-control" %>
-            </div>
-
-            <div class="col-md-12">
-              <%= f.label :sociability, "Sociability:", class: "form-label" %>
-              <%= f.select :sociability, ['social', 'anxious', 'withdrawn'], class: "form-control" %>
-            </div>
-
             <br>
             <br>
-            
+          <div id="openai">
             <p><%= @openai %></p>
-            <div class="col-md-12">
-              <%= f.label :journal_prompt_keyword, "Journal Prompt Keyphrase", class: "form-label" %>
-              <%= f.text_field :journal_prompt_keyword, class: "form-control" %>
-            </div>
-
-            <div class="col-md-12">
-              <%= f.label :journal_entry, "Journal About Your Prompt:", class: "form-label" %>
-              <%= f.text_area :journal_entry, :cols => "65", :rows => "10" %>
-            </div>
-
-            <div class="col-md-12">
-              <%= f.label :other_notes, "Other Notes:", class: "form-label" %>
-              <%= f.text_area :other_notes, :cols => "65", :rows => "10" %>
-            </div>
-
-            <div class="col-md-12">
-              <%= f.submit "Upload to the Universe", class: "btn btn-dark w-100 mb-3 text-white" %>
-            </div>
-          <% end %>
+          </div>
+        <div class="col-md-12">
+          <%= f.label :journal_entry, "Write your response here:", class: "form-label" %>
+          <%= f.text_area :journal_entry, :cols => "65", :rows => "10", class: "form-control" %>
         </div>
+      <div class="col-md-12">
+        <%= f.label :other_notes, "Other Notes:", class: "form-label" %>
+        <%= f.text_area :other_notes, :cols => "65", :rows => "10", class: "form-control" %>
       </div>
+    <div class="col-md-12">
+      <%= f.submit "Upload to the Universe", class: "btn btn-primary w-100" %>
     </div>
-  </div>
+  <% end %>
