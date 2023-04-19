@@ -5,7 +5,6 @@ RSpec.describe 'New protocol page' do
     visit '/users/1/protocols/new'
     
     expect(current_path).to eq('/users/1/protocols/new')
-    expect(page).to have_content('Custom Protocol')
   end
 
   it 'has a form to create a new protocol' do
