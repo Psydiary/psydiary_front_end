@@ -15,6 +15,7 @@ RSpec.describe 'Microdose diary show page' do
 
   it "displays all the details of a user's Microdose Diary" do
     visit '/users/2/microdose_log_entries/1'
+    save_and_open_page
 
     expect(current_path).to eq('/users/2/microdose_log_entries/1')
 
