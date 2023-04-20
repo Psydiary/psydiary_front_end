@@ -12,16 +12,19 @@
 <br />
 <div align="center">
   <a href="https://github.com/Bobsters986/psydiary_back_end">
-    <img src="https://user-images.githubusercontent.com/116703107/231324854-f10370cc-90a6-4bfd-bd75-45017fc3cb31.png" alt="Logo" width="200" height="200">
+  <img src="https://user-images.githubusercontent.com/114954379/233474790-52cd8128-529d-4574-a4e4-696039fc8719.png"
   </a>
+  
+
 
   <h3 align="center">🍄 Psydiary—The App to Bring You Home 🍄</h3>
 
   <p align="center">
-    An app to track your psilocybin microdosing protocol with everything from daily mood metrics and monthly trend representation to AI generated journal prompts.
+    An app to track your psilocybin microdosing protocol with everything from daily mood tracking and microdose experience logs to AI generated journal prompts.
     <br />
   </p>
 </div>
+
 
 
 
@@ -55,6 +58,12 @@
 
 ## About The Project
 
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/114954379/233473470-bd339e5b-65dd-4b94-919b-8efbdf8c2e86.png"
+ </a>
+ </div>
+
+
 Psydiary is a web application for users to track and journal their experiences with microdosing psychedelic mushrooms. The self reflection and data a user gathers on themselves is crucial to their journey. It will help them know what's working, if it’s time to change the frequency of their microdosing routine, or if they need a break from microdosing altogether. Users can document the following daily metrics;
 
 * Mood
@@ -66,12 +75,17 @@ Psydiary is a web application for users to track and journal their experiences w
 * Meditation Time
 * Exercise Type
 
+![Screen Shot 2023-04-20 at 2 12 20 PM](https://user-images.githubusercontent.com/114954379/233477606-a749b24b-7d9c-4319-b7a1-60a2ac6b909f.png)
+
 Users can also gain insight from their microdose protocols and journal their experience through tracking;
 * Dosage
 * Time Taken
 * Mood Before and After
 * Environment
 * Sociability
+* Journal Response to an AI Generated Prompt
+
+![Screen Shot 2023-04-20 at 2 12 41 PM](https://user-images.githubusercontent.com/114954379/233477629-f91afc94-14f0-41e7-af7b-6a653b33097a.png)
 
 Psydiary hopes to provide a structured way for users to track their experience with self-guided-treatment.
 
