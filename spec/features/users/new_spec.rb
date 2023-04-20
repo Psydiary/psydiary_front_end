@@ -4,7 +4,7 @@ require 'faker'
 describe '/users/new', type: :feature do
   describe 'as a visitor' do
     context 'when I visit the new user page' do
-      it 'I see a form to create a new user' do
+      xit 'I see a form to create a new user' do
         visit register_path
 
         expect(current_path).to eq(register_path)

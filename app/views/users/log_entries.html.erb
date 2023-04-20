@@ -1,9 +1,9 @@
 <h1>Journey Log</h1>
 
-<h3>Track Something New</h3>
+<h1 class="text-center">✨Track Something Amazing✨</h3>
     <div class="row justify-content-center align-items-center">
       <div class="col-md-4 text-center">
-        <%= link_to "🌅 Track Your Day", new_user_daily_log_entry_path(@facade.user.id) %>
+        <button type="button" class="btn btn-dark btn-center btn-md" href=<%=new_user_daily_log_entry_path(@facade.user.id)%>>🌅 Track Your Day</button>
       </div>
     </div>
 
@@ -11,10 +11,14 @@
    
    <div class="row justify-content-center align-items-center">
       <div class="col-md-4 text-center">
-        <%= link_to "🍄 Track a Microdose", new_user_microdose_log_entry_path(@facade.user.id) %>
+        <button type="button" class="btn btn-dark btn-center btn-md" href=<%=new_user_microdose_log_entry_path(@facade.user.id)%>>🍄 Track a Microdose</button>
       </div>
     </div>
 
+<div id="3-recent-entries" class="mx-auto" style="width: 600px;">
+      <h1 class="text-center">✒️Here Are Your Entries🖋</h3>
+      <br>
+<% n = 0 %>
 <%if @facade.entries.is_a?(Array)%>
   <% n = 0 %>
   <% @facade.entries.each do |entry| %>
@@ -35,3 +39,5 @@
 <%else%>
   <h4><%=@facade.entries%></h4>
 <%end%>
+</div>
+

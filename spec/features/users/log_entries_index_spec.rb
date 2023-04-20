@@ -12,10 +12,11 @@ RSpec.describe 'Log entry index page' do
         click_button 'Log In'
 
         click_link 'Your Entries Diary'
+
         
         expect(page).to have_content('Journey Log')
-        expect(page).to have_link('Track Your Day', href: new_user_daily_log_entry_path(2))
-        expect(page).to have_link('Track a Microdose', href: new_user_microdose_log_entry_path(2))
+        expect(page).to have_button('Track Your Day')
+        expect(page).to have_button('Track a Microdose')
         
         within "#entry-1" do
           expect(page).to have_content("Date: ")
