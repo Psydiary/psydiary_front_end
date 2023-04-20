@@ -26,7 +26,7 @@ RSpec.describe 'New Microdose Log Page' do
 
       it "works with chatGPT" do
         within"#openai" do
-          expect(page).to have_content("psilocybin")
+          expect(page).to have_content("?")
         end
       end
 

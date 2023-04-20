@@ -9,7 +9,7 @@
       background-color: #ffffff;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      max-width: 400px;
+      max-width: 600px;
       margin: 50px auto;
       padding: 20px 40px;
     }
@@ -52,7 +52,7 @@
     <div class="row justify-content-center align-items-center min-vh-100">
       <div class="col-sm-6">
         <div class="card p-4">
-          <h1 class="card-title text-center mb-4">Track Your Day</h1>
+          <h1 class="card-title text-center mb-4">Track Your Experience</h1>
           <%= form_with url: user_microdose_log_entries_path(@facade.user_id), method: :post, class: "row g-3" do |f| %>
           <div class="col-md-12">
             <%= f.label :mood_before, "Mood Before:", class: "form-label" %>
@@ -82,16 +82,17 @@
             <br>
           <div id="openai">
             <p><%= @openai %></p>
+            <%= f.hidden_field :journal_prompt, value: @openai%>
           </div>
-        <div class="col-md-12">
-          <%= f.label :journal_entry, "Write your response here:", class: "form-label" %>
-          <%= f.text_area :journal_entry, :cols => "65", :rows => "10", class: "form-control" %>
-        </div>
-      <div class="col-md-12">
-        <%= f.label :other_notes, "Other Notes:", class: "form-label" %>
-        <%= f.text_area :other_notes, :cols => "65", :rows => "10", class: "form-control" %>
-      </div>
+          <div class="col-md-12">
+            <%= f.label :journal_entry, "Write your response here:", class: "form-label" %>
+            <%= f.text_area :journal_entry, :cols => "65", :rows => "10", class: "form-control" %>
+          </div>
+          <div class="col-md-12">
+            <%= f.label :other_notes, "Other Notes:", class: "form-label" %>
+            <%= f.text_area :other_notes, :cols => "65", :rows => "10", class: "form-control" %>
+          </div>
     <div class="col-md-12">
-      <%= f.submit "Upload to the Universe", class: "btn btn-primary w-100" %>
+      <%= f.submit "✨ Upload to the Universe ✨", class: "btn btn-dark w-100 mb-3 text-white" %>
     </div>
   <% end %>
