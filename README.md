@@ -259,6 +259,7 @@ Use this space to list resources you find helpful and would like to give credit 
     <td><img src="https://avatars.githubusercontent.com/4D-Coder"></td>
     <td><img src="https://avatars.githubusercontent.com/davejm8"></td>
     <td><img src="https://avatars.githubusercontent.com/sgwalker327"></td>
+    <td><img src="https://avatars.githubusercontent.com/abdulredd"></td>
   </tr>
   <tr>
     <td>Tori Enyart</td>
@@ -266,6 +267,7 @@ Use this space to list resources you find helpful and would like to give credit 
     <td>Antonio King Hunt</td>
     <td>David Marino</td>
     <td>Sam Walker</td>
+    <td>Abdul Redd<br>Project Manager</td>
   </tr>
   <tr>
     <td>
@@ -288,10 +290,12 @@ Use this space to list resources you find helpful and would like to give credit 
       <a href="https://github.com/sgwalker327">GitHub</a><br>
       <a href="https://www.linkedin.com/in/sam-walker-95a49630/">LinkedIn</a>
     </td>
+     <td>
+      <a href="https://github.com/abdulredd">GitHub</a><br>
+      <a href="https://www.linkedin.com/in/abdulredd/">LinkedIn</a>
+    </td>
   </tr>
 </table>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
