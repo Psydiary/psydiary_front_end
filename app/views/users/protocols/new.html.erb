@@ -64,7 +64,7 @@
     <div class="card-body">
       <%= form_with url: user_protocols_path(@facade.user_id), method: :post, class: "row g-3" do |f| %>
         <% input_fields = [:name, :description, :dose_days, :days_between_dose, :dosage, :protocol_duration, :break_duration, :other_notes] %>
-        <% input_labels = ["Name:", "Description:", "Dose Days:", "Days Between Dose:", "Dosage:", "Protocol Duration:", "Break Duration:", "Other Notes:"] %>
+        <% input_labels = ["Name:", "Description:", "Dose Days:", "Days Between Dose:", "Dosage:", "Protocol Duration(weeks):", "Break Duration(weeks):", "Other Notes:"] %>
         <% input_fields.each_with_index do |input, index| %>
           <div class="col-md-12">
             <%= f.label input, input_labels[index], class: "form-label" %>
