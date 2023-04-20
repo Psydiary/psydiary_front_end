@@ -30,31 +30,34 @@ RSpec.describe 'User edit page' do
            'User-Agent'=>'Faraday v2.7.4'
         }
       ).to_return(status: 200, body: expected_response_body.to_json)
-
-      @user = PsydiaryFacade.new(user_id: user_id).edit_user
     end
     
     it 'I see the page exists' do
-      visit user_settings_path(@user.id)
+      visit '/login'
+
+      fill_in :email, with: "bobbyluly@gmail.com"
+      fill_in :password, with: "5678"
+      click_button 'Log In'
+
+      visit user_settings_path(2)
       
       expect(page).to have_content("Settings")
-      expect(current_path).to eq("/users/#{@user.id}/settings")
+      expect(current_path).to eq("/users/2/settings")
 
       within('section#profile_edit') do
         expect(page).to have_content("Profile Settings")
-        expect(page).to have_field(:email, with: @user.email)
+        expect(page).to have_field(:email, with: "bobbyluly@gmail.com")
         expect(page).to have_field(:old_password)
         expect(page).to have_field(:new_password)
         expect(page).to have_field(:password_conf)
-        expect(page).to have_field(:data_sharing, with: @user.data_sharing)
+        expect(page).to have_field(:data_sharing, with: true)
         expect(page).to have_button("Update & Save Changes")
       end
 
       within('section#protocol_settings') do
         expect(page).to have_content("Protocol Settings")
-        expect(page).to have_content("Current Protocol: #{@user.protocol_name}")
-        expect(page).to have_button("Update Current Custom Protocol")
-        expect(page).to have_button("Select From Our Library")
+        expect(page).to have_content("Current Protocol: Stamets")
+        expect(page).to have_link("View and Select Other Protocols")
       end
     end
   end  

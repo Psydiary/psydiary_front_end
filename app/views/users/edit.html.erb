@@ -33,9 +33,7 @@
     <h2>Protocol Settings:</h2>
     <h3>Current Protocol: <%= @user.protocol_name %></h3>
     <p>
-      <%= button_to "Update Current Custom Protocol",  user_protocol_path(@user.id, @user.protocol_id), method: :get %> 
-      or 
-      <%= button_to "Select From Our Library", user_protocols_path(@user.id) %>
+    <a class="btn btn-dark btn-center btn-md text-nowrap" href=<%=user_protocols_path(@user.id)%>>View and Select Other Protocols</a>
     </p>
   </section>
     <!-- Bootstrap Bundle JS -->
