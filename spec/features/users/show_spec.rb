@@ -17,7 +17,9 @@ RSpec.describe 'User show page' do
       expect(page).to have_content("Welcome Home, Tori")
       expect(page).to have_link("🌞 Track Your Day 🌞")
       expect(page).to have_link("🍄 Track a Microdose 🍄")
-      # expect(page).to have_button("My Entries Journal")
+      expect(page).to have_link("Explore Protocols")
+      expect(page).to have_link("Your Entries Diary")
+      expect(page).to have_link("Edit Your Profile")
     end
 
     before do

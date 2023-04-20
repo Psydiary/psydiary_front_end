@@ -32,4 +32,23 @@ RSpec.describe 'Protocols index page' do
     expect(page).to have_content('Break Duration: 3')
     expect(page).to have_content('Other Notes: Taken in the morning')
   end
+
+  it "protocols have a button to 'adopt this protocol'" do
+    visit '/login'
+    within '#login_buttons' do
+      fill_in 'email', with: 'torienyart@gmail.com'
+      fill_in 'password', with: '1234'
+      click_button 'Log In'
+    end
+    
+    visit "/users/1/protocols"
+
+    within "#1" do
+      click_button "Adopt This Protocol"
+      expect(page).to have_content("This Is Your Current Protocol")
+    end
+
+  end
+
+
 end

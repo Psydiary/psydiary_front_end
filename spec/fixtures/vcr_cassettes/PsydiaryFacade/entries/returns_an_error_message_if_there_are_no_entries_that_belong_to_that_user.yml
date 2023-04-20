@@ -15,13 +15,13 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       Server:
       - Cowboy
       Date:
-      - Wed, 19 Apr 2023 19:52:52 GMT
+      - Wed, 19 Apr 2023 22:05:50 GMT
       Connection:
       - keep-alive
       X-Frame-Options:
@@ -40,20 +40,18 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
-      Etag:
-      - W/"8fe32e407a1038ee38753b70e5374b3a"
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - c1ccb90a-8f80-4e97-b713-44c0179ae5d9
+      - a0f859fb-e988-4447-bc4b-2e95ae32df46
       X-Runtime:
-      - '0.005757'
+      - '0.005069'
       Transfer-Encoding:
       - chunked
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[]}'
-  recorded_at: Wed, 19 Apr 2023 19:52:52 GMT
+      string: '{"errors":"Couldn''t find User with ''id''=3"}'
+  recorded_at: Wed, 19 Apr 2023 22:05:50 GMT
 recorded_with: VCR 6.1.0

@@ -1,8 +1,8 @@
 class Users::ProtocolsController < ApplicationController
 
   def index
-    protocols = ProtocolFacade.new(params)
-    @user_protocols = protocols.get_protocols
+    @facade = ProtocolFacade.new(params)
+    # @user_protocols = protocols.get_protocols
   end
 
   def new

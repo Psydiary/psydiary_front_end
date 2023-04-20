@@ -11,6 +11,16 @@ class PsydiaryService
     response = conn.get("/api/v1/users/#{user_id_param}/settings")
   end
 
+  def self.update_user_protocol(user_params)
+    params = {}
+    params[:id] = user_params[:user_id]
+    params[:protocol_id] = user_params[:id]
+
+    conn.patch("/api/v1/users/#{params[:id]}/update_protocol") do |req|
+      req.body = params
+    end
+  end
+
   def self.create_daily_log_entry(entry_params)
     conn.post("/api/v1/users/#{entry_params[:user_id]}/daily_log_entries") do |req|
       req.body = entry_params
@@ -54,7 +64,7 @@ class PsydiaryService
   private
 
   def self.conn
-    # Faraday.new(url: 'http://localhost:3000')
-    Faraday.new(url: 'https://pacific-reef-79035.herokuapp.com')
+    Faraday.new(url: 'http://localhost:3000')
+    # Faraday.new(url: 'https://pacific-reef-79035.herokuapp.com')
   end
 end

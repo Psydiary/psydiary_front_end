@@ -17,11 +17,11 @@
   <div class="container">
     <div class="row justify-content-center align-items-center min-vh-100">
       <div class="col-sm-12">
-        <% @user_protocols.each_slice(2) do |slice| %>
+        <% @facade.get_protocols.each_slice(2) do |slice| %>
           <div class="row mb-5">
             <% slice.each do |protocol| %>
               <div class="col-md-12 col-lg-6">
-                <div class="card p-4">
+                <div id=<%=protocol.id%> class="card p-4">
                   <h2><%= protocol.name %></h2><br>
                   <p>Description</p><br>
                   <p><%= protocol.description %></p><br>
@@ -30,6 +30,11 @@
                   <p>Protocol Duration: <%= protocol.protocol_duration %></p>
                   <p>Break Duration: <%= protocol.break_duration %></p>
                   <p>Other Notes: <%= protocol.other_notes %></p>
+                  <%if @facade.user.protocol_id == protocol.id.to_i%>
+                    <p>✨This Is Your Current Protocol✨</p>
+                  <%else%>
+                    <%=button_to "Adopt This Protocol", "/users/#{@facade.user_id}/protocols/#{protocol.id}", method: :patch%>
+                  <%end%>
                 </div>
               </div>
             <% end %>
