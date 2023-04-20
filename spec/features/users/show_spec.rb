@@ -12,7 +12,7 @@ RSpec.describe 'User show page' do
       visit '/users/1'
     end
 
-    xit "shows buttons for a user to navigate" do
+    it "shows buttons for a user to navigate" do
       expect(current_path).to eq('/users/1')
       expect(page).to have_content("Welcome Home, Tori")
       expect(page).to have_link("🌞 Track Your Day 🌞")
@@ -23,11 +23,11 @@ RSpec.describe 'User show page' do
     end
 
     before do
-      # visit '/users/1/daily_log_entries/new'
-      # fill_in 'Mood', with: 'unmotivated'
-      # within '#sleep_score' do
-      #   find('[@id=sleep_score_4]').click
-      # end
+      visit '/users/1/daily_log_entries/new'
+      fill_in 'Mood', with: 'unmotivated'
+      within '#sleep_score' do
+        find('[@id=sleep_score_4]').click
+      end
 
       within '#anxiety_score' do
         find('[@id=anxiety_score_3]').click
@@ -84,7 +84,7 @@ RSpec.describe 'User show page' do
       click_on "Upload to the Universe"
     end
 
-    xit "shows a section with the past 3 most recent user entries" do
+    it "shows a section with the past 3 most recent user entries" do
       within "#3-recent-entries" do
         within "#entry-1" do
           expect(page).to have_content("Microdose Log Entry From:")
