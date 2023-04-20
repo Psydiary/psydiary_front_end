@@ -11,11 +11,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Bobsters986/psydiary_back_end">
+  <a href="https://secure-crag-03925.herokuapp.com/">
   <img src="https://user-images.githubusercontent.com/114954379/233474790-52cd8128-529d-4574-a4e4-696039fc8719.png"
   </a>
   
-
+  [Visit Psydiary](https://secure-crag-03925.herokuapp.com/)
 
   <h3 align="center">🍄 Psydiary—The App to Bring You Home 🍄</h3>
 
@@ -98,6 +98,10 @@ Psydiary hopes to provide a structured way for users to track their experience w
 
 ### PsyDiary Design
 
+For our service architecture we decided to split our front end from our backend. The diagram below shows the way in which our services interact. For the backend repo, click the link below.
+
+[Backend Repo](https://github.com/Psydiary/psydiary_back_end)
+
 ![Screen Shot 2023-04-20 at 1 24 27 PM](https://user-images.githubusercontent.com/116821829/233442087-cea5421d-4098-4452-a937-d62d04d5fdcf.png)
 
 ### Built With
@@ -109,6 +113,9 @@ To build this web application, our team utilized;
 * PostgreSQL
 * Bootstrap
 * Heroku
+* New Relic
+* Google OAuth
+* IPGeoLocation API
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,58 +140,39 @@ To build this web application, our team utilized;
 
 _Follow the steps below to install and set up this app._
 
-1. NEEDS OUR API KEY EXAMPLES. Get a free API Key at [https://example.com](https://example.com)
-2. Clone this Repository
+1. Sign up for an [API Key](https://platform.openai.com/account/api-keys) through OpenAI
+
+2. Sign up for a [Google developer account](https://console.cloud.google.com/apis).
+  * make sure to use the callback URL: https://secure-crag-03925.herokuapp.com/auth/google_oauth2/callback
+
+3. Clone this Repository
    ```
-    git clone https://github.com/torieynart/psydiary_front_end
-    git clone https://github.com/Bobsters986/psydiary_back_end
+    git clone https://github.com/Psydiary/psydiary_front_end
+    git clone https://github.com/Psydiary/psydiary_back_end
    ```
-3. In your terminal, run the following commands;
+4. In your terminal, run the following commands;
     ```sh
     bundle install
     bundle exec figaro install
     rails db:{drop,create,migrate,seed}
     ```
-4. Enter your API in `application.yml`
-   ```ruby
-   API_KEY = 'ENTER YOUR API';
+5. Enter your API Keys in `application.yml`
+   
+   ```
+    openai_key: 'your key here'
+    GOOGLE_CLIENT_ID: 'your id here'
+    GOOGLE_CLIENT_SECRET: 'your secret here'
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- ROADMAP -->
 ## Roadmap
+To keep track of our progress while creating Psydiary, bugs that popped up, potential refactor ideas, and more... we utilized a [Notion Project Management Board](https://alluring-phlox-b74.notion.site/72a9807f1fec4b40a63d0fc8908cb7e8?v=aec33fee246f41b5bf8e7ae6ea7f9796) from Day 1.
 
-- [x] Add README
-- [x] Add Root Page
-- [x] Add Learn More Page
-- [x] Add New User Page
-- [x] Add User Login
-- [x] User Dashboard
-- [x] Protocol Show Page
-- [x] User Edit Page
-- [x] New Daily Log
-- [x] New Microdose Diary
-- [x] Daily Log/Microdose Index
-- [x] Daily Log Show Page
-- [x] Dose Show Page
-- [x] Resources/Discover Page
+We also used tools like Miro to diagram our database and service structure and Figma to create our wireframes.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
@@ -204,16 +192,6 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### PsyDiary Team
 
@@ -262,21 +240,4 @@ Use this space to list resources you find helpful and would like to give credit 
   </tr>
 </table>
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
