@@ -10,8 +10,9 @@ RSpec.describe 'Log entry index page' do
         fill_in :email, with: "bobbyluly@gmail.com"
         fill_in :password, with: "5678"
         click_button 'Log In'
-        
-        click_link 'View All Entries'
+
+        click_link 'Your Entries Diary'
+
         
         expect(page).to have_content('Journey Log')
         expect(page).to have_button('Track Your Day')

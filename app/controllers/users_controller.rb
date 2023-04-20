@@ -52,12 +52,16 @@ class UsersController < ApplicationController
 
   def edit
     user = PsydiaryFacade.new(user_params).edit_user
-
-    if user.nil?
-      flash[:error] = user.errors.full_messages
-      redirect_to user_path(session[:id])
+    if session[:user_id] == params[:user_id]
+      if user.nil?
+        flash[:error] = user.errors.full_messages
+        redirect_to user_path(session[:user_id])
+      else
+        @user = user
+      end
     else
-      @user = user
+      redirect_to root_path
+      flash[:notice] = "You must be logged in and registered to view this page"
     end
   end
 
@@ -75,6 +79,16 @@ class UsersController < ApplicationController
     else
       session[:user_id] = user.id
       redirect_to user_path(user.id) 
+    end
+  end
+
+  def update_protocol
+    if current_user.id == params[:user_id]
+      PsydiaryFacade.new(params).update_user_protocol
+      redirect_to user_protocols_path(params[:user_id])
+    else
+      redirect_to root_path
+      flash[:notice] = "You must be logged in and registered to view this page"
     end
   end
 

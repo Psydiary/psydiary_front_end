@@ -31,4 +31,10 @@ class ProtocolFacade
       error.to_s
      end.join
   end
+
+  def user
+    response = PsydiaryService.get_user(@user_id)
+    user = JSON.parse(response.body, symbolize_names: true)
+    User.new(user)
+  end
 end

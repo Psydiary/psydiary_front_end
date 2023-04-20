@@ -28,7 +28,7 @@ describe '/users/new', type: :feature do
         fill_in :password, with: @user[:password]
 
         within '#protocols' do
-          find('[@id=protocol_id_5]').click
+          find('[@id=protocol_id_1]').click
         end
 
         select 'False', from: :data_sharing

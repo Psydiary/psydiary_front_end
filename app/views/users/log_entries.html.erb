@@ -19,19 +19,25 @@
       <h1 class="text-center">✒️Here Are Your Entries🖋</h3>
       <br>
 <% n = 0 %>
-<% @facade.entries.each do |entry| %>
-  <% if entry.class == DailyLogEntry %>
-    <div id="entry-<%=n += 1 %>">
-      <h5>Date: <%= entry.format_date %></h5>
-      <h5>Type: Daily Log Entry</h5>
-      <%= link_to "Details", user_daily_log_entry_path(@facade.user.id, entry.id) %>
-    </div>
-  <% else %>
-    <div id="entry-<%=n += 1 %>">
-      <h5>Date: <%=entry.format_date %></h5>
-      <h5>Type: Microdose Log Entry</h5>
-      <%= link_to "Details", user_microdose_log_entry_path(@facade.user.id, entry.id) %>
-    </div>
+<%if @facade.entries.is_a?(Array)%>
+  <% n = 0 %>
+  <% @facade.entries.each do |entry| %>
+    <% if entry.class == DailyLogEntry %>
+      <div id="entry-<%=n += 1 %>">
+        <h5>Date: <%= entry.format_date %></h5>
+        <h5>Type: Daily Log Entry</h5>
+        <%= link_to "Details", user_daily_log_entry_path(@facade.user.id, entry.id) %>
+      </div>
+    <% else %>
+      <div id="entry-<%=n += 1 %>">
+        <h5>Date: <%=entry.format_date %></h5>
+        <h5>Type: Microdose Log Entry</h5>
+        <%= link_to "Details", user_microdose_log_entry_path(@facade.user.id, entry.id) %>
+      </div>
+    <% end %>
   <% end %>
-<% end %>
+<%else%>
+  <h4><%=@facade.entries%></h4>
+<%end%>
 </div>
+

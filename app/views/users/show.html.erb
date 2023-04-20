@@ -6,9 +6,9 @@
 
    
     <div class="col-md-12 text-center text-nowrap">
-      <a class="btn btn-dark btn-center btn-md text-nowrap" href="#">Explore Protocols</a>
-      <a class="btn btn-dark btn-center btn-md text-nowrap" href="#">Your Entries Diary</a>
-      <a class="btn btn-dark btn-center btn-md text-nowrap" href="#">Edit Your Profile</a>
+      <a class="btn btn-dark btn-center btn-md text-nowrap" href=<%=user_protocols_path(@facade.user.id)%>>Explore Protocols</a>
+      <a class="btn btn-dark btn-center btn-md text-nowrap" href=<%=user_log_entries_path(@facade.user.id)%>>Your Entries Diary</a>
+      <a class="btn btn-dark btn-center btn-md text-nowrap" href=<%=user_settings_path(@facade.user.id)%>>Edit Your Profile</a>
     </div>
 
     <br>
@@ -32,13 +32,6 @@
     </div>
 
     <br>
-
-    <div class="row justify-content-center align-items-center">
-      <div class="col-md-4 text-center">
-        <a class="btn btn-dark btn-center btn-md" href=<%= user_log_entries_path(@facade.user.id)%>>📝 View All Entries 📝</a>
-      </div>
-    </div>
-
     <br>
     <br>
 

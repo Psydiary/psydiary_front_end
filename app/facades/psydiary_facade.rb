@@ -12,11 +12,19 @@ class PsydiaryFacade
    User.new(user)
   end
 
+  #MIGHT BE ABLE TO GET RID OF THIS IF ANTONIO DOESN'T NEED IT
   def edit_user
     response = PsydiaryService.edit_user(@params[:user_id])
     user = JSON.parse(response.body, symbolize_names: true)
     return user = nil if user[:errors].present?
     UserEdit.new(user)
+  end
+
+  def update_user_protocol
+    response = PsydiaryService.update_user_protocol(@params)
+    user = JSON.parse(response.body, symbolize_names: true)
+    return user[:errors] if user[:errors].present?
+    User.new(user)
   end
  
   def user
