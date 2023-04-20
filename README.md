@@ -249,7 +249,9 @@ Use this space to list resources you find helpful and would like to give credit 
 * [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### PsyDiary Team
+
 <table>
   <tr>
     <td><img src="https://avatars.githubusercontent.com/torienyart"></td>
