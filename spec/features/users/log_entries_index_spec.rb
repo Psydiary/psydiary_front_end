@@ -11,7 +11,7 @@ RSpec.describe 'Log entry index page' do
         fill_in :password, with: "5678"
         click_button 'Log In'
 
-        click_link 'Log Entries'
+        click_link 'Your Entries Diary'
         
         expect(page).to have_content('Journey Log')
         expect(page).to have_link('Track Your Day', href: new_user_daily_log_entry_path(2))
