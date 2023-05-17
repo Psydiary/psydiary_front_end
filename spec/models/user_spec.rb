@@ -9,6 +9,8 @@ describe User, type: :model do
   end
 
   describe "validations" do
+    subject { FactoryBot.build(:protocol) }
+    subject { FactoryBot.build(:user) }
     it { should validate_presence_of :name }
     it { should validate_presence_of :email }
     it { should validate_presence_of :password }
