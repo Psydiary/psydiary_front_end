@@ -5,7 +5,7 @@ class Users::DailyLogEntriesController < ApplicationController
   end
 
   def show
-    @daily_log_entry = facade.daily_log_entry(params[:user_id], params[:id])
+    @daily_log_entry = DailyLogEntry.find(params[:id])
   end
 
   def new
