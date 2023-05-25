@@ -18,6 +18,7 @@ RSpec.describe 'New Daily Log Page' do
 
       it "has various fields" do
         visit new_user_daily_log_entry_path(@user)
+        save_and_open_page
 
         expect(page).to have_field("Mood")
 

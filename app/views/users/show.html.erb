@@ -42,7 +42,7 @@
         <%@user.recent_entries.each do |entry|%>
           <%if entry.class == DailyLogEntry%>
             <div id="entry-<%=n += 1%>">
-            <h5>Daily Log Entry From: <%=entry.format_date%></h5>
+            <h5>Daily Log Entry From: <%=entry.created_at.strftime("%A, %B %d, %Y")%></h5>
             <p>Mood: <%=entry.mood%></p>
             <p>Sleep Score: <%=entry.sleep_score%></p>
             <p>Anxiety Score: <%=entry.anxiety_score%></p>
@@ -53,7 +53,7 @@
             <br>
           <%else%>
             <div id="entry-<%=n += 1%>">
-            <h5>Microdose Log Entry From: <%=entry.format_date%></h5>
+            <h5>Microdose Log Entry From: <%=entry.created_at.strftime("%A, %B %d, %Y")%></h5>
             <p>Mood Before: <%=entry.mood_before%></p>
             <p>Mood After: <%=entry.mood_after%></p>
             <p>Environment: <%=entry.environment%></p>
