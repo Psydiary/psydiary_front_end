@@ -5,7 +5,7 @@ RSpec.describe 'New Daily Log Page' do
     describe "I see a form to fill out a new daily log entry" do
       before :each do
         @p1 = Protocol.create!(name: "Fadiman", description: "the fadiman protocol", days_between_dose: 3, dosage: 0.2, protocol_duration: 4, break_duration: 3, other_notes: "Taken in the morning")
-        @user = User.create!(email: 'torienyart@gmail.com', password: '1234', name: "Tori", protocol: @p1 )
+        @user = User.create!(email: 'torienyart@gmail.com', password: '1234', name: "Tori Enyart", protocol: @p1 )
 
         visit '/login'
         within '#login_buttons' do
