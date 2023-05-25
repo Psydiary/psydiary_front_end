@@ -1,13 +1,13 @@
 <div class ="container">
   <div class="mx-auto" style="width: 1000px;">
-    <h1 class="text-center fw-bold display-1">Welcome Home, <%=@facade.user.first_name%></h1>
+    <h1 class="text-center fw-bold display-1">Welcome Home, <%=@user.first_name%></h1>
 
     <br>
 
    
     <div class="col-md-12 text-center text-nowrap">
-      <a class="btn btn-dark btn-center btn-md text-nowrap" href=<%=user_protocols_path(@facade.user.id)%>>Explore Protocols</a>
-      <a class="btn btn-dark btn-center btn-md text-nowrap" href=<%=user_log_entries_path(@facade.user.id)%>>Your Entries Diary</a>
+      <a class="btn btn-dark btn-center btn-md text-nowrap" href=<%=user_protocols_path(@user.id)%>>Explore Protocols</a>
+      <a class="btn btn-dark btn-center btn-md text-nowrap" href=<%=user_log_entries_path(@user.id)%>>Your Entries Diary</a>
     </div>
 
     <br>
@@ -18,7 +18,7 @@
 
     <div class="row justify-content-center align-items-center">
       <div class="col-md-4 text-center">
-        <a class="btn btn-dark btn-center btn-md" href=<%=new_user_daily_log_entry_path(@facade.user.id)%>>🌞 Track Your Day 🌞</a>
+        <a class="btn btn-dark btn-center btn-md" href=<%=new_user_daily_log_entry_path(@user.id)%>>🌞 Track Your Day 🌞</a>
       </div>
     </div>
 
@@ -26,7 +26,7 @@
    
     <div class="row justify-content-center align-items-center">
       <div class="col-md-4 text-center">
-              <a class="btn btn-dark btn-center btn-md" href=<%=new_user_microdose_log_entry_path(@facade.user.id)%>>🍄 Track a Microdose 🍄</a>
+              <a class="btn btn-dark btn-center btn-md" href=<%=new_user_microdose_log_entry_path(@user.id)%>>🍄 Track a Microdose 🍄</a>
       </div>
     </div>
 
@@ -37,34 +37,34 @@
     <div id="3-recent-entries" class="mx-auto" style="width: 600px;">
       <h1 class="text-center">✒️Here Are Your Recent Entries🖋</h3>
 
-      <%if @facade.recent_entries.class == Array%>
+      <%if @user.recent_entries.class == Array%>
         <%n = 0%>
-        <%@facade.recent_entries.each do |entry|%>
+        <%@user.recent_entries.each do |entry|%>
           <%if entry.class == DailyLogEntry%>
             <div id="entry-<%=n += 1%>">
-            <h5>Daily Log Entry From: <%=entry.format_date%></h5>
+            <h5>Daily Log Entry From: <%=entry.created_at.strftime("%A, %B %d, %Y")%></h5>
             <p>Mood: <%=entry.mood%></p>
             <p>Sleep Score: <%=entry.sleep_score%></p>
             <p>Anxiety Score: <%=entry.anxiety_score%></p>
             <p>Depression Score: <%=entry.depression_score%></p>
             <p>Energy Levels: <%=entry.energy_levels%></p>
-            <%=link_to "See More...", user_daily_log_entry_path(@facade.user.id, entry.id)%>
+            <%=link_to "See More...", user_daily_log_entry_path(@user.id, entry.id)%>
             <br>
             <br>
           <%else%>
             <div id="entry-<%=n += 1%>">
-            <h5>Microdose Log Entry From: <%=entry.format_date%></h5>
+            <h5>Microdose Log Entry From: <%=entry.created_at.strftime("%A, %B %d, %Y")%></h5>
             <p>Mood Before: <%=entry.mood_before%></p>
             <p>Mood After: <%=entry.mood_after%></p>
             <p>Environment: <%=entry.environment%></p>
             <p>Dosage: <%=entry.dosage%></p>
-            <%=link_to "See More...", user_microdose_log_entry_path(@facade.user.id, entry.id)%>
+            <%=link_to "See More...", user_microdose_log_entry_path(@user.id, entry.id)%>
             <br>
             <br>
           <%end%>
         <%end%>
       <%else%>
-        <p><%=@facade.recent_entries%></p>
+        <p><%=@user.recent_entries%></p>
       <%end%>
 
     </div>

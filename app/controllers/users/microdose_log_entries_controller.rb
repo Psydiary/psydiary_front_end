@@ -5,7 +5,6 @@ class Users::MicrodoseLogEntriesController < ApplicationController
 
   def show
     @facade = MicrodoseLogEntryFacade.new(params).one_microdose_log_entry(params[:user_id], params[:id])
-
   end
 
   def new

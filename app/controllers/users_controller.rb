@@ -16,8 +16,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    if session[:user_id] == params[:id]
-      @facade = PsydiaryFacade.new(params)
+    user = User.find(params[:id])
+    if session[:user_id] == user.id
+      @user = user
     else 
       redirect_to root_path
       flash[:notice] = "You must be logged in and registered to view your dashboard"
@@ -38,16 +39,28 @@ class UsersController < ApplicationController
   end
 
   def login
-    user = PsydiaryFacade.new(user_params).authenticate_user
-    
-    if user.nil?
-      flash[:error] = "Incorrect email or password"
-      redirect_to login_path
-    else
+    # user = PsydiaryFacade.new(user_params).authenticate_user
+    user = User.find_by(email: user_params[:email])
+    if user && user.authenticate(user_params[:password])
       session[:user_id] = user.id
       flash[:success] = "Welcome, #{user.name}!"
       redirect_to user_path(user.id)
+    elsif user != nil
+      flash[:error] = "Incorrect email or password"
+      redirect_to login_path
+    else
+      flash[:error] = "User does not exist"
     end
+
+    
+    # if user.nil?
+    #   flash[:error] = "Incorrect email or password"
+    #   redirect_to login_path
+    # else
+    #   session[:user_id] = user.id
+    #   flash[:success] = "Welcome, #{user.name}!"
+    #   redirect_to user_path(user.id)
+    # end
   end
 
   def edit

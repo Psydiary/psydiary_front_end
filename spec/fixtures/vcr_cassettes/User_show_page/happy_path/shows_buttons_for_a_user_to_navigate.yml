@@ -1,0 +1,3198 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/login
+    body:
+      encoding: UTF-8
+      string: email=torienyart%40gmail.com&password=1234
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:15 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5ba5b275-41d2-4b76-a5e8-2329460328a6
+      X-Runtime:
+      - '0.227202'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:16 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:16 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6d509106-1e25-4ef9-b707-7b81c8f03689
+      X-Runtime:
+      - '0.003037'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:16 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:15 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 8c5a55e4-309e-4315-9335-5605eb655bf6
+      X-Runtime:
+      - '0.003413'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:16 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:16 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f73024c6-b892-4599-a62f-7120b0f667de
+      X-Runtime:
+      - '0.003021'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:16 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:16 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3ba45014-64b8-43d0-bac3-1a1f2f772df1
+      X-Runtime:
+      - '0.003190'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:17 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:17 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1a87d597-c9ee-4d01-8e49-3682972b5e56
+      X-Runtime:
+      - '0.003257'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:17 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1/log_entries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:17 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"bbb5a09b2089ab2076bdf557f8f898e2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d5c036dc-22b8-4349-ad5f-97f80d956970
+      X-Runtime:
+      - '0.010703'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"32","type":"user_entry","attributes":{"id":32,"user_id":1,"created_at":"2023-05-16T14:24:21.028Z","updated_at":"2023-05-16T14:24:21.028Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"31","type":"user_entry","attributes":{"id":31,"user_id":1,"created_at":"2023-05-12T18:26:07.985Z","updated_at":"2023-05-12T18:26:07.985Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"30","type":"user_entry","attributes":{"id":30,"user_id":1,"created_at":"2023-05-12T18:23:46.734Z","updated_at":"2023-05-12T18:23:46.734Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"29","type":"user_entry","attributes":{"id":29,"user_id":1,"created_at":"2023-05-12T18:23:41.605Z","updated_at":"2023-05-12T18:23:41.605Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"28","type":"user_entry","attributes":{"id":28,"user_id":1,"created_at":"2023-05-12T18:23:26.993Z","updated_at":"2023-05-12T18:23:26.993Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"27","type":"user_entry","attributes":{"id":27,"user_id":1,"created_at":"2023-05-12T18:23:21.637Z","updated_at":"2023-05-12T18:23:21.637Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"26","type":"user_entry","attributes":{"id":26,"user_id":1,"created_at":"2023-05-12T18:22:08.039Z","updated_at":"2023-05-12T18:22:08.039Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"25","type":"user_entry","attributes":{"id":25,"user_id":1,"created_at":"2023-05-12T18:00:38.586Z","updated_at":"2023-05-12T18:00:38.586Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"24","type":"user_entry","attributes":{"id":24,"user_id":1,"created_at":"2023-05-12T18:00:32.992Z","updated_at":"2023-05-12T18:00:32.992Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"23","type":"user_entry","attributes":{"id":23,"user_id":1,"created_at":"2023-05-12T18:00:17.486Z","updated_at":"2023-05-12T18:00:17.486Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"22","type":"user_entry","attributes":{"id":22,"user_id":1,"created_at":"2023-05-12T18:00:10.998Z","updated_at":"2023-05-12T18:00:10.998Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"21","type":"user_entry","attributes":{"id":21,"user_id":1,"created_at":"2023-05-12T17:58:52.399Z","updated_at":"2023-05-12T17:58:52.399Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-21T21:37:24.530Z","updated_at":"2023-04-21T21:37:24.530Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is one limiting belief you hold about yourself and where did it originate?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"18","type":"user_entry","attributes":{"id":18,"user_id":1,"created_at":"2023-04-21T21:36:55.572Z","updated_at":"2023-04-21T21:36:55.572Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:17:49.163Z","updated_at":"2023-04-20T21:17:49.163Z","type":"MicrodoseLogEntry","mood_before":"upsetti
+        spaghetti","mood_after":"motivated","dosage":0.2,"intensity":"low","sociability":"social","journal_prompt":"What
+        are some patterns in your life that you have been repeating unconsciously?","journal_entry":"GOing
+        to the grocery store and forgetting things - OH NO","environment":"home","other_notes":""}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-20T21:11:26.032Z","updated_at":"2023-04-20T21:11:26.032Z","type":"DailyLogEntry","sociability":"social","mood":"Happy","depression_score":7,"anxiety_score":3,"sleep_score":5,"exercise":"aerobic","meditation":"60","energy_levels":2,"notes":""}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:52.053Z","updated_at":"2023-04-20T21:05:52.053Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        does living your best life mean to you?","journal_entry":"I learned that I
+        can let go","environment":"at home","other_notes":"I stayed in my bed for
+        this experience"}},{"id":"12","type":"user_entry","attributes":{"id":12,"user_id":1,"created_at":"2023-04-20T21:05:50.888Z","updated_at":"2023-04-20T21:05:50.888Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:05:50.638Z","updated_at":"2023-04-20T21:05:50.638Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:05:49.742Z","updated_at":"2023-04-20T21:05:49.742Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        are three things in your life that you are currently grateful for and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"10","type":"user_entry","attributes":{"id":10,"user_id":1,"created_at":"2023-04-20T21:05:48.087Z","updated_at":"2023-04-20T21:05:48.087Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"9","type":"user_entry","attributes":{"id":9,"user_id":1,"created_at":"2023-04-20T21:05:47.838Z","updated_at":"2023-04-20T21:05:47.838Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:05:43.337Z","updated_at":"2023-04-20T21:05:43.337Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        fears or limiting beliefs are holding you back from living the life you desire?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:36.085Z","updated_at":"2023-04-20T21:05:36.085Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:22.046Z","updated_at":"2023-04-20T21:02:22.046Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve always wanted to do but have been too afraid to try?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:02:20.647Z","updated_at":"2023-04-20T21:02:20.647Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:02:20.350Z","updated_at":"2023-04-20T21:02:20.350Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:19.360Z","updated_at":"2023-04-20T21:02:19.360Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is a deeply held belief that you have, and why do you believe it?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:17.884Z","updated_at":"2023-04-20T21:02:17.884Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:17.626Z","updated_at":"2023-04-20T21:02:17.626Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:12.124Z","updated_at":"2023-04-20T21:02:12.124Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve been avoiding dealing with in your life and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:04.907Z","updated_at":"2023-04-20T21:02:04.907Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}}]}'
+  recorded_at: Tue, 16 May 2023 14:25:17 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1/log_entries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:18 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"bbb5a09b2089ab2076bdf557f8f898e2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fa62b632-0e87-4c8a-87c6-02856de50dd5
+      X-Runtime:
+      - '0.010492'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"32","type":"user_entry","attributes":{"id":32,"user_id":1,"created_at":"2023-05-16T14:24:21.028Z","updated_at":"2023-05-16T14:24:21.028Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"31","type":"user_entry","attributes":{"id":31,"user_id":1,"created_at":"2023-05-12T18:26:07.985Z","updated_at":"2023-05-12T18:26:07.985Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"30","type":"user_entry","attributes":{"id":30,"user_id":1,"created_at":"2023-05-12T18:23:46.734Z","updated_at":"2023-05-12T18:23:46.734Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"29","type":"user_entry","attributes":{"id":29,"user_id":1,"created_at":"2023-05-12T18:23:41.605Z","updated_at":"2023-05-12T18:23:41.605Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"28","type":"user_entry","attributes":{"id":28,"user_id":1,"created_at":"2023-05-12T18:23:26.993Z","updated_at":"2023-05-12T18:23:26.993Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"27","type":"user_entry","attributes":{"id":27,"user_id":1,"created_at":"2023-05-12T18:23:21.637Z","updated_at":"2023-05-12T18:23:21.637Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"26","type":"user_entry","attributes":{"id":26,"user_id":1,"created_at":"2023-05-12T18:22:08.039Z","updated_at":"2023-05-12T18:22:08.039Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"25","type":"user_entry","attributes":{"id":25,"user_id":1,"created_at":"2023-05-12T18:00:38.586Z","updated_at":"2023-05-12T18:00:38.586Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"24","type":"user_entry","attributes":{"id":24,"user_id":1,"created_at":"2023-05-12T18:00:32.992Z","updated_at":"2023-05-12T18:00:32.992Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"23","type":"user_entry","attributes":{"id":23,"user_id":1,"created_at":"2023-05-12T18:00:17.486Z","updated_at":"2023-05-12T18:00:17.486Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"22","type":"user_entry","attributes":{"id":22,"user_id":1,"created_at":"2023-05-12T18:00:10.998Z","updated_at":"2023-05-12T18:00:10.998Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"21","type":"user_entry","attributes":{"id":21,"user_id":1,"created_at":"2023-05-12T17:58:52.399Z","updated_at":"2023-05-12T17:58:52.399Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-21T21:37:24.530Z","updated_at":"2023-04-21T21:37:24.530Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is one limiting belief you hold about yourself and where did it originate?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"18","type":"user_entry","attributes":{"id":18,"user_id":1,"created_at":"2023-04-21T21:36:55.572Z","updated_at":"2023-04-21T21:36:55.572Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:17:49.163Z","updated_at":"2023-04-20T21:17:49.163Z","type":"MicrodoseLogEntry","mood_before":"upsetti
+        spaghetti","mood_after":"motivated","dosage":0.2,"intensity":"low","sociability":"social","journal_prompt":"What
+        are some patterns in your life that you have been repeating unconsciously?","journal_entry":"GOing
+        to the grocery store and forgetting things - OH NO","environment":"home","other_notes":""}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-20T21:11:26.032Z","updated_at":"2023-04-20T21:11:26.032Z","type":"DailyLogEntry","sociability":"social","mood":"Happy","depression_score":7,"anxiety_score":3,"sleep_score":5,"exercise":"aerobic","meditation":"60","energy_levels":2,"notes":""}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:52.053Z","updated_at":"2023-04-20T21:05:52.053Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        does living your best life mean to you?","journal_entry":"I learned that I
+        can let go","environment":"at home","other_notes":"I stayed in my bed for
+        this experience"}},{"id":"12","type":"user_entry","attributes":{"id":12,"user_id":1,"created_at":"2023-04-20T21:05:50.888Z","updated_at":"2023-04-20T21:05:50.888Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:05:50.638Z","updated_at":"2023-04-20T21:05:50.638Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:05:49.742Z","updated_at":"2023-04-20T21:05:49.742Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        are three things in your life that you are currently grateful for and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"10","type":"user_entry","attributes":{"id":10,"user_id":1,"created_at":"2023-04-20T21:05:48.087Z","updated_at":"2023-04-20T21:05:48.087Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"9","type":"user_entry","attributes":{"id":9,"user_id":1,"created_at":"2023-04-20T21:05:47.838Z","updated_at":"2023-04-20T21:05:47.838Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:05:43.337Z","updated_at":"2023-04-20T21:05:43.337Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        fears or limiting beliefs are holding you back from living the life you desire?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:36.085Z","updated_at":"2023-04-20T21:05:36.085Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:22.046Z","updated_at":"2023-04-20T21:02:22.046Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve always wanted to do but have been too afraid to try?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:02:20.647Z","updated_at":"2023-04-20T21:02:20.647Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:02:20.350Z","updated_at":"2023-04-20T21:02:20.350Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:19.360Z","updated_at":"2023-04-20T21:02:19.360Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is a deeply held belief that you have, and why do you believe it?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:17.884Z","updated_at":"2023-04-20T21:02:17.884Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:17.626Z","updated_at":"2023-04-20T21:02:17.626Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:12.124Z","updated_at":"2023-04-20T21:02:12.124Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve been avoiding dealing with in your life and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:04.907Z","updated_at":"2023-04-20T21:02:04.907Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}}]}'
+  recorded_at: Tue, 16 May 2023 14:25:18 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:17 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ab0efd97-376d-48ab-a8c7-e999946411bb
+      X-Runtime:
+      - '0.003249'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:18 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:18 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 80bd76d3-9b57-4824-bcf8-44cd8864e6d0
+      X-Runtime:
+      - '0.003028'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:18 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:18 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a65a207d-31d6-44aa-966d-682e7e327851
+      X-Runtime:
+      - '0.003478'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:19 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:19 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - de8a7e12-235b-4797-9944-616fbe8f1a6b
+      X-Runtime:
+      - '0.003145'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:19 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:19 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f624a00f-9a60-4b8b-a1d8-fde2428b281e
+      X-Runtime:
+      - '0.003166'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:19 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:19 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a0afb052-9322-4879-8fc4-ca03d9d6eb21
+      X-Runtime:
+      - '0.003198'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:20 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:20 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3201723a-981a-454d-aef1-b270d1c419df
+      X-Runtime:
+      - '0.004602'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:20 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:20 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d8cb6b69-6bdd-45ed-a74d-9bf840dbde49
+      X-Runtime:
+      - '0.003162'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:20 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:20 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9bc82e88-b139-4aad-9085-95569be59e52
+      X-Runtime:
+      - '0.004238'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:21 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1/log_entries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:21 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"bbb5a09b2089ab2076bdf557f8f898e2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 316d6434-8d92-4dde-9934-94f220904322
+      X-Runtime:
+      - '0.011331'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"32","type":"user_entry","attributes":{"id":32,"user_id":1,"created_at":"2023-05-16T14:24:21.028Z","updated_at":"2023-05-16T14:24:21.028Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"31","type":"user_entry","attributes":{"id":31,"user_id":1,"created_at":"2023-05-12T18:26:07.985Z","updated_at":"2023-05-12T18:26:07.985Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"30","type":"user_entry","attributes":{"id":30,"user_id":1,"created_at":"2023-05-12T18:23:46.734Z","updated_at":"2023-05-12T18:23:46.734Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"29","type":"user_entry","attributes":{"id":29,"user_id":1,"created_at":"2023-05-12T18:23:41.605Z","updated_at":"2023-05-12T18:23:41.605Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"28","type":"user_entry","attributes":{"id":28,"user_id":1,"created_at":"2023-05-12T18:23:26.993Z","updated_at":"2023-05-12T18:23:26.993Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"27","type":"user_entry","attributes":{"id":27,"user_id":1,"created_at":"2023-05-12T18:23:21.637Z","updated_at":"2023-05-12T18:23:21.637Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"26","type":"user_entry","attributes":{"id":26,"user_id":1,"created_at":"2023-05-12T18:22:08.039Z","updated_at":"2023-05-12T18:22:08.039Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"25","type":"user_entry","attributes":{"id":25,"user_id":1,"created_at":"2023-05-12T18:00:38.586Z","updated_at":"2023-05-12T18:00:38.586Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"24","type":"user_entry","attributes":{"id":24,"user_id":1,"created_at":"2023-05-12T18:00:32.992Z","updated_at":"2023-05-12T18:00:32.992Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"23","type":"user_entry","attributes":{"id":23,"user_id":1,"created_at":"2023-05-12T18:00:17.486Z","updated_at":"2023-05-12T18:00:17.486Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"22","type":"user_entry","attributes":{"id":22,"user_id":1,"created_at":"2023-05-12T18:00:10.998Z","updated_at":"2023-05-12T18:00:10.998Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"21","type":"user_entry","attributes":{"id":21,"user_id":1,"created_at":"2023-05-12T17:58:52.399Z","updated_at":"2023-05-12T17:58:52.399Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-21T21:37:24.530Z","updated_at":"2023-04-21T21:37:24.530Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is one limiting belief you hold about yourself and where did it originate?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"18","type":"user_entry","attributes":{"id":18,"user_id":1,"created_at":"2023-04-21T21:36:55.572Z","updated_at":"2023-04-21T21:36:55.572Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:17:49.163Z","updated_at":"2023-04-20T21:17:49.163Z","type":"MicrodoseLogEntry","mood_before":"upsetti
+        spaghetti","mood_after":"motivated","dosage":0.2,"intensity":"low","sociability":"social","journal_prompt":"What
+        are some patterns in your life that you have been repeating unconsciously?","journal_entry":"GOing
+        to the grocery store and forgetting things - OH NO","environment":"home","other_notes":""}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-20T21:11:26.032Z","updated_at":"2023-04-20T21:11:26.032Z","type":"DailyLogEntry","sociability":"social","mood":"Happy","depression_score":7,"anxiety_score":3,"sleep_score":5,"exercise":"aerobic","meditation":"60","energy_levels":2,"notes":""}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:52.053Z","updated_at":"2023-04-20T21:05:52.053Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        does living your best life mean to you?","journal_entry":"I learned that I
+        can let go","environment":"at home","other_notes":"I stayed in my bed for
+        this experience"}},{"id":"12","type":"user_entry","attributes":{"id":12,"user_id":1,"created_at":"2023-04-20T21:05:50.888Z","updated_at":"2023-04-20T21:05:50.888Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:05:50.638Z","updated_at":"2023-04-20T21:05:50.638Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:05:49.742Z","updated_at":"2023-04-20T21:05:49.742Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        are three things in your life that you are currently grateful for and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"10","type":"user_entry","attributes":{"id":10,"user_id":1,"created_at":"2023-04-20T21:05:48.087Z","updated_at":"2023-04-20T21:05:48.087Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"9","type":"user_entry","attributes":{"id":9,"user_id":1,"created_at":"2023-04-20T21:05:47.838Z","updated_at":"2023-04-20T21:05:47.838Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:05:43.337Z","updated_at":"2023-04-20T21:05:43.337Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        fears or limiting beliefs are holding you back from living the life you desire?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:36.085Z","updated_at":"2023-04-20T21:05:36.085Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:22.046Z","updated_at":"2023-04-20T21:02:22.046Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve always wanted to do but have been too afraid to try?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:02:20.647Z","updated_at":"2023-04-20T21:02:20.647Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:02:20.350Z","updated_at":"2023-04-20T21:02:20.350Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:19.360Z","updated_at":"2023-04-20T21:02:19.360Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is a deeply held belief that you have, and why do you believe it?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:17.884Z","updated_at":"2023-04-20T21:02:17.884Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:17.626Z","updated_at":"2023-04-20T21:02:17.626Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:12.124Z","updated_at":"2023-04-20T21:02:12.124Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve been avoiding dealing with in your life and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:04.907Z","updated_at":"2023-04-20T21:02:04.907Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}}]}'
+  recorded_at: Tue, 16 May 2023 14:25:21 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1/log_entries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:21 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"bbb5a09b2089ab2076bdf557f8f898e2"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 699ba66f-44a0-4252-9aec-ea5ae2e21ff7
+      X-Runtime:
+      - '0.016078'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"32","type":"user_entry","attributes":{"id":32,"user_id":1,"created_at":"2023-05-16T14:24:21.028Z","updated_at":"2023-05-16T14:24:21.028Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"31","type":"user_entry","attributes":{"id":31,"user_id":1,"created_at":"2023-05-12T18:26:07.985Z","updated_at":"2023-05-12T18:26:07.985Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"30","type":"user_entry","attributes":{"id":30,"user_id":1,"created_at":"2023-05-12T18:23:46.734Z","updated_at":"2023-05-12T18:23:46.734Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"29","type":"user_entry","attributes":{"id":29,"user_id":1,"created_at":"2023-05-12T18:23:41.605Z","updated_at":"2023-05-12T18:23:41.605Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"28","type":"user_entry","attributes":{"id":28,"user_id":1,"created_at":"2023-05-12T18:23:26.993Z","updated_at":"2023-05-12T18:23:26.993Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"27","type":"user_entry","attributes":{"id":27,"user_id":1,"created_at":"2023-05-12T18:23:21.637Z","updated_at":"2023-05-12T18:23:21.637Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"26","type":"user_entry","attributes":{"id":26,"user_id":1,"created_at":"2023-05-12T18:22:08.039Z","updated_at":"2023-05-12T18:22:08.039Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"25","type":"user_entry","attributes":{"id":25,"user_id":1,"created_at":"2023-05-12T18:00:38.586Z","updated_at":"2023-05-12T18:00:38.586Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"24","type":"user_entry","attributes":{"id":24,"user_id":1,"created_at":"2023-05-12T18:00:32.992Z","updated_at":"2023-05-12T18:00:32.992Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"23","type":"user_entry","attributes":{"id":23,"user_id":1,"created_at":"2023-05-12T18:00:17.486Z","updated_at":"2023-05-12T18:00:17.486Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"22","type":"user_entry","attributes":{"id":22,"user_id":1,"created_at":"2023-05-12T18:00:10.998Z","updated_at":"2023-05-12T18:00:10.998Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"21","type":"user_entry","attributes":{"id":21,"user_id":1,"created_at":"2023-05-12T17:58:52.399Z","updated_at":"2023-05-12T17:58:52.399Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-21T21:37:24.530Z","updated_at":"2023-04-21T21:37:24.530Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is one limiting belief you hold about yourself and where did it originate?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"18","type":"user_entry","attributes":{"id":18,"user_id":1,"created_at":"2023-04-21T21:36:55.572Z","updated_at":"2023-04-21T21:36:55.572Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:17:49.163Z","updated_at":"2023-04-20T21:17:49.163Z","type":"MicrodoseLogEntry","mood_before":"upsetti
+        spaghetti","mood_after":"motivated","dosage":0.2,"intensity":"low","sociability":"social","journal_prompt":"What
+        are some patterns in your life that you have been repeating unconsciously?","journal_entry":"GOing
+        to the grocery store and forgetting things - OH NO","environment":"home","other_notes":""}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-20T21:11:26.032Z","updated_at":"2023-04-20T21:11:26.032Z","type":"DailyLogEntry","sociability":"social","mood":"Happy","depression_score":7,"anxiety_score":3,"sleep_score":5,"exercise":"aerobic","meditation":"60","energy_levels":2,"notes":""}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:52.053Z","updated_at":"2023-04-20T21:05:52.053Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        does living your best life mean to you?","journal_entry":"I learned that I
+        can let go","environment":"at home","other_notes":"I stayed in my bed for
+        this experience"}},{"id":"12","type":"user_entry","attributes":{"id":12,"user_id":1,"created_at":"2023-04-20T21:05:50.888Z","updated_at":"2023-04-20T21:05:50.888Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:05:50.638Z","updated_at":"2023-04-20T21:05:50.638Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:05:49.742Z","updated_at":"2023-04-20T21:05:49.742Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        are three things in your life that you are currently grateful for and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"10","type":"user_entry","attributes":{"id":10,"user_id":1,"created_at":"2023-04-20T21:05:48.087Z","updated_at":"2023-04-20T21:05:48.087Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"9","type":"user_entry","attributes":{"id":9,"user_id":1,"created_at":"2023-04-20T21:05:47.838Z","updated_at":"2023-04-20T21:05:47.838Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:05:43.337Z","updated_at":"2023-04-20T21:05:43.337Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        fears or limiting beliefs are holding you back from living the life you desire?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:36.085Z","updated_at":"2023-04-20T21:05:36.085Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:22.046Z","updated_at":"2023-04-20T21:02:22.046Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve always wanted to do but have been too afraid to try?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:02:20.647Z","updated_at":"2023-04-20T21:02:20.647Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:02:20.350Z","updated_at":"2023-04-20T21:02:20.350Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:19.360Z","updated_at":"2023-04-20T21:02:19.360Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is a deeply held belief that you have, and why do you believe it?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:17.884Z","updated_at":"2023-04-20T21:02:17.884Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:17.626Z","updated_at":"2023-04-20T21:02:17.626Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:12.124Z","updated_at":"2023-04-20T21:02:12.124Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve been avoiding dealing with in your life and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:04.907Z","updated_at":"2023-04-20T21:02:04.907Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}}]}'
+  recorded_at: Tue, 16 May 2023 14:25:21 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:21 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 04c5e7c9-8879-4333-b79a-56f3c6cc0a9f
+      X-Runtime:
+      - '0.003436'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:22 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:21 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - af5e6ef3-0cc3-45d9-bcbb-5e455273197e
+      X-Runtime:
+      - '0.003413'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:22 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:22 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - cda5a028-5628-47db-95b8-d56a0ef10c95
+      X-Runtime:
+      - '0.003720'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:22 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:22 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 274ab35b-fa27-401b-919f-8cd663ac5174
+      X-Runtime:
+      - '0.003198'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:23 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:23 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 89f6554f-fd48-4a6c-ab06-7fe623e1ad09
+      X-Runtime:
+      - '0.003698'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:23 GMT
+- request:
+    method: post
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1/daily_log_entries
+    body:
+      encoding: UTF-8
+      string: anxiety_score=3&depression_score=7&energy_levels=5&exercise=cardio&meditation=20&mood=unmotivated&notes=I+want+a+capybara&sleep_score=4&sociability=withdrawn&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:23 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"31e3691880440910a7212c5da152ec5c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d8131f5c-c382-4c8a-9ed8-e1d3852a7755
+      X-Runtime:
+      - '0.008562'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"33","type":"daily_log_entry","attributes":{"user_id":1,"mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"energy_levels":5,"notes":"I
+        want a capybara","meditation":"20","sociability":"withdrawn","exercise":"cardio","created_at":"May
+        16, 2023"}}}'
+  recorded_at: Tue, 16 May 2023 14:25:23 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:23 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1abc161a-d37f-4f9b-8267-9bab0642ac87
+      X-Runtime:
+      - '0.003351'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:24 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:23 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4aa53e5d-1475-4add-a694-9f93db2a0099
+      X-Runtime:
+      - '0.003372'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:24 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:24 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 83770a95-6c17-4fcf-8434-5565587db343
+      X-Runtime:
+      - '0.003906'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:24 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:24 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 10e0fb80-b0c9-4dd7-b30a-026a9192ae65
+      X-Runtime:
+      - '0.004121'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:25 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:24 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5c45b8de-af85-4ab2-9466-06c1b305f582
+      X-Runtime:
+      - '0.003401'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:25 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1/log_entries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:25 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"1fc925bdf92dfe3fc7267ee0ace1e4cd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fe274ada-d714-47c9-abae-771f3abc7c88
+      X-Runtime:
+      - '0.010902'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"33","type":"user_entry","attributes":{"id":33,"user_id":1,"created_at":"2023-05-16T14:25:23.873Z","updated_at":"2023-05-16T14:25:23.873Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"32","type":"user_entry","attributes":{"id":32,"user_id":1,"created_at":"2023-05-16T14:24:21.028Z","updated_at":"2023-05-16T14:24:21.028Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"31","type":"user_entry","attributes":{"id":31,"user_id":1,"created_at":"2023-05-12T18:26:07.985Z","updated_at":"2023-05-12T18:26:07.985Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"30","type":"user_entry","attributes":{"id":30,"user_id":1,"created_at":"2023-05-12T18:23:46.734Z","updated_at":"2023-05-12T18:23:46.734Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"29","type":"user_entry","attributes":{"id":29,"user_id":1,"created_at":"2023-05-12T18:23:41.605Z","updated_at":"2023-05-12T18:23:41.605Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"28","type":"user_entry","attributes":{"id":28,"user_id":1,"created_at":"2023-05-12T18:23:26.993Z","updated_at":"2023-05-12T18:23:26.993Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"27","type":"user_entry","attributes":{"id":27,"user_id":1,"created_at":"2023-05-12T18:23:21.637Z","updated_at":"2023-05-12T18:23:21.637Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"26","type":"user_entry","attributes":{"id":26,"user_id":1,"created_at":"2023-05-12T18:22:08.039Z","updated_at":"2023-05-12T18:22:08.039Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"25","type":"user_entry","attributes":{"id":25,"user_id":1,"created_at":"2023-05-12T18:00:38.586Z","updated_at":"2023-05-12T18:00:38.586Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"24","type":"user_entry","attributes":{"id":24,"user_id":1,"created_at":"2023-05-12T18:00:32.992Z","updated_at":"2023-05-12T18:00:32.992Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"23","type":"user_entry","attributes":{"id":23,"user_id":1,"created_at":"2023-05-12T18:00:17.486Z","updated_at":"2023-05-12T18:00:17.486Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"22","type":"user_entry","attributes":{"id":22,"user_id":1,"created_at":"2023-05-12T18:00:10.998Z","updated_at":"2023-05-12T18:00:10.998Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"21","type":"user_entry","attributes":{"id":21,"user_id":1,"created_at":"2023-05-12T17:58:52.399Z","updated_at":"2023-05-12T17:58:52.399Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-21T21:37:24.530Z","updated_at":"2023-04-21T21:37:24.530Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is one limiting belief you hold about yourself and where did it originate?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"18","type":"user_entry","attributes":{"id":18,"user_id":1,"created_at":"2023-04-21T21:36:55.572Z","updated_at":"2023-04-21T21:36:55.572Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:17:49.163Z","updated_at":"2023-04-20T21:17:49.163Z","type":"MicrodoseLogEntry","mood_before":"upsetti
+        spaghetti","mood_after":"motivated","dosage":0.2,"intensity":"low","sociability":"social","journal_prompt":"What
+        are some patterns in your life that you have been repeating unconsciously?","journal_entry":"GOing
+        to the grocery store and forgetting things - OH NO","environment":"home","other_notes":""}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-20T21:11:26.032Z","updated_at":"2023-04-20T21:11:26.032Z","type":"DailyLogEntry","sociability":"social","mood":"Happy","depression_score":7,"anxiety_score":3,"sleep_score":5,"exercise":"aerobic","meditation":"60","energy_levels":2,"notes":""}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:52.053Z","updated_at":"2023-04-20T21:05:52.053Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        does living your best life mean to you?","journal_entry":"I learned that I
+        can let go","environment":"at home","other_notes":"I stayed in my bed for
+        this experience"}},{"id":"12","type":"user_entry","attributes":{"id":12,"user_id":1,"created_at":"2023-04-20T21:05:50.888Z","updated_at":"2023-04-20T21:05:50.888Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:05:50.638Z","updated_at":"2023-04-20T21:05:50.638Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:05:49.742Z","updated_at":"2023-04-20T21:05:49.742Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        are three things in your life that you are currently grateful for and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"10","type":"user_entry","attributes":{"id":10,"user_id":1,"created_at":"2023-04-20T21:05:48.087Z","updated_at":"2023-04-20T21:05:48.087Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"9","type":"user_entry","attributes":{"id":9,"user_id":1,"created_at":"2023-04-20T21:05:47.838Z","updated_at":"2023-04-20T21:05:47.838Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:05:43.337Z","updated_at":"2023-04-20T21:05:43.337Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        fears or limiting beliefs are holding you back from living the life you desire?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:36.085Z","updated_at":"2023-04-20T21:05:36.085Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:22.046Z","updated_at":"2023-04-20T21:02:22.046Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve always wanted to do but have been too afraid to try?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:02:20.647Z","updated_at":"2023-04-20T21:02:20.647Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:02:20.350Z","updated_at":"2023-04-20T21:02:20.350Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:19.360Z","updated_at":"2023-04-20T21:02:19.360Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is a deeply held belief that you have, and why do you believe it?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:17.884Z","updated_at":"2023-04-20T21:02:17.884Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:17.626Z","updated_at":"2023-04-20T21:02:17.626Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:12.124Z","updated_at":"2023-04-20T21:02:12.124Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve been avoiding dealing with in your life and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:04.907Z","updated_at":"2023-04-20T21:02:04.907Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}}]}'
+  recorded_at: Tue, 16 May 2023 14:25:25 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1/log_entries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:25 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"1fc925bdf92dfe3fc7267ee0ace1e4cd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ffc9f63e-1cc2-4163-a528-7fca5582cb98
+      X-Runtime:
+      - '0.012540'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"33","type":"user_entry","attributes":{"id":33,"user_id":1,"created_at":"2023-05-16T14:25:23.873Z","updated_at":"2023-05-16T14:25:23.873Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"32","type":"user_entry","attributes":{"id":32,"user_id":1,"created_at":"2023-05-16T14:24:21.028Z","updated_at":"2023-05-16T14:24:21.028Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"31","type":"user_entry","attributes":{"id":31,"user_id":1,"created_at":"2023-05-12T18:26:07.985Z","updated_at":"2023-05-12T18:26:07.985Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"30","type":"user_entry","attributes":{"id":30,"user_id":1,"created_at":"2023-05-12T18:23:46.734Z","updated_at":"2023-05-12T18:23:46.734Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"29","type":"user_entry","attributes":{"id":29,"user_id":1,"created_at":"2023-05-12T18:23:41.605Z","updated_at":"2023-05-12T18:23:41.605Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"28","type":"user_entry","attributes":{"id":28,"user_id":1,"created_at":"2023-05-12T18:23:26.993Z","updated_at":"2023-05-12T18:23:26.993Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"27","type":"user_entry","attributes":{"id":27,"user_id":1,"created_at":"2023-05-12T18:23:21.637Z","updated_at":"2023-05-12T18:23:21.637Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"26","type":"user_entry","attributes":{"id":26,"user_id":1,"created_at":"2023-05-12T18:22:08.039Z","updated_at":"2023-05-12T18:22:08.039Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"25","type":"user_entry","attributes":{"id":25,"user_id":1,"created_at":"2023-05-12T18:00:38.586Z","updated_at":"2023-05-12T18:00:38.586Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"24","type":"user_entry","attributes":{"id":24,"user_id":1,"created_at":"2023-05-12T18:00:32.992Z","updated_at":"2023-05-12T18:00:32.992Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"23","type":"user_entry","attributes":{"id":23,"user_id":1,"created_at":"2023-05-12T18:00:17.486Z","updated_at":"2023-05-12T18:00:17.486Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"22","type":"user_entry","attributes":{"id":22,"user_id":1,"created_at":"2023-05-12T18:00:10.998Z","updated_at":"2023-05-12T18:00:10.998Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"21","type":"user_entry","attributes":{"id":21,"user_id":1,"created_at":"2023-05-12T17:58:52.399Z","updated_at":"2023-05-12T17:58:52.399Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-21T21:37:24.530Z","updated_at":"2023-04-21T21:37:24.530Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is one limiting belief you hold about yourself and where did it originate?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"18","type":"user_entry","attributes":{"id":18,"user_id":1,"created_at":"2023-04-21T21:36:55.572Z","updated_at":"2023-04-21T21:36:55.572Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:17:49.163Z","updated_at":"2023-04-20T21:17:49.163Z","type":"MicrodoseLogEntry","mood_before":"upsetti
+        spaghetti","mood_after":"motivated","dosage":0.2,"intensity":"low","sociability":"social","journal_prompt":"What
+        are some patterns in your life that you have been repeating unconsciously?","journal_entry":"GOing
+        to the grocery store and forgetting things - OH NO","environment":"home","other_notes":""}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-20T21:11:26.032Z","updated_at":"2023-04-20T21:11:26.032Z","type":"DailyLogEntry","sociability":"social","mood":"Happy","depression_score":7,"anxiety_score":3,"sleep_score":5,"exercise":"aerobic","meditation":"60","energy_levels":2,"notes":""}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:52.053Z","updated_at":"2023-04-20T21:05:52.053Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        does living your best life mean to you?","journal_entry":"I learned that I
+        can let go","environment":"at home","other_notes":"I stayed in my bed for
+        this experience"}},{"id":"12","type":"user_entry","attributes":{"id":12,"user_id":1,"created_at":"2023-04-20T21:05:50.888Z","updated_at":"2023-04-20T21:05:50.888Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:05:50.638Z","updated_at":"2023-04-20T21:05:50.638Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:05:49.742Z","updated_at":"2023-04-20T21:05:49.742Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        are three things in your life that you are currently grateful for and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"10","type":"user_entry","attributes":{"id":10,"user_id":1,"created_at":"2023-04-20T21:05:48.087Z","updated_at":"2023-04-20T21:05:48.087Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"9","type":"user_entry","attributes":{"id":9,"user_id":1,"created_at":"2023-04-20T21:05:47.838Z","updated_at":"2023-04-20T21:05:47.838Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:05:43.337Z","updated_at":"2023-04-20T21:05:43.337Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        fears or limiting beliefs are holding you back from living the life you desire?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:36.085Z","updated_at":"2023-04-20T21:05:36.085Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:22.046Z","updated_at":"2023-04-20T21:02:22.046Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve always wanted to do but have been too afraid to try?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:02:20.647Z","updated_at":"2023-04-20T21:02:20.647Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:02:20.350Z","updated_at":"2023-04-20T21:02:20.350Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:19.360Z","updated_at":"2023-04-20T21:02:19.360Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is a deeply held belief that you have, and why do you believe it?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:17.884Z","updated_at":"2023-04-20T21:02:17.884Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:17.626Z","updated_at":"2023-04-20T21:02:17.626Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:12.124Z","updated_at":"2023-04-20T21:02:12.124Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve been avoiding dealing with in your life and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:04.907Z","updated_at":"2023-04-20T21:02:04.907Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}}]}'
+  recorded_at: Tue, 16 May 2023 14:25:26 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:25 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d4af52dc-7bb8-4935-a1c8-8a2b5b9dad73
+      X-Runtime:
+      - '0.003370'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:26 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:26 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ed17bccf-89d9-4130-b226-c615ef21f40e
+      X-Runtime:
+      - '0.003250'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:26 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:26 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b06db2df-a718-4fe8-b126-eb4a0bea0598
+      X-Runtime:
+      - '0.003536'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:27 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:26 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5c78bbec-ea08-47a9-b1c0-933582944566
+      X-Runtime:
+      - '0.003640'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:27 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:27 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '088a531b-c63c-46af-9ab6-c2520b5d14bf'
+      X-Runtime:
+      - '0.003257'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:27 GMT
+- request:
+    method: post
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1/daily_log_entries
+    body:
+      encoding: UTF-8
+      string: anxiety_score=3&depression_score=2&energy_levels=7&exercise=cardio&meditation=20&mood=happy%21&notes=I+want+an+axolotl&sleep_score=7&sociability=social&user_id=1
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:27 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"470c924d5abc08b3b278b0b55f6436b6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 7f78a243-1ad3-4fc8-871d-6e3f8be05682
+      X-Runtime:
+      - '0.007693'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"34","type":"daily_log_entry","attributes":{"user_id":1,"mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"energy_levels":7,"notes":"I
+        want an axolotl","meditation":"20","sociability":"social","exercise":"cardio","created_at":"May
+        16, 2023"}}}'
+  recorded_at: Tue, 16 May 2023 14:25:28 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:27 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6282f83b-d8d8-4289-9286-40fcca1de98e
+      X-Runtime:
+      - '0.003956'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:28 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:28 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 11861d74-c6f4-4042-8c73-20dc27c9b286
+      X-Runtime:
+      - '0.007479'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:28 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:28 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ea716d59-a10a-4823-8074-7224148cabb7
+      X-Runtime:
+      - '0.003478'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:29 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:29 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fa94faca-5063-45a0-b977-59129f2d4f88
+      X-Runtime:
+      - '0.004101'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:29 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:28 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 560d0283-0c6a-4fe0-a679-4667631ea95e
+      X-Runtime:
+      - '0.003390'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:29 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1/log_entries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:29 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"f7083379e9c102634f9e82d412a0893b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 77d7c31c-96f6-4767-9ace-597151391b14
+      X-Runtime:
+      - '0.020619'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"34","type":"user_entry","attributes":{"id":34,"user_id":1,"created_at":"2023-05-16T14:25:28.099Z","updated_at":"2023-05-16T14:25:28.099Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"33","type":"user_entry","attributes":{"id":33,"user_id":1,"created_at":"2023-05-16T14:25:23.873Z","updated_at":"2023-05-16T14:25:23.873Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"32","type":"user_entry","attributes":{"id":32,"user_id":1,"created_at":"2023-05-16T14:24:21.028Z","updated_at":"2023-05-16T14:24:21.028Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"31","type":"user_entry","attributes":{"id":31,"user_id":1,"created_at":"2023-05-12T18:26:07.985Z","updated_at":"2023-05-12T18:26:07.985Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"30","type":"user_entry","attributes":{"id":30,"user_id":1,"created_at":"2023-05-12T18:23:46.734Z","updated_at":"2023-05-12T18:23:46.734Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"29","type":"user_entry","attributes":{"id":29,"user_id":1,"created_at":"2023-05-12T18:23:41.605Z","updated_at":"2023-05-12T18:23:41.605Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"28","type":"user_entry","attributes":{"id":28,"user_id":1,"created_at":"2023-05-12T18:23:26.993Z","updated_at":"2023-05-12T18:23:26.993Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"27","type":"user_entry","attributes":{"id":27,"user_id":1,"created_at":"2023-05-12T18:23:21.637Z","updated_at":"2023-05-12T18:23:21.637Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"26","type":"user_entry","attributes":{"id":26,"user_id":1,"created_at":"2023-05-12T18:22:08.039Z","updated_at":"2023-05-12T18:22:08.039Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"25","type":"user_entry","attributes":{"id":25,"user_id":1,"created_at":"2023-05-12T18:00:38.586Z","updated_at":"2023-05-12T18:00:38.586Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"24","type":"user_entry","attributes":{"id":24,"user_id":1,"created_at":"2023-05-12T18:00:32.992Z","updated_at":"2023-05-12T18:00:32.992Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"23","type":"user_entry","attributes":{"id":23,"user_id":1,"created_at":"2023-05-12T18:00:17.486Z","updated_at":"2023-05-12T18:00:17.486Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"22","type":"user_entry","attributes":{"id":22,"user_id":1,"created_at":"2023-05-12T18:00:10.998Z","updated_at":"2023-05-12T18:00:10.998Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"21","type":"user_entry","attributes":{"id":21,"user_id":1,"created_at":"2023-05-12T17:58:52.399Z","updated_at":"2023-05-12T17:58:52.399Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-21T21:37:24.530Z","updated_at":"2023-04-21T21:37:24.530Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is one limiting belief you hold about yourself and where did it originate?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"18","type":"user_entry","attributes":{"id":18,"user_id":1,"created_at":"2023-04-21T21:36:55.572Z","updated_at":"2023-04-21T21:36:55.572Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:17:49.163Z","updated_at":"2023-04-20T21:17:49.163Z","type":"MicrodoseLogEntry","mood_before":"upsetti
+        spaghetti","mood_after":"motivated","dosage":0.2,"intensity":"low","sociability":"social","journal_prompt":"What
+        are some patterns in your life that you have been repeating unconsciously?","journal_entry":"GOing
+        to the grocery store and forgetting things - OH NO","environment":"home","other_notes":""}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-20T21:11:26.032Z","updated_at":"2023-04-20T21:11:26.032Z","type":"DailyLogEntry","sociability":"social","mood":"Happy","depression_score":7,"anxiety_score":3,"sleep_score":5,"exercise":"aerobic","meditation":"60","energy_levels":2,"notes":""}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:52.053Z","updated_at":"2023-04-20T21:05:52.053Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        does living your best life mean to you?","journal_entry":"I learned that I
+        can let go","environment":"at home","other_notes":"I stayed in my bed for
+        this experience"}},{"id":"12","type":"user_entry","attributes":{"id":12,"user_id":1,"created_at":"2023-04-20T21:05:50.888Z","updated_at":"2023-04-20T21:05:50.888Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:05:50.638Z","updated_at":"2023-04-20T21:05:50.638Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:05:49.742Z","updated_at":"2023-04-20T21:05:49.742Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        are three things in your life that you are currently grateful for and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"10","type":"user_entry","attributes":{"id":10,"user_id":1,"created_at":"2023-04-20T21:05:48.087Z","updated_at":"2023-04-20T21:05:48.087Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"9","type":"user_entry","attributes":{"id":9,"user_id":1,"created_at":"2023-04-20T21:05:47.838Z","updated_at":"2023-04-20T21:05:47.838Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:05:43.337Z","updated_at":"2023-04-20T21:05:43.337Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        fears or limiting beliefs are holding you back from living the life you desire?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:36.085Z","updated_at":"2023-04-20T21:05:36.085Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:22.046Z","updated_at":"2023-04-20T21:02:22.046Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve always wanted to do but have been too afraid to try?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:02:20.647Z","updated_at":"2023-04-20T21:02:20.647Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:02:20.350Z","updated_at":"2023-04-20T21:02:20.350Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:19.360Z","updated_at":"2023-04-20T21:02:19.360Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is a deeply held belief that you have, and why do you believe it?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:17.884Z","updated_at":"2023-04-20T21:02:17.884Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:17.626Z","updated_at":"2023-04-20T21:02:17.626Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:12.124Z","updated_at":"2023-04-20T21:02:12.124Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve been avoiding dealing with in your life and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:04.907Z","updated_at":"2023-04-20T21:02:04.907Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}}]}'
+  recorded_at: Tue, 16 May 2023 14:25:30 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1/log_entries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:30 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"f7083379e9c102634f9e82d412a0893b"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1e4f8f27-3ebd-441a-8a66-c4cf9d1be8d1
+      X-Runtime:
+      - '0.015943'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"34","type":"user_entry","attributes":{"id":34,"user_id":1,"created_at":"2023-05-16T14:25:28.099Z","updated_at":"2023-05-16T14:25:28.099Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"33","type":"user_entry","attributes":{"id":33,"user_id":1,"created_at":"2023-05-16T14:25:23.873Z","updated_at":"2023-05-16T14:25:23.873Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"32","type":"user_entry","attributes":{"id":32,"user_id":1,"created_at":"2023-05-16T14:24:21.028Z","updated_at":"2023-05-16T14:24:21.028Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"31","type":"user_entry","attributes":{"id":31,"user_id":1,"created_at":"2023-05-12T18:26:07.985Z","updated_at":"2023-05-12T18:26:07.985Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"30","type":"user_entry","attributes":{"id":30,"user_id":1,"created_at":"2023-05-12T18:23:46.734Z","updated_at":"2023-05-12T18:23:46.734Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"29","type":"user_entry","attributes":{"id":29,"user_id":1,"created_at":"2023-05-12T18:23:41.605Z","updated_at":"2023-05-12T18:23:41.605Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"28","type":"user_entry","attributes":{"id":28,"user_id":1,"created_at":"2023-05-12T18:23:26.993Z","updated_at":"2023-05-12T18:23:26.993Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"27","type":"user_entry","attributes":{"id":27,"user_id":1,"created_at":"2023-05-12T18:23:21.637Z","updated_at":"2023-05-12T18:23:21.637Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"26","type":"user_entry","attributes":{"id":26,"user_id":1,"created_at":"2023-05-12T18:22:08.039Z","updated_at":"2023-05-12T18:22:08.039Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"25","type":"user_entry","attributes":{"id":25,"user_id":1,"created_at":"2023-05-12T18:00:38.586Z","updated_at":"2023-05-12T18:00:38.586Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"24","type":"user_entry","attributes":{"id":24,"user_id":1,"created_at":"2023-05-12T18:00:32.992Z","updated_at":"2023-05-12T18:00:32.992Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"23","type":"user_entry","attributes":{"id":23,"user_id":1,"created_at":"2023-05-12T18:00:17.486Z","updated_at":"2023-05-12T18:00:17.486Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"22","type":"user_entry","attributes":{"id":22,"user_id":1,"created_at":"2023-05-12T18:00:10.998Z","updated_at":"2023-05-12T18:00:10.998Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"21","type":"user_entry","attributes":{"id":21,"user_id":1,"created_at":"2023-05-12T17:58:52.399Z","updated_at":"2023-05-12T17:58:52.399Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-21T21:37:24.530Z","updated_at":"2023-04-21T21:37:24.530Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is one limiting belief you hold about yourself and where did it originate?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"18","type":"user_entry","attributes":{"id":18,"user_id":1,"created_at":"2023-04-21T21:36:55.572Z","updated_at":"2023-04-21T21:36:55.572Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:17:49.163Z","updated_at":"2023-04-20T21:17:49.163Z","type":"MicrodoseLogEntry","mood_before":"upsetti
+        spaghetti","mood_after":"motivated","dosage":0.2,"intensity":"low","sociability":"social","journal_prompt":"What
+        are some patterns in your life that you have been repeating unconsciously?","journal_entry":"GOing
+        to the grocery store and forgetting things - OH NO","environment":"home","other_notes":""}},{"id":"13","type":"user_entry","attributes":{"id":13,"user_id":1,"created_at":"2023-04-20T21:11:26.032Z","updated_at":"2023-04-20T21:11:26.032Z","type":"DailyLogEntry","sociability":"social","mood":"Happy","depression_score":7,"anxiety_score":3,"sleep_score":5,"exercise":"aerobic","meditation":"60","energy_levels":2,"notes":""}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:52.053Z","updated_at":"2023-04-20T21:05:52.053Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        does living your best life mean to you?","journal_entry":"I learned that I
+        can let go","environment":"at home","other_notes":"I stayed in my bed for
+        this experience"}},{"id":"12","type":"user_entry","attributes":{"id":12,"user_id":1,"created_at":"2023-04-20T21:05:50.888Z","updated_at":"2023-04-20T21:05:50.888Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"11","type":"user_entry","attributes":{"id":11,"user_id":1,"created_at":"2023-04-20T21:05:50.638Z","updated_at":"2023-04-20T21:05:50.638Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:05:49.742Z","updated_at":"2023-04-20T21:05:49.742Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        are three things in your life that you are currently grateful for and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"10","type":"user_entry","attributes":{"id":10,"user_id":1,"created_at":"2023-04-20T21:05:48.087Z","updated_at":"2023-04-20T21:05:48.087Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"9","type":"user_entry","attributes":{"id":9,"user_id":1,"created_at":"2023-04-20T21:05:47.838Z","updated_at":"2023-04-20T21:05:47.838Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:05:43.337Z","updated_at":"2023-04-20T21:05:43.337Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        fears or limiting beliefs are holding you back from living the life you desire?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"8","type":"user_entry","attributes":{"id":8,"user_id":1,"created_at":"2023-04-20T21:05:36.085Z","updated_at":"2023-04-20T21:05:36.085Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:22.046Z","updated_at":"2023-04-20T21:02:22.046Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve always wanted to do but have been too afraid to try?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"7","type":"user_entry","attributes":{"id":7,"user_id":1,"created_at":"2023-04-20T21:02:20.647Z","updated_at":"2023-04-20T21:02:20.647Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"6","type":"user_entry","attributes":{"id":6,"user_id":1,"created_at":"2023-04-20T21:02:20.350Z","updated_at":"2023-04-20T21:02:20.350Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:19.360Z","updated_at":"2023-04-20T21:02:19.360Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is a deeply held belief that you have, and why do you believe it?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"5","type":"user_entry","attributes":{"id":5,"user_id":1,"created_at":"2023-04-20T21:02:17.884Z","updated_at":"2023-04-20T21:02:17.884Z","type":"DailyLogEntry","sociability":"social","mood":"happy!","depression_score":2,"anxiety_score":3,"sleep_score":7,"exercise":"cardio","meditation":"20","energy_levels":7,"notes":"I
+        want an axolotl"}},{"id":"4","type":"user_entry","attributes":{"id":4,"user_id":1,"created_at":"2023-04-20T21:02:17.626Z","updated_at":"2023-04-20T21:02:17.626Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:12.124Z","updated_at":"2023-04-20T21:02:12.124Z","type":"MicrodoseLogEntry","mood_before":"angsty","mood_after":"peaceful","dosage":0.2,"intensity":"medium","sociability":"withdrawn","journal_prompt":"What
+        is something you''ve been avoiding dealing with in your life and why?","journal_entry":"I
+        learned that I can let go","environment":"at home","other_notes":"I stayed
+        in my bed for this experience"}},{"id":"3","type":"user_entry","attributes":{"id":3,"user_id":1,"created_at":"2023-04-20T21:02:04.907Z","updated_at":"2023-04-20T21:02:04.907Z","type":"DailyLogEntry","sociability":"withdrawn","mood":"unmotivated","depression_score":7,"anxiety_score":3,"sleep_score":4,"exercise":"cardio","meditation":"20","energy_levels":5,"notes":"I
+        want a capybara"}}]}'
+  recorded_at: Tue, 16 May 2023 14:25:30 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:30 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aded2cfb-c831-481f-8d10-b976d22a1e43
+      X-Runtime:
+      - '0.004212'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:30 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:30 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 21914241-9df2-431f-aae4-21420c8c3c53
+      X-Runtime:
+      - '0.007443'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:31 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:30 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 32572502-0ca3-4624-b963-9daabbff976f
+      X-Runtime:
+      - '0.003778'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:31 GMT
+- request:
+    method: get
+    uri: https://pacific-reef-79035.herokuapp.com/api/v1/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Tue, 16 May 2023 14:25:31 GMT
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"978d591733ec175f959c3cf6cbc036a8"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 04414c6c-bacb-4f49-a153-97beffc1fc59
+      X-Runtime:
+      - '0.003190'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"user","attributes":{"name":"Tori Enyart","email":"torienyart@gmail.com","protocol_id":1,"data_sharing":true}}}'
+  recorded_at: Tue, 16 May 2023 14:25:31 GMT
+- request:
+    method: post
+    uri: https://api.openai.com/v1/chat/completions
+    body:
+      encoding: UTF-8
+      string: '{"model":"gpt-3.5-turbo","messages":[{"role":"user","content":"I''m
+        documenting my experience with psilocybin. Can you help me with a random thought
+        provoking journal prompt replying only with the journal prompt? A prompt that
+        will envoke introspection would be good."}],"temperature":0.9,"max_tokens":100}'
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Type:
+      - application/json
+      Authorization:
+      - Bearer
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Tue, 16 May 2023 14:25:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '496'
+      Connection:
+      - keep-alive
+      Vary:
+      - Origin
+      X-Request-Id:
+      - ab560cf2e97d6bd450a60b331a42c2d0
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7c844a5e9e1e1f35-DEN
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: |
+        {
+            "error": {
+                "message": "You didn't provide an API key. You need to provide your API key in an Authorization header using Bearer auth (i.e. Authorization: Bearer YOUR_KEY), or as the password field (with blank username) if you're accessing the API from your browser and are prompted for a username and password. You can obtain an API key from https://platform.openai.com/account/api-keys.",
+                "type": "invalid_request_error",
+                "param": null,
+                "code": null
+            }
+        }
+  recorded_at: Tue, 16 May 2023 14:25:31 GMT
+recorded_with: VCR 6.1.0
