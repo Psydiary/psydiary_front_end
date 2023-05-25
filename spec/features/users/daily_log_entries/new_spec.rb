@@ -18,7 +18,6 @@ RSpec.describe 'New Daily Log Page' do
 
       it "has various fields" do
         visit new_user_daily_log_entry_path(@user)
-        save_and_open_page
 
         expect(page).to have_field("Mood")
 
@@ -79,7 +78,7 @@ RSpec.describe 'New Daily Log Page' do
         expect(page).to have_select("Exercise")
       end
       
-      xit "takes you to the user_dashboard once you fill out the form and click submit" do
+      it "takes you to the user_dashboard once you fill out the form and click submit" do
         visit new_user_daily_log_entry_path(@user)
 
         fill_in 'Mood', with: 'unmotivated'
@@ -105,7 +104,7 @@ RSpec.describe 'New Daily Log Page' do
         fill_in 'Notes', with: 'I want a capybara'
         click_on "Upload to the Universe"
 
-        expect(page.current_path).to eq(user_path(1))
+        expect(page.current_path).to eq(user_path(@user))
       end
     end
   end

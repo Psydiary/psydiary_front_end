@@ -9,14 +9,7 @@ class Users::DailyLogEntriesController < ApplicationController
   end
 
   def new
-    # @facade = DailyLogEntriesFacade.new(params)
-    @daily_log_entry = DailyLogEntry.new(daily_log_entry_params)
-    if @daily_log_entry.save
-      redirect_to user_path(params[:user_id])
-    else
-      flash[:error] = @daily_log_entry.errors.full_messages.to_sentence
-      render :new
-    end
+    @daily_log_entry = DailyLogEntry.new(user_id: params[:user_id])
   end
 
   def create
