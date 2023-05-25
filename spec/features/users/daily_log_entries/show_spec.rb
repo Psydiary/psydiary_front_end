@@ -1,19 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'Daily log show page' do
-  # before do
-  #   response = File.read('spec/fixtures/daily_log_entry.json')
-  #   stub_request(:get, "https://pacific-reef-79035.herokuapp.com/api/v1/users/2/daily_log_entries/1").
-  #        with(
-  #          headers: {
-  #             'Accept'=>'*/*',
-  #             'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3',
-  #             'User-Agent'=>'Faraday v2.7.4'
-  #          }).
-  #        to_return(status: 200, body: response, headers: {})
-  # end
-
   before do
+    
     @user = create(:user)
 
     create(:daily_log_entry, user_id: @user.id)
@@ -22,7 +11,6 @@ RSpec.describe 'Daily log show page' do
   end
 
   it 'exists' do
-
     visit  user_daily_log_entry_path(@user, @entry)
 
     expect(current_path).to eq(user_daily_log_entry_path(@user, @entry))
@@ -42,7 +30,5 @@ RSpec.describe 'Daily log show page' do
       expect(page).to have_content("#{@entry.exercise}")
       expect(page).to have_content("#{@entry.notes}")
     end
-
-    save_and_open_page
   end
 end

@@ -9,16 +9,23 @@ class Users::DailyLogEntriesController < ApplicationController
   end
 
   def new
-    @facade = DailyLogEntriesFacade.new(params)
+    # @facade = DailyLogEntriesFacade.new(params)
+    @daily_log_entry = DailyLogEntry.new(daily_log_entry_params)
+    if @daily_log_entry.save
+      redirect_to user_path(params[:user_id])
+    else
+      flash[:error] = @daily_log_entry.errors.full_messages.to_sentence
+      render :new
+    end
   end
 
   def create
-    daily_log_entry = DailyLogEntriesFacade.new(daily_log_entry_params).new_entry
-    if daily_log_entry.is_a?(Array)
-      flash[:error] = "Could not create entry"
-      redirect_to register_path
-    else
+    daily_log_entry = DailyLogEntry.new(daily_log_entry_params)
+    if daily_log_entry.save
       redirect_to user_path(params[:user_id]) 
+    else
+      flash[:error] = "Could not create entry"
+      redirect_to user_path(params[:user_id])
     end
   end
 
