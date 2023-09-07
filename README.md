@@ -11,11 +11,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://secure-crag-03925.herokuapp.com/">
+  <a href="https://psydiary-app-1dfc3c05be70.herokuapp.com">
   <img src="https://user-images.githubusercontent.com/114954379/233474790-52cd8128-529d-4574-a4e4-696039fc8719.png"
   </a>
   
-  [Visit Psydiary](https://secure-crag-03925.herokuapp.com/)
+  [Visit Psydiary](https://psydiary-app-1dfc3c05be70.herokuapp.com)
 
   <h3 align="center">🍄 Psydiary—The App to Bring You Home 🍄</h3>
 
@@ -25,35 +25,10 @@
   </p>
 </div>
 
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
+<div align="center">
+  <b>To interact with the deployed version of Psydiary, please check out the "How to View Psydiary on the Web" Section</b>
+</div>
+<br>
 
 
 ## About The Project
@@ -163,6 +138,24 @@ _Follow the steps below to install and set up this app._
     GOOGLE_CLIENT_ID: 'your id here'
     GOOGLE_CLIENT_SECRET: 'your secret here'
    ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## How to View Psydiary on the Web
+
+_Follow the steps below to log in and explore Psydiary as a sample user
+
+1. Navigate to the [Psydiary webpage](https://psydiary-app-1dfc3c05be70.herokuapp.com)
+
+2. Login as our example user-
+* username: janedoe@example.com
+* password: 1234
+
+3. Poke around Jane's dashboard to see the ways she can and has been interacting with Psydiary!
+
+
+NOTE: If you would like to try Psydiary by creating your own account, you must be located in one of the states where Psilocybin is currently legal (Colorado, California, or Oregon). The app is currently set up to restrict user access in states where Psilocybin is illegal!
+THe test user we have created should allow you to explore the use of the app regardless of the state you are accessing the web from!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
