@@ -5,20 +5,20 @@ class Users::DailyLogEntriesController < ApplicationController
   end
 
   def show
-    @daily_log_entry = facade.daily_log_entry(params[:user_id], params[:id])
+    @daily_log_entry = DailyLogEntry.find(params[:id])
   end
 
   def new
-    @facade = DailyLogEntriesFacade.new(params)
+    @daily_log_entry = DailyLogEntry.new(user_id: params[:user_id])
   end
 
   def create
-    daily_log_entry = DailyLogEntriesFacade.new(daily_log_entry_params).new_entry
-    if daily_log_entry.is_a?(Array)
-      flash[:error] = "Could not create entry"
-      redirect_to register_path
-    else
+    daily_log_entry = DailyLogEntry.new(daily_log_entry_params)
+    if daily_log_entry.save
       redirect_to user_path(params[:user_id]) 
+    else
+      flash[:error] = "Could not create entry"
+      redirect_to user_path(params[:user_id])
     end
   end
 
